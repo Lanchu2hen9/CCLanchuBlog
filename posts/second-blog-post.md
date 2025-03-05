@@ -46,9 +46,9 @@ Used to update and or increment the Afterthought/Counter variable, in the case o
 
 function setup() {  
 createCanvas(innerWidth, 200);  
-colorMode (HSB)  
-rectMode (CENTER)  
-noStroke ()  
+colorMode (HSB)[^1]  
+rectMode (CENTER)[^2]  
+noStroke ()[^3]  
 }
 
 function draw()  
@@ -67,4 +67,50 @@ square (width * (i + 0.5) / total*squares, height / 2, t \* (i + 1) % size)
 
 "innerWidth" essentially is viewport width of the small window of the preview. "Width" holds whatever values the browser specifies the "innerWidth" of the Preview to be.
 
-![a drippy lemon](/IMG_8737.jpg)
+![Formula diagram.](/IMG_8737.jpg)  
+Correction the H and W are not the height and width of the squares generated. It decides where the squares are located on the x-axis and the y-axis.
+
+## Attempt 1:
+
+Below is Attempt number one without the help of ChatGPT. Its not _"efficient"_
+
+<iframe id="falling_falling" src="https://editor.p5js.org/Lanchu2hen9/full/r2yY9hMko"></iframe>
+
+<script type="module">
+
+    const iframe  = document.getElementById (`falling_falling`)
+    iframe.width  = iframe.parentNode.scrollWidth
+    iframe.height = iframe.width * 9 / 16 + 42
+
+</script>
+
+## Attempt 2:
+
+ChatGPT assisted. ChatGPT states:
+
+![A response from ChatGPT on how to do task 1.](/ChatGPT.png)
+
+<iframe id="p5js2" src="https://editor.p5js.org/Lanchu2hen9/full/eCm_owgZ5"></iframe>
+
+<script type="module">
+
+    const iframe  = document.getElementById (`p5js2`)
+    iframe.width  = iframe.parentNode.scrollWidth
+    iframe.height = iframe.width * 9 / 16 + 42
+
+</script>
+
+# Task 2:
+
+What ChatGPT says:
+![A response from ChatGPT on how to do task 2.](/ChatGPT2.png)
+
+## Resources:
+
+- The p5js2 Reference Library `https://p5js.org/reference/`
+- The Coding Train (Daniel Shiffman) `https://www.youtube.com/c/TheCodingTrain`
+- ChatGPT and the entirety of the Internet.
+
+[^1]: Changes the way that colours are defined in p5.js, by default uses RGB (Red, Green, Blue) colour values.
+[^2]: Draws the square from the centre of the square. There are other rectMode(); that draw the square from different points in the square, but I can't be fcked to type them down.
+[^3]: Removes outlines from shapes.
