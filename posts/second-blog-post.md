@@ -1,7 +1,7 @@
 ---
-title: Week 1 Homework
+title: Week 1 (Tues) Homework
 published_at: 2025-01-05
-snippet: An example of a blog post.
+snippet: This the homework to the first class of Semester 1 2025.
 disable_html_sanitization: true
 allow_math: true
 ---
