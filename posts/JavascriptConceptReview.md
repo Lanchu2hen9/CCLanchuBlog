@@ -1,0 +1,35 @@
+---
+title: Javascript Concept Review
+published_at: 2025-01-08
+snippet: My stupid ass forgot how the basics of js worked, and now here I am re-learning them.
+disable_html_sanitization: true
+allow_math: true
+---
+
+# General Math/Maths scripting Language:
+
+- 7 \*\* 2 is "7 to the power of 2."
+- When doing the following:
+  > function setup () {  
+  >  const NotEqual = 7 _ 7 == 5 _ 5
+  > console.log(NotEqual);
+  > }
+  - The console should print out false, I assume this is because the computer does the little mathy mathy, and gives out a false statement.
+  - Same goes for print ();
+- Remember that "${...}", allows you to do the following:
+  - Insert strings
+  - Do maths
+  - Call functions
+  - Call information stored within previously established variables.
+  - Straight up use an array.
+  - ~Manspreads~ Splays content over multiple lines of code.
+- "FrameCount();" Pretty self-explaintory, it counts deez framez.
+
+# General Notes:
+
+- Don't use print ();, use console.log(``);
+  - Because useing print (); outside of the setup () {} function actually prints out things.
+
+# Experiments:
+
+[Print & Console.log](https://editor.p5js.org/Lanchu2hen9/sketches/IFmbUaFe0)
