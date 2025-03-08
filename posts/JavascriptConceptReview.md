@@ -30,6 +30,15 @@ allow_math: true
 - Don't use print ();, use console.log(``);
   - Because useing print (); outside of the setup () {} function actually prints out things.
 
+# Colours:
+
+- **Paradigms:** fancy ass for different colour modes. There are two modes:
+  - Your RGB mode. (Default)
+  - HSB mode.
+- **Color objects:** You can store "color(...);" within variables and extract the red, green and blue channels of said stored variable.
+
 # Experiments:
 
-[Print & Console.log](https://editor.p5js.org/Lanchu2hen9/sketches/IFmbUaFe0)
+[Print & Console.log](https://editor.p5js.org/Lanchu2hen9/sketches/IFmbUaFe0)  
+[FrameCount](https://editor.p5js.org/Lanchu2hen9/sketches/SuYTKxWHq)
+[Colour](https://editor.p5js.org/Lanchu2hen9/sketches/BDZ7gXE-z)
