@@ -6,6 +6,8 @@ disable_html_sanitization: true
 allow_math: true
 ---
 
+[Home](https://cclanchublo6.deno.dev/)
+
 # Table Of Contents:
 
 1. [06/01/2025 After Class note.](https://cclanchublo6.deno.dev/third-blog-post#before-week-1-thursday-homeworkk)
