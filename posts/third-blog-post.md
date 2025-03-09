@@ -22,6 +22,7 @@ allow_math: true
       [Arrays](https://cclanchublo6.deno.dev/third-blog-post#arrays)
    - [Sound](https://cclanchublo6.deno.dev/third-blog-post#sound)
 4. [Youtube Resources](https://cclanchublo6.deno.dev/third-blog-post#youtube-resources)
+5. [Classmate Consulations](https://cclanchublo6.deno.dev/third-blog-post#classmate-consulations)
 
 # Before Week 1, Thursday Homework.
 
@@ -125,5 +126,7 @@ Travis states:
 > "i reckon Rafaël has a class or an object he calls for each iteration of the house, which he just feeds a color and a falling direction.. i'm not sure how he's accomplished the appearence of having them fall over in different directions, but it's almost certainly a random direction."
 
 > "if i had to guess how they were shown to fall downwards, i would imagine that each corner is programmed to move towards the other horizontally, and the ground vertically, both vertical and horizontal calculated with a small offset to make it seem like they are falling in 3d space, instead of just 2d squishing."
+
+# Concept Implementation:
 
 [^2]: 9 of March 2025 here, I'm sorry but its time for you to suffer.
