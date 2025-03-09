@@ -9,7 +9,7 @@ allow_math: true
 # Table Of Contents:
 
 1. [06/01/2025 After Class note.](https://cclanchublo6.deno.dev/third-blog-post#before-week-1-thursday-homeworkk)
-2. [How_Does_ItWork?](https://cclanchublo6.deno.dev/third-blog-post#how-does-house-by-rafa%C3%ABl-rozendaal-work)
+2. [How Does it Work?](https://cclanchublo6.deno.dev/third-blog-post#how-does-house-by-rafa%C3%ABl-rozendaal-work)
 3. [Concepts & Techniques:](https://cclanchublo6.deno.dev/third-blog-post#concepts--techniques)
    - [Scale](https://cclanchublo6.deno.dev/third-blog-post#scale)
    - [Vectors](https://cclanchublo6.deno.dev/third-blog-post#vectors)
