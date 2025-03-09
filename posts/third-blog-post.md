@@ -8,9 +8,18 @@ allow_math: true
 
 # Table Of Contents:
 
-1. [Introduction](#Before Week 1, Thursday Homework)
-2. [How It Works](#how-it-works)
-3. [Conclusion](#conclusion)
+1. [06/01/2025 After Class note.](https://cclanchublo6.deno.dev/third-blog-post#before-week-1-thursday-homeworkk)
+2. [How_Does_ItWork?](https://cclanchublo6.deno.dev/third-blog-post#how-does-house-by-rafa%C3%ABl-rozendaal-work)
+3. [Concepts & Techniques:](https://cclanchublo6.deno.dev/third-blog-post#concepts--techniques)
+   - [Scale](https://cclanchublo6.deno.dev/third-blog-post#scale)
+   - [Vectors](https://cclanchublo6.deno.dev/third-blog-post#vectors)
+   - [Translate](https://cclanchublo6.deno.dev/third-blog-post#translate)
+   - [Interaction](https://cclanchublo6.deno.dev/third-blog-post#interaction)  
+     [Colours](https://cclanchublo6.deno.dev/third-blog-post#colours)
+     [Random](https://cclanchublo6.deno.dev/third-blog-post#random)  
+     [Arrays](https://cclanchublo6.deno.dev/third-blog-post#arrays)
+   - [Sound](https://cclanchublo6.deno.dev/third-blog-post#sound)
+4. [Youtube Resources](https://cclanchublo6.deno.dev/third-blog-post#youtube-resources)
 
 # Before Week 1, Thursday Homework.
 
