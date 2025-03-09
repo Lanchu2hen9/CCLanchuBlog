@@ -37,8 +37,14 @@ allow_math: true
   - HSB mode.
 - **Color objects:** You can store "color(...);" within variables and extract the red, green and blue channels of said stored variable.
 
+# Iteration:
+
+- The while loop code is below, be careful, running conditional logic can lock up your browser.
+- See ["for" loops](https://cclanchublo6.deno.dev/second-blog-post)
+
 # Experiments:
 
 [Print & Console.log](https://editor.p5js.org/Lanchu2hen9/sketches/IFmbUaFe0)  
-[FrameCount](https://editor.p5js.org/Lanchu2hen9/sketches/SuYTKxWHq)
-[Colour](https://editor.p5js.org/Lanchu2hen9/sketches/BDZ7gXE-z)
+[FrameCount](https://editor.p5js.org/Lanchu2hen9/sketches/SuYTKxWHq)  
+[Colour](https://editor.p5js.org/Lanchu2hen9/sketches/BDZ7gXE-z)  
+[While](https://editor.p5js.org/Lanchu2hen9/sketches/61098iznH)
