@@ -17,9 +17,9 @@ allow_math: true
    - [Vectors](https://cclanchublo6.deno.dev/third-blog-post#vectors)
    - [Translate](https://cclanchublo6.deno.dev/third-blog-post#translate)
    - [Interaction](https://cclanchublo6.deno.dev/third-blog-post#interaction)  
-     [Colours](https://cclanchublo6.deno.dev/third-blog-post#colours)
+      [Colours](https://cclanchublo6.deno.dev/third-blog-post#colours)
      [Random](https://cclanchublo6.deno.dev/third-blog-post#random)  
-     [Arrays](https://cclanchublo6.deno.dev/third-blog-post#arrays)
+      [Arrays](https://cclanchublo6.deno.dev/third-blog-post#arrays)
    - [Sound](https://cclanchublo6.deno.dev/third-blog-post#sound)
 4. [Youtube Resources](https://cclanchublo6.deno.dev/third-blog-post#youtube-resources)
 
@@ -118,5 +118,12 @@ Just in case you need an refresher: [Arrays](https://blog.science.family/240312_
   - [Make Water Surface Effect in p5.js 1/2](https://youtu.be/kUexPZMIwuA?si=_mkku41cogQpajRx)
   - [Make Water Surface Effect in p5.js 2/2](https://youtu.be/H7CEy5mgKFY?si=IbRnHgjY6vtlbk-t)
 
-[^1]: Slerp is lerp but used for non-linear, circular paths.
+# Classmate Consulations:
+
+Travis states:
+
+> "i reckon Rafaël has a class or an object he calls for each iteration of the house, which he just feeds a color and a falling direction.. i'm not sure how he's accomplished the appearence of having them fall over in different directions, but it's almost certainly a random direction."
+
+> "if i had to guess how they were shown to fall downwards, i would imagine that each corner is programmed to move towards the other horizontally, and the ground vertically, both vertical and horizontal calculated with a small offset to make it seem like they are falling in 3d space, instead of just 2d squishing."
+
 [^2]: 9 of March 2025 here, I'm sorry but its time for you to suffer.
