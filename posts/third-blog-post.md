@@ -23,7 +23,7 @@ allow_math: true
    - [Sound](https://cclanchublo6.deno.dev/third-blog-post#sound)
 4. [Youtube Resources](https://cclanchublo6.deno.dev/third-blog-post#youtube-resources)
 5. [Classmate Consulations](https://cclanchublo6.deno.dev/third-blog-post#classmate-consulations)
-6. [Concept Implementation](https://cclanchublo6.deno.dev/third-blog-post#classmate-consulations)
+6. [Concept Implementation](https://cclanchublo6.deno.dev/third-blog-post#concept-implementation)
 
 # Before Week 1, Thursday Homework.
 
@@ -130,4 +130,5 @@ Travis states:
 
 # Concept Implementation:
 
+[^1]: Slerp(); is lerp(); but for circular paths/non-linear paths.
 [^2]: 9 of March 2025 here, I'm sorry but its time for you to suffer.
