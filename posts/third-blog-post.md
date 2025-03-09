@@ -23,7 +23,7 @@ allow_math: true
    - [Sound](https://cclanchublo6.deno.dev/third-blog-post#sound)
 4. [Youtube Resources](https://cclanchublo6.deno.dev/third-blog-post#youtube-resources)
 5. [Classmate Consulations](https://cclanchublo6.deno.dev/third-blog-post#classmate-consulations)
-6. [Concept Implementation](https://cclanchublo6.deno.dev/third-blog-post#concept-implementation)
+6. [Implementing the Concept](https://cclanchublo6.deno.dev/third-blog-post#concept-implementation)
 
 # Before Week 1, Thursday Homework.
 
