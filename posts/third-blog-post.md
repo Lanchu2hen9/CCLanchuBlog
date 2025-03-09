@@ -116,5 +116,5 @@ Just in case you need an refresher: [Arrays](https://blog.science.family/240312_
   - [Make Water Surface Effect in p5.js 1/2](https://youtu.be/kUexPZMIwuA?si=_mkku41cogQpajRx)
   - [Make Water Surface Effect in p5.js 2/2](https://youtu.be/H7CEy5mgKFY?si=IbRnHgjY6vtlbk-t)
 
-[^1]: Slerp is lerp but used for nolinear, circular paths.
+[^1]: Slerp is lerp but used for non-linear, circular paths.
 [^2]: 9 of March 2025 here, I'm sorry but its time for you to suffer.
