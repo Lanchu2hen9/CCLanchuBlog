@@ -128,6 +128,20 @@ Travis states:
 
 > "if i had to guess how they were shown to fall downwards, i would imagine that each corner is programmed to move towards the other horizontally, and the ground vertically, both vertical and horizontal calculated with a small offset to make it seem like they are falling in 3d space, instead of just 2d squishing."
 
+Rania states for the following questions:
+
+1. **What do you think is going on under the hood?**
+
+> That's an interesting question! Although I don't know much about JavaScript, I would assume that Rafael utilised p5.js to create his artwork house. I’d guess he used a low frame rate of 25 fps to make the animation move quickly but still feel smooth. Functions like sin() might be used for smooth motion, while random() is likely behind the varied positions, colours, and sizes of the houses, making his artwork feel like the houses are falling backward. Rafael probably also used motion and colour theory to add subtle transitions, giving the piece a flowing, almost hypnotic appeal. This is what I suspect is going on under the hood.
+
+2. **What concepts would I need to understand to replicate this work in p5?**
+
+> Rafael Rozendaal often uses geometric shapes in his work, and in "House," I think he likely created the house using simple shapes like rectangles or squares. To replicate his style, you'd need to get comfortable with functions like rect() and square(), along with manipulating colors using fill(), stroke(), color(), and lerpColor(). Since randomness plays a big role in his art, understanding random() to randomise positions, colours, and sizes would be key. You’d also need to grasp animation and motion, using tools like frameCount, deltaTime, or time-based functions like sin(), cos(), and lerp() to create smooth movement. By changing variables like X and Y in the draw() loop, you can achieve that flowy motion he’s known for. These are just some of the concepts that can help you replicate his work, based on p5.js references.
+
+3. **What resources might help me to learn those concepts?**
+
+I frequently consult various resources for information, including the p5.js reference documentation, Reddit discussions, Stack Overflow for programming questions, ChatGPT for code I couldn't find anywhere else or to clean up code unnecessary code and W3Schools for JavaScript tutorials and youtube tutorials are a big help for understanding code look up coding train, I found it quite helpful. I believe utilising these resources will help us learn new concepts.
+
 # Concept Implementation:
 
 [^1]: Slerp(); is lerp(); but for circular paths/non-linear paths.
