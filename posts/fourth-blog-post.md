@@ -43,3 +43,18 @@ For the cute visuals click this [link,](https://pin.it/4l2Y3nUXe) to my Pinteres
 |Credit to: PointerClicker on Pinterest, [link.](https://pin.it/1XA6EpW0o) |
 
 [^1]: Side note I might need to think more about what I am going to do in terms of sound. I am not really an auditory person.
+
+# Cute Sounds:
+
+Duck playground xylophone. You click on a duck, and the duck plays a note that ranges from C - D - E - G - A. The duck is floating on a pond/wave that changes colour when clicked.
+![ChatGPT Response to Duck xylophone.](ChatGPT_Duck1.png)
+![ChatGPT Response to Duck xylophone 2.](ChatGPT_Duck2.png)
+![ChatGPT Response to Duck xylophone 3.](ChatGPT_Duck3.png)
+
+# Cute Interactions:
+
+See above.
+
+# Code Implementation/Experiement:
+
+![Click Me!](https://editor.p5js.org/Lanchu2hen9/sketches/BfNvD-mzw)
