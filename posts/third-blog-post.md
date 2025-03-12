@@ -139,7 +139,7 @@ Rania states for the following questions:
 
 3. **What resources might help me to learn those concepts?**
 
-I frequently consult various resources for information, including the p5.js reference documentation, Reddit discussions, Stack Overflow for programming questions, ChatGPT for code I couldn't find anywhere else or to clean up code unnecessary code and W3Schools for JavaScript tutorials and youtube tutorials are a big help for understanding code look up coding train, I found it quite helpful. I believe utilising these resources will help us learn new concepts.
+> I frequently consult various resources for information, including the p5.js reference documentation, Reddit discussions, Stack Overflow for programming questions, ChatGPT for code I couldn't find anywhere else or to clean up code unnecessary code and W3Schools for JavaScript tutorials and youtube tutorials are a big help for understanding code look up coding train, I found it quite helpful. I believe utilising these resources will help us learn new concepts.
 
 [^1]: Slerp(); is lerp(); but for circular paths/non-linear paths.
 [^2]: 9 of March 2025 here, I'm sorry but its time for you to suffer.

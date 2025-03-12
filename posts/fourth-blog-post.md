@@ -1,0 +1,45 @@
+---
+title: Week 2, Tuesday Homework
+published_at: 2022-11-04
+snippet: Second week of Sem 1. :D
+disable_html_sanitization: true
+allow_math: true
+---
+
+[Home](https://cclanchublo6.deno.dev/)
+
+# Table Of Contents:
+
+1. [06/01/2025 After Class note.](#)
+2. [How Does it Work?](#)
+3. [Concepts & Techniques:](#)
+   - [Scale](#)
+   - [Vectors](#)
+   - [Translate](#)
+   - [Interaction](#)  
+      [Colours](#)
+     [Random](#)  
+      [Arrays](#)
+   - [Sound](#)
+4. [Youtube Resources](#)
+5. [Classmate Consulations](#)
+
+# A1 Overview:
+
+So for broad plan, it also might be a very ambitious plan, but it is what it is. Is to to create a wave-like kind of screen-saver p5 sketch where lilypads and or ducks float around the waves. (Yes I might need to scope this down, I know.) Whenever the user interactions/clicks on the waves it makes the waves change colour, from a set of pre-define hex codes within an array.
+
+To see what techniques and concepts I would use see: ["Concepts & Techniques"](https://cclanchublo6.deno.dev/third-blog-post#concepts--techniques), I would additionally like to add that Rania said that I might need to use `sin();` and `cos();` to ensure smooth animations. (See ["Classmate Consulations"](https://cclanchublo6.deno.dev/third-blog-post#classmate-consulations)) [^1]
+
+# Cute Visuals:
+
+For the cute visuals click this [link,](https://pin.it/4l2Y3nUXe) to my Pinterest board. The Pinterest board is divided into 2 sections, "Dark Blue" and "Light Blue", I am going to be colour-picking colours from the image held within these two sections and storing them in two arrays. The first array "Dark Blue" is going to be a selection of colours that the waves cycle through without the user's input. The second array "Light Blue" is going to be a selection of colours that changes based on user input.
+
+![Cute Illustrated duck floating on back, with frog.](DUck-1.jpg)
+|:----------------------:|
+|Credit to: Ksenia on Pinterest, [link.](https://pin.it/2RsGsiq26) |
+
+![Cute duck on pond looking at frog.](duck%202.jpg)
+|:----------------------:|
+|Credit to: PointerClicker on Pinterest, [link.](https://pin.it/1XA6EpW0o) |
+
+[^1]: Side note I might need to think more about what I am going to do in terms of sound. I am not really an auditory person.
