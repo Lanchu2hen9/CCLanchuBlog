@@ -23,7 +23,6 @@ allow_math: true
    - [Sound](https://cclanchublo6.deno.dev/third-blog-post#sound)
 4. [Youtube Resources](https://cclanchublo6.deno.dev/third-blog-post#youtube-resources)
 5. [Classmate Consulations](https://cclanchublo6.deno.dev/third-blog-post#classmate-consulations)
-6. [Implementing the Concept](https://cclanchublo6.deno.dev/third-blog-post#concept-implementation)
 
 # Before Week 1, Thursday Homework.
 
@@ -141,8 +140,6 @@ Rania states for the following questions:
 3. **What resources might help me to learn those concepts?**
 
 I frequently consult various resources for information, including the p5.js reference documentation, Reddit discussions, Stack Overflow for programming questions, ChatGPT for code I couldn't find anywhere else or to clean up code unnecessary code and W3Schools for JavaScript tutorials and youtube tutorials are a big help for understanding code look up coding train, I found it quite helpful. I believe utilising these resources will help us learn new concepts.
-
-# Concept Implementation:
 
 [^1]: Slerp(); is lerp(); but for circular paths/non-linear paths.
 [^2]: 9 of March 2025 here, I'm sorry but its time for you to suffer.
