@@ -15,7 +15,7 @@ allow_math: true
 3. [Cute Sounds](https://cclanchublo6.deno.dev/fourth-blog-post#cute-sounds)
 4. [Cute Interactions](https://cclanchublo6.deno.dev/fourth-blog-post#cute-interactions)
 5. [Code Implementations & Experiements](https://cclanchublo6.deno.dev/fourth-blog-post#png--button-code)
-   - [Scale](https://cclanchublo6.deno.dev/third-blog-post#scale)
+   - [Png & Button code](https://cclanchublo6.deno.dev/fourth-blog-post#png--button-code)
 6. [Final Sketch](https://cclanchublo6.deno.dev/fourth-blog-post#final-sketch)
 
 # A1 Overview:
