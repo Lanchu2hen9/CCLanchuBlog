@@ -57,4 +57,23 @@ See above.
 
 # Code Implementation/Experiement:
 
-![Click Me!](https://editor.p5js.org/Lanchu2hen9/sketches/BfNvD-mzw)
+- Found the sketch files, section of the web editor, am very excited.  
+  ![Sketchfiles of web editor.](Sketchfiles.png)
+
+## Png & Button code:
+
+As you can see the button and the png of the duck has been inserted into the web editor.
+![Sketchfiles of web editor.](PngBtn.png)
+
+# Final Sketch:
+
+<iframe id="DuckPondTest" src="https://editor.p5js.org/Lanchu2hen9/full/BfNvD-mzw"></iframe>
+
+<script type="module">
+
+    const iframe  = document.getElementById (`DuckPondTest`)
+    iframe.width  = iframe.parentNode.scrollWidth
+    iframe.height = iframe.width * 9 / 16 + 42
+</script>
+
+You can see the web editor version [here.](https://editor.p5js.org/Lanchu2hen9/sketches/BfNvD-mzw) Please do not edit my code willy nilly. Add comments and or run it past me first.
