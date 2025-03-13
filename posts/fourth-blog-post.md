@@ -80,4 +80,6 @@ You can see the web editor version [here.](https://editor.p5js.org/Lanchu2hen9/s
 
 So for the duck xylophone, I'm going to be doing something like this:
 ![ChatGPT creating a sample duck xylophone javascript code for me.](DuckXylophone.png)
-Ignore the fact that ChatGPT used two arrays to store both the .mp3 sound of the notes, and the sound files of the ducks. (I'm going to be create .wav files pitched to the notes of "C, D, E, G, A" and storing them in one singular array.)
+Ignore the fact that ChatGPT used two arrays to store both the .mp3 sound of the notes, and the sound files of the ducks. (I'm going to be creating .wav files pitched to the notes of "C, D, E, G, A" and storing them in one singular array.)
+
+For the waves see this [tutorial](https://youtu.be/nqvJDkKsYYI?si=o4m5xbUzHIWzzB91).
