@@ -77,3 +77,20 @@ So for the duck xylophone, I'm going to be doing something like this:
 Ignore the fact that ChatGPT used two arrays to store both the .mp3 sound of the notes, and the sound files of the ducks. (I'm going to be creating .wav files pitched to the notes of "C, D, E, G, A" and storing them in one singular array.)
 
 For the waves see this [tutorial](https://youtu.be/nqvJDkKsYYI?si=o4m5xbUzHIWzzB91).
+
+# Ideas:
+
+- You could use:
+
+`const colours = [ 'black', 'purple', 'hotpink', 'skyblue' ]`
+
+`function setup() {`  
+`createCanvas(400, 400);`  
+`noStroke ()`  
+`frameRate (5)`  
+`}`
+
+`function draw() {`  
+`background('turquoise');`  
+`square (25, random (100, 300), 100)`  
+`}`
