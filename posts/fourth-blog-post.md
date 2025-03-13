@@ -94,3 +94,9 @@ For the waves see this [tutorial](https://youtu.be/nqvJDkKsYYI?si=o4m5xbUzHIWzzB
 `background('turquoise');`  
 `square (25, random (100, 300), 100)`  
 `}`
+
+# Kindred Spirits:
+
+1. My Phone
+2. My room
+3. Drawing tablet.
