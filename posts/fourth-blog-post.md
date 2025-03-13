@@ -77,3 +77,7 @@ As you can see the button and the png of the duck has been inserted into the web
 </script>
 
 You can see the web editor version [here.](https://editor.p5js.org/Lanchu2hen9/sketches/BfNvD-mzw) Please do not edit my code willy nilly. Add comments and or run it past me first.
+
+So for the duck xylophone, I'm going to be doing something like this:
+![ChatGPT creating a sample duck xylophone javascript code for me.](DuckXylophone.png)
+Ignore the fact that ChatGPT used two arrays to store both the .mp3 sound of the notes, and the sound files of the ducks. (I'm going to be create .wav files pitched to the notes of "C, D, E, G, A" and storing them in one singular array.)
