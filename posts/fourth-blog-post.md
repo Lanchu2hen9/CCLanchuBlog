@@ -10,19 +10,13 @@ allow_math: true
 
 # Table Of Contents:
 
-1. [06/01/2025 After Class note.](#)
-2. [How Does it Work?](#)
-3. [Concepts & Techniques:](#)
-   - [Scale](#)
-   - [Vectors](#)
-   - [Translate](#)
-   - [Interaction](#)  
-      [Colours](#)
-     [Random](#)  
-      [Arrays](#)
-   - [Sound](#)
-4. [Youtube Resources](#)
-5. [Classmate Consulations](#)
+1. [A1 Overview](https://cclanchublo6.deno.dev/fourth-blog-post#a1-overview)
+2. [Cute Visuals](https://cclanchublo6.deno.dev/fourth-blog-post#cute-visuals)
+3. [Cute Sounds](https://cclanchublo6.deno.dev/fourth-blog-post#cute-sounds)
+4. [Cute Interactions](https://cclanchublo6.deno.dev/fourth-blog-post#cute-interactions)
+5. [Code Implementations & Experiements](https://cclanchublo6.deno.dev/fourth-blog-post#png--button-code)
+   - [Scale](https://cclanchublo6.deno.dev/third-blog-post#scale)
+6. [Final Sketch](https://cclanchublo6.deno.dev/fourth-blog-post#final-sketch)
 
 # A1 Overview:
 
