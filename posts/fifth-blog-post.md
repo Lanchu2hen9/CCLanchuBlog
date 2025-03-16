@@ -32,11 +32,7 @@ What's more cuter then a duck xylophone that mimics those playground/xylophone c
 To create a cute, aesthetically pleasing and wave simulation, whose visuals, sounds and interactions come together to create a playful, "cute"[^2] and calming experience for the user.
 
 **Challenge/Adversary:**
-ChatGPT says:
-
-> "Your shared challenge might be chaos vs. harmony...The struggle is about finding structure in fluidity."
-
-It's not this,
+Our shared challenge is finding structure in the everyday chaos of daily life. As woman in her twenties, which is a period of time often marked as a liminal transitional period, where you're techinically an adult legally speaking, but you're still figuring out wtf you should do with your life. Waves for me represent a calming force in this transitional period of my life.
 
 [^1]: Artistic Yapping at its finest Tom. I hope you appreciate my blog and footnotes.
 [^2]: As in both fun to play with and cute to look at. "Cute" is the definition of easily commercialised, and commodified.
