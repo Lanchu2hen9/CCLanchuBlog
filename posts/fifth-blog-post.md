@@ -34,5 +34,10 @@ To create a cute, aesthetically pleasing and wave simulation, whose visuals, sou
 **Challenge/Adversary:**
 Our shared challenge is finding structure in the everyday chaos of daily life. As woman in her twenties, which is a period of time often marked as a liminal transitional period, where you're techinically an adult legally speaking, but you're still figuring out wtf you should do with your life. Waves for me represent a calming force in this transitional period of my life.
 
+# Task 2:
+
+**Please expand on your discussions from homework: 2a to explain how your chosen kindred spirit may understand or relate to the visual, sonic, and interactive elements of your AT1 idea. Please use embedded p5 sketches to help explain your ideas.**
+Honestly for the sonic part, I might just use ambient background pond/waves sounds. That or I am not going to use that much sounds at all for the background.
+
 [^1]: Artistic Yapping at its finest Tom. I hope you appreciate my blog and footnotes.
 [^2]: As in both fun to play with and cute to look at. "Cute" is the definition of easily commercialised, and commodified.
