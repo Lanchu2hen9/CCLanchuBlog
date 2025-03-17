@@ -39,5 +39,10 @@ Our shared challenge is finding structure in the everyday chaos of daily life. A
 **Please expand on your discussions from homework: 2a to explain how your chosen kindred spirit may understand or relate to the visual, sonic, and interactive elements of your AT1 idea. Please use embedded p5 sketches to help explain your ideas.**  
 Honestly for the sonic part, I might just use ambient background pond/waves sounds. That or I am not going to use that much sounds at all for the background.
 
+# Task 3:
+
+[ChatGPT visualisation](https://editor.p5js.org/Lanchu2hen9/sketches/FiGhdYykI).
+[Falling Anotation](https://editor.p5js.org/Lanchu2hen9/sketches/M66nRZUHf).
+
 [^1]: Artistic Yapping at its finest Tom. I hope you appreciate my blog and footnotes.
 [^2]: As in both fun to play with and cute to look at. "Cute" is the definition of easily commercialised, and commodified.
