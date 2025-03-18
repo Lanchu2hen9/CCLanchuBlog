@@ -39,6 +39,11 @@ Our shared challenge is finding structure in the everyday chaos of daily life. A
 **Please expand on your discussions from homework: 2a to explain how your chosen kindred spirit may understand or relate to the visual, sonic, and interactive elements of your AT1 idea. Please use embedded p5 sketches to help explain your ideas.**  
 Honestly for the sonic part, I might just use ambient background pond/waves sounds. That or I am not going to use that much sounds at all for the background.
 
+You can use the arrays to hold the xylophone sounds. You can do something like [this](https://editor.p5js.org/Lanchu2hen9/sketches/VMi5WkPyu).
+
+- It might be easier to assign physically each duck a different note using the built-in p5 tone function.
+- A good idea is to push data from other arrays into the duck sound array.
+
 # Task 3:
 
 [ChatGPT visualisation](https://editor.p5js.org/Lanchu2hen9/sketches/FiGhdYykI).
