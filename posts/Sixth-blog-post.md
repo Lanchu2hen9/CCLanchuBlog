@@ -47,4 +47,8 @@ Time code: roughly [2:55](https://youtu.be/nqvJDkKsYYI?si=yiRRF8kT2cO6xhkC&t=176
 Going to work on the duck xyolophone part.  
 [Duck xylophone, p5 file](https://editor.p5js.org/Lanchu2hen9/sketches/cuZN7X6dW). Still a WIP.
 
+# Notes:
+
+- Classes are like cookie cutter, it makes new objects.
+
 [^1]: Yes I know its hypocritical for me to say this, since I am chronically online.
