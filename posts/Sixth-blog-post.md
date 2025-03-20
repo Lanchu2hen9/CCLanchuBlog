@@ -40,4 +40,13 @@ Within the theme of aesthetic register of cute, cute things are often used to su
 
 In a less formal, ted-talk style, I also find it this artwork has a sense of artificiality, because it tries to simulate a natural phenomeon of rain. It feels "not natural" in a weird way.
 
+# Task 2:
+
+I haven't done that much for the waves background but here is the [p5 file](https://editor.p5js.org/Lanchu2hen9/sketches/xiz9X7J1b).  
+Time code: roughly [2:55](https://youtu.be/nqvJDkKsYYI?si=yiRRF8kT2cO6xhkC&t=176)mins in.  
+Going to work on the duck xyolophone part.  
+[Duck xylophone, p5 file](https://editor.p5js.org/Lanchu2hen9/sketches/xiz9X7J1b). Still a WIP.
+
+https://editor.p5js.org/Lanchu2hen9/sketches/cuZN7X6dW
+
 [^1]: Yes I know its hypocritical for me to say this, since I am chronically online.
