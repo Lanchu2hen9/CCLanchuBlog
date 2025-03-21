@@ -75,28 +75,43 @@ See video tutorial: ["6.2: Classes in JavaScript with ES6 - p5.js Tutorial"](htt
 
 - Modulation also adds usability to your code.
 
-  ## Encapsulation:
+## Encapsulation:
 
-  - Encapulating an object's sliders, all its properties.
-  - ** ITS EXISTENCE, IT BEING, ITS FUNDEMENTAL ESSCENCE.**
-    `Class Bubble {...Everything it it means to be a Bubble...}`
-  - The idea of "Encapsulation" is to encapsulate data and function into an object.
+- Encapulating an object's sliders, all its properties.
+- ** ITS EXISTENCE, IT BEING, ITS FUNDEMENTAL ESSCENCE.**
+  `Class Bubble {...Everything it it means to be a Bubble...}`
+- The idea of "Encapsulation" is to encapsulate data and function into an object.
 
-  Think of it this way:
-  Bubble is a person, and in `Class Bubble {...}` in your separate script, thereby called "Classes.js", you are defining the person's personality, identity, and behaviour.
+Think of it this way:
+Bubble is a person, and in `Class Bubble {...}` in your separate script, thereby called "Classes.js", you are defining the person's personality, identity, and behaviour.
 
-  And later on in your script.js file you are essentially telling the script.js[^2] to drag the "Bubble" person into the room (your script.js file), and giving "Bubble" intructions to do smth.
+And later on in your script.js file you are essentially telling the script.js[^2] to drag the "Bubble" person into the room (your script.js file), and giving "Bubble" intructions to do smth.
 
-  - `Class Bubble {...}` => The template.
-  - `Function Setup () { Bubble = new bubble();}`, `Function Draw () { Bubble.move();}`, the actual fucking person.
-    - Can have multiple instancåes of the same Instance/persons.
+(Side note: A less long-winded explaination of this is that `class Bubble{}` is the factory, and `Bubble` is the cookie cutter.)
 
-  ## Classes:
+- `Class Bubble {...}` => The template.
+- `Function Setup () { Bubble = new bubble();}`, `Function Draw () { Bubble.move();}`, the actual fucking person.
+  - Can have multiple instancåes of the same Instance/persons.
 
-  - Think of it as the word "template" or "blueprint".
-  - "Bubble" in `Class Bubble {...}` is also referred to as the cookie cutter sometimes.
+## Classes:
 
+- Think of it as the word "template" or "blueprint".
+- "Bubble" in `Class Bubble {...}` is also referred to as the cookie cutter sometimes.
 - "Bubble" in `Function Setup () { Bubble = new bubble();}` are called instance.
+
+## Syntax:
+
+- `new bubble();`, "new" creates a object instance.[See mozilla database "new" reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new)
+  - `new` is a fancy function that "constructs" a new object.
+- `this.x = 100,` the `this` keyword is like assigning a property within the `constructor(){}`, it attached `x = 100` to the context of the template of `class Bubble {constructor(){}}`.
+  - You're basically assigning a personality trait to the "Bubble" person.
+  - See [mozilla database "this." reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
+
+### Constructor(){}
+
+- Just like any old function definition.
+- `constructor(){}` is kind of like the object's `setup(){}` where you initialise/"set-up" things, and later `draw(){}` animates things.
+- If we're going by the same "person" analogy as before, `constructor(){}` is like the first first thoughts/words of the "Bubble" person, when they first enter into the room.
 
 # Experiments:
 
