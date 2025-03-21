@@ -47,6 +47,17 @@ Time code: roughly [2:55](https://youtu.be/nqvJDkKsYYI?si=yiRRF8kT2cO6xhkC&t=176
 Going to work on the duck xyolophone part.  
 [Duck xylophone, p5 file](https://editor.p5js.org/Lanchu2hen9/sketches/cuZN7X6dW). Still a WIP.
 
+<iframe id="DuckPondD1" src="https://editor.p5js.org/Lanchu2hen9/full/cuZN7X6dW"></iframe>
+
+<script type="module">
+
+    const iframe  = document.getElementById (`DuckPondD1`)
+    iframe.width  = iframe.parentNode.scrollWidth
+    iframe.height = iframe.width * 9 / 16 + 42
+</script>
+
+The 6 ducks are not there, but this is like a rough draft of the duck part.
+
 # Notes:
 
 - Classes are like cookie cutter, it makes new objects.
