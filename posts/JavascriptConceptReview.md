@@ -113,6 +113,20 @@ And later on in your script.js file you are essentially telling the script.js[^2
 - `constructor(){}` is kind of like the object's `setup(){}` where you initialise/"set-up" things, and later `draw(){}` animates things.
 - If we're going by the same "person" analogy as before, `constructor(){}` is like the first first thoughts/words of the "Bubble" person, when they first enter into the room.
 
+## Coding Practise Emeb:
+
+<iframe id="Bubble" src="https://editor.p5js.org/Lanchu2hen9/full/TCVv-n70j"></iframe>
+
+<script type="module">
+
+    const iframe  = document.getElementById (`Bubble`)
+    iframe.width  = iframe.parentNode.scrollWidth
+    iframe.height = iframe.width * 9 / 16 + 42
+
+</script>
+
+The web editor/code version is [here](https://editor.p5js.org/Lanchu2hen9/sketches/TCVv-n70j), please out of good faith, do not edit my code. Duplicate it. You can also find the original lesson file in the description of Daniel's ["6.2: Classes in JavaScript with ES6 - p5.js Tutorial"](https://youtu.be/T-HGdc8L-7w?si=8uE07jv2jK-lgjCE).
+
 # Experiments:
 
 [Print & Console.log](https://editor.p5js.org/Lanchu2hen9/sketches/IFmbUaFe0)  
