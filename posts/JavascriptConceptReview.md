@@ -15,8 +15,8 @@ allow_math: true
 3. [Colours](https://cclanchublo6.deno.dev/JavascriptConceptReview#colours)
 4. [Iteration](https://cclanchublo6.deno.dev/JavascriptConceptReview#iteration)
 5. [Experiments](https://cclanchublo6.deno.dev/JavascriptConceptReview#experiments)
-   - [Png & Button code](https://cclanchublo6.deno.dev/fourth-blog-post#png--button-code)
-6. [Final Sketch](https://cclanchublo6.deno.dev/fourth-blog-post#final-sketch)
+   - [Png & Button code](#)
+6. [Final Sketch](#)
 
 # General Math/Maths scripting Language:
 
