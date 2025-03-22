@@ -20,6 +20,35 @@ allow_math: true
 
 # Task 1:
 
+**Please describe how your AT1 will use each of the following concepts:**
+
+**Variables:**  
+I'll be declaring`const DuckNotes` and `const Duckies` variables globally so that my functions are able to access my variable.
+
+- There's not need for these variables to be let since, they'll be containg the sprites (duck .png), and .wav files of my ducks xylophones.
+
+**Functions:**
+
+- `function setup(){}` to initalise the function.
+- `function draw(){}` to animate things that happen when the experience is loaded.
+
+**Iteration:**
+
+**Boolean logic:**
+
+- Don't really need boolean logic if, you count `DuckNotes[4].stop;` and `DuckNotes[4].play;` as boolean logic than sure.
+
+**Arrays:**
+
+- My `const DuckNotes` and `const Duckies` are arrays, I'll be using `DuckNotes.push (loadSound('CNote.wav'));` and `Duckies.push (loadImage('ducktest1.png'));` to push the respective .png and .wav files into their respective arrays.
+
+**Classes:**
+
+- Asked ChatGPT if I should re-factor the DuckBtns code, the bot said yes, and Classes are worth 10% of the assignment, so here I am.
+
+  _ChatGPT's response:_
+  ![Asking ChatGPT if I should re-factor my code.](ChatGPT_Refactoring.png)
+
 # Task 2:
 
 [CC_Assignment 1, WIP](https://editor.p5js.org/Lanchu2hen9/sketches/wc1DKZ-x1).
