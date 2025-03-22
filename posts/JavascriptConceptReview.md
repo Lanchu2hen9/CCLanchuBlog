@@ -40,6 +40,7 @@ allow_math: true
   - Straight up use an array.
   - ~Manspreads~ Splays content over multiple lines of code.
 - "FrameCount();" Pretty self-explaintory, it counts deez framez.
+- `return`, returns value, stops executing code after the `return`.
 
 # General Notes:
 
