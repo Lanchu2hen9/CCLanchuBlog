@@ -63,3 +63,10 @@ The 6 ducks are not there, but this is like a rough draft of the duck part.
 - Classes are like cookie cutter, it makes new objects.
 
 [^1]: Yes I know its hypocritical for me to say this, since I am chronically online.
+
+# Task 3:
+
+I only have one feedback from Rania see below. I add more to my 3b, blog later once I have a more finished version of my AT1 task.  
+Rania:
+
+> "The ducks are a great idea as they are adorable. The waves might be hypnotic so ensure the pacing isn't too fast or slow to avoid this. The sound interaction is cute and playful. Hope this helps."
