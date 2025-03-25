@@ -59,6 +59,8 @@ Going to use a `for (let duck of ducks){}` to iterate through each `DuckButton` 
 
 ## Previous Drafts:
 
+- Tom wants duck button reactions.
+
 So, this was the original version of my duck xylophone, the unfactored version, called "sketch.1.0.js" in the p5 web editor. See below:
 
 ```js
