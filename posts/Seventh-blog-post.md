@@ -247,6 +247,13 @@ class DuckButton {
 The final version for the duck xylophone, is the one activated in the editor. The below is a comment/note from 24 March 2025, Lanchu:
 ![A note from Lanchu, about background updates.](Lanny's_note_24:03:2025.png)
 
+## Waves:
+
+- Cooking~25 March 2025
+  ![A cos wave generated from code..](Cos.png)
+
+[Waves p5 file](https://editor.p5js.org/Lanchu2hen9/sketches/xiz9X7J1b).
+
 # Task 2:
 
 Rough draft, its only like 50% done. Haven't done the wave background yet.
