@@ -246,3 +246,41 @@ class DuckButton {
 
 The final version for the duck xylophone, is the one activated in the editor. The below is a comment/note from 24 March 2025, Lanchu:
 ![A note from Lanchu, about background updates.](Lanny's_note_24:03:2025.png)
+
+# Task 2:
+
+Rough draft, its only like 50% done. Haven't done the wave background yet.
+
+<iframe id="CC_Assignment 1" src="https://editor.p5js.org/Lanchu2hen9/full/wc1DKZ-x1"></iframe>
+
+<script type="module">
+
+    const iframe  = document.getElementById (`CC_Assignment 1`)
+    iframe.width  = iframe.parentNode.scrollWidth
+    iframe.height = iframe.width * 9 / 16 + 42
+
+</script>
+
+**1. how well did you achieve cuteness in the visual, sonic, and interactive domains?**  
+Considering that I still need to do the following:
+
+- Draw duck sprites for my buttons.
+- Overlay/edit the notes with the duck notes audio.
+- Create the wave background.
+
+I think I did pretty well, since in terms of the interaction domains, I believe that so far my AT1 is very playful.
+
+**2. what communities and learning resources did you draw on to do the bulk of your learning for this project?**
+
+- The p5 referencel library.
+- Mdn.
+- The coding train, when I reviewed what classes are in p5.
+- ChatGPT, I didn't blindly copy its code.
+
+**3. what aspects have you enjoyed the most about this process? What have you found to be most surprising?**  
+Coding in general, mostly using the arrays and seeing how I can use arrays in different ways. What did I find the be most surprising? Considering I have a very CSS/HTML approach to coding, as in moreso of "how do I make this look good?" over "I need this to be more functional.". I tend to enjoy the more visual parts of front-end coding. Suprisedly I am actually enjoying the logic of coding, like you input something into a function and something comes out.
+
+**4. what aspects have you struggled with the most? What have you found the most confusing?**  
+`for` and `while` loops specifically, its not that I don't understand what they are, its just that the idea of a `for` loop iterating over a set of values, does come as easily to me as something like if else statements. Also the maths[^1], I don't struggle with it, but its probably going to take up RAM when I code the waves part.
+
+[^1]: Two years of VCE Maths Methods, will give you some repressed maths trauma. Maths~useful, coding~enjoyable, Maths Methods~painful and insomnia-inducing.
