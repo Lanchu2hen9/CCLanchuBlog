@@ -33,6 +33,7 @@ I'll be declaring`const DuckNotes` and `const Duckies` variables globally so tha
 - `function draw(){}` to animate things that happen when the experience is loaded.
 
 **Iteration:**
+Going to use a `for (let duck of ducks){}` to iterate through each `DuckButton` object that is created by the class, and I am going to use the `for (let duck of ducks){}` to both display each `DuckButton` on the canvas and to play sound.
 
 **Boolean logic:**
 
@@ -40,7 +41,8 @@ I'll be declaring`const DuckNotes` and `const Duckies` variables globally so tha
 
 **Arrays:**
 
-- My `const DuckNotes` and `const Duckies` are arrays, I'll be using `DuckNotes.push (loadSound('CNote.wav'));` and `Duckies.push (loadImage('ducktest1.png'));` to push the respective .png and .wav files into their respective arrays.
+- My `let DuckNotes` and `let Duckies` are arrays, I'll be using `DuckNotes.push (loadSound('CNote.wav'));` and `Duckies.push (loadImage('ducktest1.png'));` to push the respective .png and .wav files into their respective arrays.
+- Would also be using the `let ducks` to store the respective pairs of Duckies .png, and DuckNotes .wav files. In the case of my code its the object created by the DuckButtons.
 
 **Classes:**
 
@@ -49,11 +51,13 @@ I'll be declaring`const DuckNotes` and `const Duckies` variables globally so tha
   _ChatGPT's response:_
   ![Asking ChatGPT if I should re-factor my code.](ChatGPT_Refactoring.png)
 
-# Task 2:
+- Created a new `class DuckButton` class, it acts a template in which p5 uses to create each instance of notes that the user can play.
+
+# Updates:
 
 [CC_Assignment 1, WIP](https://editor.p5js.org/Lanchu2hen9/sketches/wc1DKZ-x1).
 
-## Updates:
+## Previous Drafts:
 
 So, this was the original version of my duck xylophone, the unfactored version, called "sketch.1.0.js" in the p5 web editor. See below:
 
