@@ -333,6 +333,58 @@ function draw() {
 }
 ```
 
+Need to fix this issue:
+
+> 🌸 p5.js says: [sketch.js, line 19] lerpColor() was expecting p5.Color for the second parameter, received string instead. (http://p5js.org/reference/p5/lerpColor)
+
+```js
+let waves;
+let waves1;
+let waves2;
+
+let BlueSet = ["#A1DCD0", "#169EF2", "#0F88F2", "#0B4FD9", "#073BD9"];
+let GreenSet = [
+  "#C1E5AC",
+  "#88E4C5",
+  "#03C19C",
+  "#0FBF8D",
+  "#41A6A6",
+  "#41A6A6",
+];
+
+let SandyFloor = ["#E8E3D0", "#F5D9A7", "#E2C9BC", "#D9B3AE", "#F0A7A6"];
+
+function setup() {
+  createCanvas(550, 550);
+  background(164, 241, 244, 30);
+  angleMode(DEGREES); //Good to investigate later in the p5 library.
+  //Sets the angle mode to degrees.
+
+  waves = new Pack(8, 0, lerpColor(random(BlueSet), random(GreenSet), 0.5));
+  waves1 = new Pack(8, 90, lerpColor(random(BlueSet), random(GreenSet), 0.5));
+  waves2 = new Pack(8, 30, lerpColor(random(BlueSet), random(GreenSet), 0.5));
+}
+
+function draw() {
+  background(164, 241, 244, 30);
+  waves.display();
+  waves1.display();
+  waves2.display();
+}
+```
+
+## Waves ~ Part B:
+
+<iframe id="Wave_PartB" src="https://editor.p5js.org/Lanchu2hen9/full/xiz9X7J1b"></iframe>
+
+<script type="module">
+
+    const iframe  = document.getElementById (`Wave_PartB`)
+    iframe.width = 550;
+    iframe.height = 550;
+
+</script>
+
 # Task 2:
 
 Rough draft, its only like 50% done. Haven't done the wave background yet.
