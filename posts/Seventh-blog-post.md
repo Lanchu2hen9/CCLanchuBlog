@@ -458,6 +458,8 @@ Which gave me these errors of:
 
 Now despite my love of ✨learning✨ & ✨perfectionism✨, I'm going to be resorting back to my previous copy with the issue of the p5.colour object issue, because I have deadlines to meet.
 
+Thanks you Tom for solving my p5.colour object issue. File is [here.](https://editor.p5js.org/capogreco/sketches/vTLhUEDM0b).
+
 ## Waves ~ Part B:
 
 <iframe id="Wave_PartB" src="https://editor.p5js.org/Lanchu2hen9/full/xiz9X7J1b"></iframe>
