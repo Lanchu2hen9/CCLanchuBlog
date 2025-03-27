@@ -373,6 +373,91 @@ function draw() {
 }
 ```
 
+So I fixed that issue by doing this:
+
+```js
+function setup() {
+  createCanvas(550, 550);
+  background(164, 241, 244, 30);
+  angleMode(DEGREES); //Good to investigate later in the p5 library.
+  //Sets the angle mode to degrees.
+
+  let BlueSet = color(
+    random(["#A1DCD0", "#169EF2", "#0F88F2", "#0B4FD9", "#073BD9"])
+  );
+  let GreenSet = color(
+    random(["#C1E5AC", "#88E4C5", "#03C19C", "#0FBF8D", "#41A6A6", "#41A6A6"])
+  );
+
+  waves = new Pack(8, 0, lerpColor(BlueSet, GreenSet, 0.5));
+  waves1 = new Pack(8, 90, lerpColor(BlueSet, GreenSet, 0.5));
+  waves2 = new Pack(8, 30, lerpColor(BlueSet, GreenSet, 0.5));
+}
+```
+
+Now my variables are p5.colour object, its just not lerping the colours correctly. And next I then tried this:
+
+```js
+let waves;
+let waves1;
+let waves2;
+
+let BlueColours = ["#A1DCD0", "#169EF2", "#0F88F2", "#0B4FD9", "#073BD9"];
+
+let GreenColours = [
+  "#C1E5AC",
+  "#88E4C5",
+  "#03C19C",
+  "#0FBF8D",
+  "#41A6A6",
+  "#41A6A6",
+];
+
+let BlueSet = color(random(BlueColours));
+let GreenSet = color(random(GreenColours));
+
+let SandyFloor = ["#E8E3D0", "#F5D9A7", "#E2C9BC", "#D9B3AE", "#F0A7A6"];
+
+function setup() {
+  createCanvas(550, 550);
+  background(164, 241, 244, 30);
+  angleMode(DEGREES); //Good to investigate later in the p5 library.
+  //Sets the angle mode to degrees.
+
+  waves = new Pack(8, 0, lerpColor(BlueSet, GreenSet, 0.5));
+  waves1 = new Pack(8, 90, lerpColor(BlueSet, GreenSet, 0.5));
+  waves2 = new Pack(8, 30, lerpColor(BlueSet, GreenSet, 0.5));
+}
+
+function draw() {
+  background(164, 241, 244, 30);
+  waves.display();
+  waves1.display();
+  waves2.display();
+}
+```
+
+Which gave me these errors of:
+
+- "ReferenceError: color is not defined at /sketch.js:12:17
+- ReferenceError: Cannot access 'BlueSet' before initialization
+  - at setup (/sketch.js:24:36)
+  - at \_setup (https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js:66280:25)
+  - at \_runIfPreloadsAreDone (https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js:66226:27)
+  - at p5.\_decrementPreload (https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js:66237:25)
+  - at p5.<anonymous> (https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js:2:98292)
+
+> 🌸 p5.js says: [sketch.js, line 12] "color" is not defined in the current scope. If you have defined it in your code, you should check its scope, spelling, and letter-casing (JavaScript is case-sensitive).
+>
+> - More info: https://p5js.org/tutorials/variables-and-change/ Did you just try to use p5.js's color() function? If so, you may want to move it into your sketch's setup() function.
+> - More info: https://github.com/processing/p5.js/wiki/p5 js-overview#why-cant-i-assign-variables-using-p5-functions-and-variables-before-setup
+
+> 🌸 p5.js says: [sketch.js, line 24] "BlueSet" is used before declaration. Make sure you have declared the variable before using it.
+>
+> - More info: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_access_lexical_declara
+
+Now despite my love of ✨learning✨ & ✨perfectionism✨, I'm going to be resorting back to my previous copy with the issue of the p5.colour object issue, because I have deadlines to meet.
+
 ## Waves ~ Part B:
 
 <iframe id="Wave_PartB" src="https://editor.p5js.org/Lanchu2hen9/full/xiz9X7J1b"></iframe>
