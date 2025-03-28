@@ -10,13 +10,8 @@ allow_math: true
 
 # Table Of Contents:
 
-1. [A1 Overview](https://cclanchublo6.deno.dev/fourth-blog-post#a1-overview)
-2. [Cute Visuals](https://cclanchublo6.deno.dev/fourth-blog-post#cute-visuals)
-3. [Cute Sounds](https://cclanchublo6.deno.dev/fourth-blog-post#cute-sounds)
-4. [Cute Interactions](https://cclanchublo6.deno.dev/fourth-blog-post#cute-interactions)
-5. [Code Implementations & Experiements](https://cclanchublo6.deno.dev/fourth-blog-post#code-implementationexperiement)
-   - [Png & Button code](https://cclanchublo6.deno.dev/fourth-blog-post#png--button-code)
-6. [Final Sketch](https://cclanchublo6.deno.dev/fourth-blog-post#final-sketch)
+1. [Final Assignment 1, p5 sketch](https://cclanchublo6.deno.dev/AT1-blog#final-assignment-1-p5-sketch)
+2. [Assets used/References](https://cclanchublo6.deno.dev/AT1-blog#assets-usedreferences)
 
 # Final Assignment 1, p5 sketch:
 

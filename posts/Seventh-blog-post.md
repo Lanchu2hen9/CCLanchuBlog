@@ -10,9 +10,13 @@ allow_math: true
 
 # Table Of Contents:
 
-1. [A1 Overview](https://cclanchublo6.deno.dev/fourth-blog-post#a1-overview)
-2. [Cute Visuals](https://cclanchublo6.deno.dev/fourth-blog-post#cute-visuals)
-3. [Cute Sounds](https://cclanchublo6.deno.dev/fourth-blog-post#cute-sounds)
+1. [Task 1](https://cclanchublo6.deno.dev/Seventh-blog-post#task-1)
+2. [Updates](https://cclanchublo6.deno.dev/Seventh-blog-post#updates)
+   - [Previous Drafts](https://cclanchublo6.deno.dev/Seventh-blog-post#previous-drafts)
+   - [Waves](https://cclanchublo6.deno.dev/Seventh-blog-post#waves)
+     - [Code Drafts](https://cclanchublo6.deno.dev/Seventh-blog-post#code-drafts)
+   - [Waves ~ Part B:](https://cclanchublo6.deno.dev/Seventh-blog-post#waves--part-b)
+3. [Task 2](https://cclanchublo6.deno.dev/Seventh-blog-post#task-2)
 4. [Cute Interactions](https://cclanchublo6.deno.dev/fourth-blog-post#cute-interactions)
 5. [Code Implementations & Experiements](https://cclanchublo6.deno.dev/fourth-blog-post#code-implementationexperiement)
    - [Png & Button code](https://cclanchublo6.deno.dev/fourth-blog-post#png--button-code)
@@ -55,7 +59,7 @@ Going to use a `for (let duck of ducks){}` to iterate through each `DuckButton` 
 
 # Updates:
 
-[CC_Assignment 1, WIP](https://editor.p5js.org/Lanchu2hen9/sketches/wc1DKZ-x1).
+[CC_Assignment 1, WIP](https://editor.p5js.org/Lanchu2hen9/sketches/wc1DKZ-x1). Very old version of my Assignment 1, I really wouldn't recommend using this link.
 
 ## Previous Drafts:
 
