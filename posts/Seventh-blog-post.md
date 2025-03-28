@@ -472,9 +472,7 @@ Thanks you Tom for solving my p5.colour object issue. File is [here.](https://ed
 
 </script>
 
-# Task 2:
-
-Rough draft, its only like 50% done. Haven't done the wave background yet.
+A really rough draft, its only like 50% done. Haven't done the wave background yet.
 
 <iframe id="CC_Assignment 1" src="https://editor.p5js.org/Lanchu2hen9/full/wc1DKZ-x1"></iframe>
 
@@ -485,6 +483,22 @@ Rough draft, its only like 50% done. Haven't done the wave background yet.
     iframe.height = iframe.width * 9 / 16 + 42
 
 </script>
+
+### Different Versions of AT1:
+
+Thought that I might as well embed some previous older versions of my AT1 that lead to the Final version. Enjoy the janky nature of these versions.
+
+<iframe id="Assignment 1-1.5" src="https://editor.p5js.org/Lanchu2hen9/full/CBxbKChhAd"></iframe>
+
+<script type="module">
+
+    const iframe  = document.getElementById (`Assignment 1-1.5`)
+    iframe.width = 450;
+    iframe.height = 450;
+
+</script>
+
+# Task 2:
 
 **1. how well did you achieve cuteness in the visual, sonic, and interactive domains?**  
 Considering that I still need to do the following:
