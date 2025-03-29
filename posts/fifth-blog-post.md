@@ -13,6 +13,7 @@ allow_math: true
 1. [Task 1](https://cclanchublo6.deno.dev/fifth-blog-post#task-1)
 2. [Task 2](https://cclanchublo6.deno.dev/fifth-blog-post#task-2)
 3. [Task 3](https://cclanchublo6.deno.dev/fifth-blog-post#task-3)
+4. [Task 4](https://cclanchublo6.deno.dev/fifth-blog-post#task-4)
 
 # Task 1:
 
