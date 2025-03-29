@@ -1,6 +1,6 @@
 ---
 title: Assignment 1; Cute! p5.js & the Aesthetics of Inclusion
-published_at: 2022-11-04
+published_at: 2025-03-25
 snippet: Existing but at what cost?
 disable_html_sanitization: true
 allow_math: true

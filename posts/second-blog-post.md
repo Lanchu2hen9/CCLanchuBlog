@@ -1,6 +1,6 @@
 ---
 title: Week 1 (Tues) Homework
-published_at: 2025-01-05
+published_at: 2025-02-05
 snippet: This is homework 1a.
 disable_html_sanitization: true
 allow_math: true

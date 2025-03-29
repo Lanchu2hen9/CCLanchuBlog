@@ -1,6 +1,6 @@
 ---
 title: Week 3 (Thurs) Homework
-published_at: 2022-11-04
+published_at: 2025-02-21
 snippet: This is homework 3b.
 disable_html_sanitization: true
 allow_math: true
