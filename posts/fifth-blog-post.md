@@ -10,13 +10,9 @@ allow_math: true
 
 # Table Of Contents:
 
-1. [A1 Overview](https://cclanchublo6.deno.dev/fourth-blog-post#a1-overview)
-2. [Cute Visuals](https://cclanchublo6.deno.dev/fourth-blog-post#cute-visuals)
-3. [Cute Sounds](https://cclanchublo6.deno.dev/fourth-blog-post#cute-sounds)
-4. [Cute Interactions](https://cclanchublo6.deno.dev/fourth-blog-post#cute-interactions)
-5. [Code Implementations & Experiements](https://cclanchublo6.deno.dev/fourth-blog-post#code-implementationexperiement)
-   - [Png & Button code](https://cclanchublo6.deno.dev/fourth-blog-post#png--button-code)
-6. [Final Sketch](https://cclanchublo6.deno.dev/fourth-blog-post#final-sketch)
+1. [Task 1](https://cclanchublo6.deno.dev/fifth-blog-post#task-1)
+2. [Task 2](https://cclanchublo6.deno.dev/fifth-blog-post#task-2)
+3. [Task 3](https://cclanchublo6.deno.dev/fifth-blog-post#task-3)
 
 # Task 1:
 
@@ -46,7 +42,7 @@ You can use the arrays to hold the xylophone sounds. You can do something like [
 
 # Task 3:
 
-[ChatGPT visualisation](https://editor.p5js.org/Lanchu2hen9/sketches/FiGhdYykI).
+[ChatGPT visualisation](https://editor.p5js.org/Lanchu2hen9/sketches/FiGhdYykI).  
 [Falling Anotation](https://editor.p5js.org/Lanchu2hen9/sketches/M66nRZUHf).
 
 [^1]: Artistic Yapping at its finest Tom. I hope you appreciate my blog and footnotes.

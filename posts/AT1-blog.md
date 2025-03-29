@@ -25,6 +25,10 @@ allow_math: true
 
 </script>
 
+# Comments:
+
+I didn't want to add background waves "ocean" sounds to AT1 because I think that they'll be too much sounds going on, and I think that's a little bit too distracting and or chaotic.
+
 # Assets used/References:
 
 Freesound - Duck Quack by qubodup 2018, Freesound.org, viewed 28 March 2025, <https://freesound.org/people/qubodup/sounds/442820/>.
