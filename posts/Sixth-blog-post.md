@@ -10,12 +10,12 @@ allow_math: true
 
 # Table Of Contents:
 
-1. [Task 1](https://cclanchublo6.deno.dev/fourth-blog-post#a1-overview)
-   - [Visually](https://cclanchublo6.deno.dev/fourth-blog-post#png--button-code)
-   - [Sonically](https://cclanchublo6.deno.dev/fourth-blog-post#png--button-code)
-   - [Interactively](https://cclanchublo6.deno.dev/fourth-blog-post#png--button-code)
-2. [Task 2](https://cclanchublo6.deno.dev/fourth-blog-post#cute-visuals)
-3. [Task 3](https://cclanchublo6.deno.dev/fourth-blog-post#cute-sounds)
+1. [Task 1](https://cclanchublo6.deno.dev/Sixth-blog-post#task-1)
+   - [Visually](https://cclanchublo6.deno.dev/Sixth-blog-post#visually)
+   - [Sonically](https://cclanchublo6.deno.dev/Sixth-blog-post#sonically)
+   - [Interactively](https://cclanchublo6.deno.dev/Sixth-blog-post#interactively)
+2. [Task 2](https://cclanchublo6.deno.dev/Sixth-blog-post#task-2)
+3. [Task 3](https://cclanchublo6.deno.dev/Sixth-blog-post#task-3)
 
 # Task 1:
 

@@ -1,7 +1,7 @@
 ---
-title: Homework 3b.
+title: Week 3 (Thurs) Homework
 published_at: 2022-11-04
-snippet: Existing but at what cost?
+snippet: This is homework 3b.
 disable_html_sanitization: true
 allow_math: true
 ---
@@ -513,17 +513,29 @@ Considering that I still need to do the following:
 
 I think I did pretty well, since in terms of the interaction domains, I believe that so far my AT1 is very playful.
 
+This is Lanchu a day before the Sunday Deadline, I think I did pretty well in the visual, sonic and interactive domains of AT1. For AT1, I didn't want to do anything too overally complex, as you see week 1 Lanchu thought that this would be difficult to code, it is not. I do want to do something a bit more ambitious for AT2, but that is tbc.
+
 **2. what communities and learning resources did you draw on to do the bulk of your learning for this project?**
 
-- The p5 referencel library.
-- Mdn.
-- The coding train, when I reviewed what classes are in p5.
-- ChatGPT, I didn't blindly copy its code.
+- [The p5 reference library](https://p5js.org/reference/)
+- [Mdn Wed Docs/Mozilla.org website](https://developer.mozilla.org/en-US/)
+
+Sometimes I find that this online library is a bit wordy, and its coding terms are a bit needlessly complex for me to understand personally.
+
+For example to a person, (me) who learns better through creating/doing, and I read:
+
+> "Like function expressions, class expressions may be anonymous, or have a name that's different from the variable that it's assigned to. However, unlike function declarations, class declarations have the same **temporal dead zone restrictions** as let or const and behave as if they are not hoisted."
+
+on the Class page on the Mdn website, I go like: "Wtf is a **temporal dead zone restriction?!**"
+
+So I ask ChatGPT to explain methods/termology to me, even though ChatGPT does sometimes pull concepts/explainations out of its ass sometimes. That's where common sense, and my general understanding of coding logic and the p5 library is applicable.
+
+- The coding train/ Youtube
+  - Particularly this [video](https://youtu.be/T-HGdc8L-7w?si=VItXX0axkKsEvdXk), really helped me to understand how classes work in p5.
+- ChatGPT.
 
 **3. what aspects have you enjoyed the most about this process? What have you found to be most surprising?**  
-Coding in general, mostly using the arrays and seeing how I can use arrays in different ways. What did I find the be most surprising? Considering I have a very CSS/HTML approach to coding, as in moreso of "how do I make this look good?" over "I need this to be more functional.". I tend to enjoy the more visual parts of front-end coding. Suprisedly I am actually enjoying the logic of coding, like you input something into a function and something comes out.
+Coding logic, if my code is correct and I input a value/interaction, the code should technically speaking output a value/result that I want it to do. What I found the most surpising is that p5 is honestly so easy to code in. An example is that to convert Hex codes into p5 colour objects, I don't have to do like 30 mins+ of research youtub-ing and ChatGPT-ing to figure out some convoluted way of converting Hex codes into colour objects. (Thanks Tom for this btw, save me so much time.)
 
 **4. what aspects have you struggled with the most? What have you found the most confusing?**  
-`for` and `while` loops specifically, its not that I don't understand what they are, its just that the idea of a `for` loop iterating over a set of values, does come as easily to me as something like if else statements. Also the maths[^1], I don't struggle with it, but its probably going to take up RAM when I code the waves part.
-
-[^1]: Two years of VCE Maths Methods, will give you some repressed maths trauma. Maths~useful, coding~enjoyable, Maths Methods~painful and insomnia-inducing.
+Probably `for` and `while` loops specifically, its not that I don't understand the concept its just like to my brain, understanding how to use `for`/`while` loops is not as easy to understand as how to use `if{...} else{...}`. I know the `for`/`while` is iterating through something as time passes, it just doesn't come as easily to my brain.
