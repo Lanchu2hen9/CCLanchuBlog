@@ -1,7 +1,7 @@
 ---
-title: Week 2, Tuesday Homework
+title: Week 2 (Tues) Homework
 published_at: 2022-11-04
-snippet: Second week of Sem 1. :D
+snippet: This is homework 2a.
 disable_html_sanitization: true
 allow_math: true
 ---

@@ -1,7 +1,7 @@
 ---
 title: Week 1 (Thurs) Homework
 published_at: 2025-01-06
-snippet: This is the homework for the second class of Week 1, Sem 1.
+snippet: Homework 1b.
 disable_html_sanitization: true
 allow_math: true
 ---
@@ -24,7 +24,7 @@ allow_math: true
 4. [Youtube Resources](https://cclanchublo6.deno.dev/third-blog-post#youtube-resources)
 5. [Classmate Consulations](https://cclanchublo6.deno.dev/third-blog-post#classmate-consulations)
 
-# Before Week 1, Thursday Homework.
+# Task 2:
 
 I wish to change my inspiration for A1 to House by [House by Rafaël Rozendaal](https://www.newrafael.com/house). Do **"detailed"** research on this Lanchu.
 
