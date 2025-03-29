@@ -1,7 +1,7 @@
 ---
 title: Week 1 (Tues) Homework
 published_at: 2025-01-05
-snippet: This the homework to the first class of Semester 1 2025.
+snippet: This is homework 1a.
 disable_html_sanitization: true
 allow_math: true
 ---
