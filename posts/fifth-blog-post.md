@@ -45,5 +45,9 @@ You can use the arrays to hold the xylophone sounds. You can do something like [
 [ChatGPT visualisation](https://editor.p5js.org/Lanchu2hen9/sketches/FiGhdYykI).  
 [Falling Anotation](https://editor.p5js.org/Lanchu2hen9/sketches/M66nRZUHf).
 
+# Task 4:
+
+29th March 2025 Lanchu here, never ended up doing the 4th task, I do understand how classes work in p5 though.
+
 [^1]: Artistic Yapping at its finest Tom. I hope you appreciate my blog and footnotes.
 [^2]: As in both fun to play with and cute to look at. "Cute" is the definition of easily commercialised, and commodified.
