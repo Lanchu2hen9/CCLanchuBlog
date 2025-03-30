@@ -23,3 +23,5 @@ allow_math: true
 6. [Final Sketch](https://cclanchublo6.deno.dev/fourth-blog-post#final-sketch)
 
 # Task 1:
+
+[Task 1 Sketch](https://lanchu-thespiral-a-50-81ssb0cys6e1.deno.dev/ExperiementFiles/index2.html)
