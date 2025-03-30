@@ -24,4 +24,10 @@ allow_math: true
 
 # Task 1:
 
-[Task 1 Sketch](https://lanchu-thespiral-a-50-81ssb0cys6e1.deno.dev/ExperiementFiles/index2.html)
+## High Compressibility:
+
+Tried to code smth in the Canvas API, here hope that this is good enough of a example for high compressibility:
+
+[Task 1a Sketch](https://lanchu-thespiral-a-50-81ssb0cys6e1.deno.dev/ExperiementFiles/index2.html)
+
+## Low Compressibility:
