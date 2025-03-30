@@ -31,3 +31,13 @@ Tried to code smth in the Canvas API, here hope that this is good enough of a ex
 [Task 1a Sketch](https://lanchu-thespiral-a-50-81ssb0cys6e1.deno.dev/ExperiementFiles/index2.html)
 
 ## Low Compressibility:
+
+<iframe id="CocoMelon" src="https://editor.p5js.org/Lanchu2hen9/full/KVWP32eXI"></iframe>
+
+<script type="module">
+
+    const iframe  = document.getElementById (`CocoMelon`)
+    iframe.width  = iframe.parentNode.scrollWidth
+    iframe.height = iframe.width * 9 / 16 + 42
+
+</script>
