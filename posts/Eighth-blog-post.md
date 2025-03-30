@@ -41,3 +41,5 @@ Tried to code smth in the Canvas API, here hope that this is good enough of a ex
     iframe.height = iframe.width * 9 / 16 + 42
 
 </script>
+
+## High effective complexity:

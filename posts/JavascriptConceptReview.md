@@ -132,6 +132,10 @@ And later on in your script.js file you are essentially telling the script.js[^2
 
 The web editor/code version is [here](https://editor.p5js.org/Lanchu2hen9/sketches/TCVv-n70j), please out of good faith, do not edit my code. Duplicate it. You can also find the original lesson file in the description of Daniel's ["6.2: Classes in JavaScript with ES6 - p5.js Tutorial"](https://youtu.be/T-HGdc8L-7w?si=8uE07jv2jK-lgjCE).
 
+# Recursion:
+
+- Function that calls itself.
+
 # Experiments:
 
 [Print & Console.log](https://editor.p5js.org/Lanchu2hen9/sketches/IFmbUaFe0)  
