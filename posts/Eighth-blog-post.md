@@ -104,6 +104,14 @@ And my high compressibility is just a orange and blue house, quite simple, quite
 
 # Task 3:
 
+## Randomness:
+
+Presumbly the artist is using some kind of algorithm to generate worley or perlin noise. And overlaying that over either real world video and or images.
+
 ## Structure:
 
-## Randomness:
+Overlaying worley/perlin noise over the structured/images and videos provides structure as base to their artwork.
+
+And I'm going to say most of the glitch, and screen filters on their artworks aren't procedurally generated and they added some filters in some photo editing, and or video editting software.
+
+Although you can map glitch effects, text in Premerie Pro to perlin noise maps. Maye
