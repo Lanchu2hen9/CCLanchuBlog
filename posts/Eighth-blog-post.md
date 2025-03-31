@@ -10,17 +10,14 @@ allow_math: true
 
 # Table Of Contents:
 
-1. [Task 1](https://cclanchublo6.deno.dev/Seventh-blog-post#task-1)
-2. [Updates](https://cclanchublo6.deno.dev/Seventh-blog-post#updates)
-   - [Previous Drafts](https://cclanchublo6.deno.dev/Seventh-blog-post#previous-drafts)
-   - [Waves](https://cclanchublo6.deno.dev/Seventh-blog-post#waves)
-     - [Code Drafts](https://cclanchublo6.deno.dev/Seventh-blog-post#code-drafts)
-   - [Waves ~ Part B:](https://cclanchublo6.deno.dev/Seventh-blog-post#waves--part-b)
-3. [Task 2](https://cclanchublo6.deno.dev/Seventh-blog-post#task-2)
-4. [Cute Interactions](https://cclanchublo6.deno.dev/fourth-blog-post#cute-interactions)
-5. [Code Implementations & Experiements](https://cclanchublo6.deno.dev/fourth-blog-post#code-implementationexperiement)
-   - [Png & Button code](https://cclanchublo6.deno.dev/fourth-blog-post#png--button-code)
-6. [Final Sketch](https://cclanchublo6.deno.dev/fourth-blog-post#final-sketch)
+1. [Task 1](https://cclanchublo6.deno.dev/Eighth-blog-post#task-1)
+   - [High Compressibility](https://cclanchublo6.deno.dev/Eighth-blog-post#high-compressibility)
+   - [Low Compressibility](https://cclanchublo6.deno.dev/Eighth-blog-post#low-compressibility)
+   - [High effective complexity](https://cclanchublo6.deno.dev/Eighth-blog-post#high-effective-complexity)
+2. [Task 2](https://cclanchublo6.deno.dev/Eighth-blog-post#task-2)
+3. [Task 3](https://cclanchublo6.deno.dev/Eighth-blog-post#task-3)
+   - [Randomness](https://cclanchublo6.deno.dev/Eighth-blog-post#randomness)
+   - [Structure](https://cclanchublo6.deno.dev/Eighth-blog-post#structure)
 
 # Task 1:
 
@@ -114,4 +111,4 @@ Overlaying worley/perlin noise over the structured/images and videos provides st
 
 And I'm going to say most of the glitch, and screen filters on their artworks aren't procedurally generated and they added some filters in some photo editing, and or video editting software.
 
-Although you can map glitch effects, text in Premerie Pro to perlin noise maps. Maye
+Although you can map glitch effects, text in Premerie Pro to perlin noise maps.
