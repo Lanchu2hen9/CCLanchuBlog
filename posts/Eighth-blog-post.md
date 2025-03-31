@@ -101,3 +101,5 @@ The fact that the above code is something so simple and creates a pattern that i
 Meanwhile in my Low Compressibility example, although the squares in a grid give it order, subjectively speaking the "randomness" of the `sizes[i][j] = map(noise(xoff, yoff, zoff), 0, 1, 0, size *1.7);` perlin noise field, and `let r = noise(zoff) * 255; let g = noise(zoff + 10) * 255; let b = noise(zoff + 20) * 255;` rgb fields of the square adds more information content, and random deviation.
 
 And my high compressibility is just a orange and blue house, quite simple, quite organised. Less information content, and random deviation.
+
+# Task 3:
