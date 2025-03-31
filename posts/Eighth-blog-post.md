@@ -103,3 +103,7 @@ Meanwhile in my Low Compressibility example, although the squares in a grid give
 And my high compressibility is just a orange and blue house, quite simple, quite organised. Less information content, and random deviation.
 
 # Task 3:
+
+## Structure:
+
+## Randomness:
