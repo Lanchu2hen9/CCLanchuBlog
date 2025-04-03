@@ -112,3 +112,7 @@ function checkboxClick(event) {
 When the function `checkboxClick(event){}` is executed `event.preventDefault();` still executes the code but doesn't tick the tickbox.
 
 Also can be expressed as `const checkboxClick = event => {}`, arrows function are like mouldable "dough"/"personality traits" they take on whatever instance variable is used on a previous line. For example: `const obj = new Example("Charlie"); obj.arrowFunction();` outputs Charlie. See [Encapsulation](https://cclanchublo6.deno.dev/JavascriptConceptReview#encapsulation)
+
+## Glitchy Self-Portrait:
+
+[Self-Portrait Product](https://lanchu-thespiral-a-50-004gtr45tswx.deno.dev/ExperiementFiles/index3.html)
