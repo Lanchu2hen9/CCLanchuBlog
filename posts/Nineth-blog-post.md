@@ -286,3 +286,7 @@ onresize = () => {
   draw(img);
 };
 ```
+
+# Task 2:
+
+**How does rendering your likeness in this way affect its aesthetic register? In your discussion.**
