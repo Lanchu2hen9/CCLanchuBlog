@@ -1,6 +1,6 @@
 ---
 title: Week 5 (Thurs) Homework
-published_at: 2025-04-03
+published_at: 2025-04-04
 snippet: This is homework 4b.
 disable_html_sanitization: true
 allow_math: true
