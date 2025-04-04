@@ -290,3 +290,13 @@ onresize = () => {
 # Task 2:
 
 **How does rendering your likeness in this way affect its aesthetic register? In your discussion.**
+The asethetic register of the above sits in Ngai's aesthetic registers of Zany and Interesting. Zany by Ngai's definition is an aesthetic bound up in the performance of instability. The latter aesthetic "Interesting" is an artwork that is engaging due to its incompleteness, irregularity, or ambiguity. The fact that the above code is deliberately glitching an image of myself, it creates a sense of irregularity for the viewer.
+
+Additionally, glitch art in Menkman's _A Phenomenology Of Glitch Art_ states through her examples of Jodis' artwork _untitled game (1996-2001)_ & _<$blogtitle$>_, that glitch art in essence is a rebellion against/exposing the norms/conventions of the medium in which they are created in. For example, _untitled game (1996-2001)_ is a "wholly non-Newtonian, visually nonsensical" version of FPS game Quake 1 that the artist Jodi has made 11 modifications to. _untitled game (1996-2001)_ aims to exposes and challenges the conventions of what makes a FPS game a FPS game.
+
+Similarily, in the above example the very fact that the code is taken out in `ChunkSize` and randomly glitched by `const RandInt = (max) => Math.floor(Math.random() * max);`, it exposes the medium and the fallibility of the web browser through the removal and glitching the string data of the image. It essientally removes me from the context of being a subject an actual person and transforms into a "blob" of data in flux.
+
+## Effective Complexity:
+
+- Structure: My face my actual being, the image of my likeness. Faces are something that humans are trained to recongised/see the pattern in.
+- The randomness is added with the glitching of the image of my likeness.
