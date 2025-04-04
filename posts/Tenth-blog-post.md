@@ -10,14 +10,12 @@ allow_math: true
 
 # Table Of Contents:
 
-1. [Task 1](https://cclanchublo6.deno.dev/Eighth-blog-post#task-1)
-   - [High Compressibility](https://cclanchublo6.deno.dev/Eighth-blog-post#high-compressibility)
-   - [Low Compressibility](https://cclanchublo6.deno.dev/Eighth-blog-post#low-compressibility)
-   - [High effective complexity](https://cclanchublo6.deno.dev/Eighth-blog-post#high-effective-complexity)
-2. [Task 2](https://cclanchublo6.deno.dev/Eighth-blog-post#task-2)
-3. [Task 3](https://cclanchublo6.deno.dev/Eighth-blog-post#task-3)
-   - [Randomness](https://cclanchublo6.deno.dev/Eighth-blog-post#randomness)
-   - [Structure](https://cclanchublo6.deno.dev/Eighth-blog-post#structure)
+1. [Task 1](https://cclanchublo6.deno.dev/Tenth-blog-post#task-1)
+2. [Task 2](https://cclanchublo6.deno.dev/Tenth-blog-post#task-2)
+   - [3D model Generation](https://cclanchublo6.deno.dev/Tenth-blog-post#3d-model-generation)
+   - [Interaction](https://cclanchublo6.deno.dev/Tenth-blog-post#interaction)
+   - [Audio](https://cclanchublo6.deno.dev/Tenth-blog-post#audio)
+3. [Task 3](#)
 
 # Task 1:
 
