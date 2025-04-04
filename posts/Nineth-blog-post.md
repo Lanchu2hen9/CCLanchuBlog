@@ -10,14 +10,11 @@ allow_math: true
 
 # Table Of Contents:
 
-1. [Task 1](https://cclanchublo6.deno.dev/Eighth-blog-post#task-1)
-   - [High Compressibility](https://cclanchublo6.deno.dev/Eighth-blog-post#high-compressibility)
-   - [Low Compressibility](https://cclanchublo6.deno.dev/Eighth-blog-post#low-compressibility)
-   - [High effective complexity](https://cclanchublo6.deno.dev/Eighth-blog-post#high-effective-complexity)
-2. [Task 2](https://cclanchublo6.deno.dev/Eighth-blog-post#task-2)
-3. [Task 3](https://cclanchublo6.deno.dev/Eighth-blog-post#task-3)
-   - [Randomness](https://cclanchublo6.deno.dev/Eighth-blog-post#randomness)
-   - [Structure](https://cclanchublo6.deno.dev/Eighth-blog-post#structure)
+1. [Task 1](https://cclanchublo6.deno.dev/Nineth-blog-post#task-1)
+   - [Event: preventDefault() Method](https://cclanchublo6.deno.dev/Nineth-blog-post#event-preventdefault-method)
+   - [Glitchy Self-Portrait](https://cclanchublo6.deno.dev/Nineth-blog-post#glitchy-self-portrait)
+2. [Task 2](https://cclanchublo6.deno.dev/Nineth-blog-post#task-2)
+   - [Randomness](https://cclanchublo6.deno.dev/Nineth-blog-post#effective-complexity)
 
 # Task 1:
 
