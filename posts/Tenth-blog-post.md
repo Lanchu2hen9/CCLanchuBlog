@@ -1,7 +1,7 @@
 ---
 title: Week 5 (Thurs) Homework
 published_at: 2025-04-04
-snippet: This is homework 4b.
+snippet: This is homework 5a.
 disable_html_sanitization: true
 allow_math: true
 ---
@@ -44,3 +44,47 @@ The WEBGL library particularly:
 
 - Web Audio API, Processes sound dynamically in the browser.
 - [GLTFLoader.js](https://tonejs.github.io/).
+
+# Task 3:
+
+<script src="./scripts/p5.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/rita"></script>
+
+<div id="p5_example"></div>
+
+<script>
+const cnv = document.getElementById ("p5_example")
+
+let grammar, poem;
+
+function setup() {
+   // cnv = createCanvas (400, 400)
+   cnv = createCanvas (400, 400, P2D, cnv)
+   cnv.parent("p5_example");
+
+   const rules = {
+      "<start>": [
+         "I listen to the <created> shell, and wonder if the <sound> housed within, is a meer <fake> or not? I feel the <imperfections> of the seashells, and wonder if these <imperfections> are <convincing> enough to those who have come before."
+      ],
+      "<created>": ["manufactured","constructed","artificial", "assembled", "contrived", "spurious", "counterfeit", "
+factitious", "simulated" ],
+"<sound>": ["Ocean", "filtered static", "life", "existence", "entity", "individual", "soul", "creature", "history", "story", "the experiences"],
+"<fake>": ["Simularcrum", "effigy", "representation", "account", "declaration", "rendering", "mimicry", "imitation", "impersonation", "impression", "mockery", "parody"],
+"<imperfections>": ["imperfections", "blemishes", "marks", "spots", "scratches", "indentations", "notches", "flaws", "errors"],
+"<convincing>": ["convincing", "persuasive", "plausible", "believable", "feasible", "reasonable", "acceptable", "credible", "suasive"]
+   };
+
+   grammar = RiTa.grammar(rules);
+   poem = grammar.expand();
+
+   textAlign(CENTER);
+   textSize(16);
+}
+
+function draw() {
+  background(220);
+  text(poem, width/2, height/2);
+  noLoop();
+  
+}
+</script>
