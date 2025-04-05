@@ -50,7 +50,7 @@ The WEBGL library particularly:
 <script src="./scripts/p5.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/rita"></script>
 
-<div id="p5_example"></div>
+<canvas id="p5_example"></canvas>
 
 <script>
 const cnv = document.getElementById ("p5_example")
