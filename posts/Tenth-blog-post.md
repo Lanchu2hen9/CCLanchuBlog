@@ -47,43 +47,127 @@ The WEBGL library particularly:
 
 # Task 3:
 
+Trying to do some text replacement with Rita here, its not working obviously.
+
+```js
+const cnv = document.getElementById("p5_example");
+
+let grammar, poem;
+
+function setup() {
+  createCanvas(500, 500, P2D);
+  cnv.parent("p5_example");
+
+  const rules = {
+    start: [
+      "I listen to the <created> shell, and wonder if the <sound> housed within, is a meer <fake> or not? I feel the <imperfections> of the seashells, and wonder if these <imperfections> are <convincing> enough to those who have come before.",
+    ],
+    created: [
+      "manufactured",
+      "constructed",
+      "artificial",
+      "assembled",
+      "contrived",
+      "spurious",
+      "counterfeit",
+      "factitious",
+      "simulated",
+    ],
+    sound: [
+      "Ocean",
+      "filtered static",
+      "life",
+      "existence",
+      "entity",
+      "individual",
+      "soul",
+      "creature",
+      "history",
+      "story",
+      "the experiences",
+    ],
+    fake: [
+      "Simularcrum",
+      "effigy",
+      "representation",
+      "account",
+      "declaration",
+      "rendering",
+      "mimicry",
+      "imitation",
+      "impersonation",
+      "impression",
+      "mockery",
+      "parody",
+    ],
+    imperfections: [
+      "imperfections",
+      "blemishes",
+      "marks",
+      "spots",
+      "scratches",
+      "indentations",
+      "notches",
+      "flaws",
+      "errors",
+    ],
+    convincing: [
+      "convincing",
+      "persuasive",
+      "plausible",
+      "believable",
+      "feasible",
+      "reasonable",
+      "acceptable",
+      "credible",
+      "suasive",
+    ],
+  };
+
+  grammar = RiTa.grammar(rules);
+  poem = grammar.expand("start");
+  // poem = grammar.expand("start");
+}
+
+function draw() {
+  background(220);
+  textAlign(LEFT, TOP);
+  textWrap(WORD);
+  textSize(16);
+
+  text(poem, 20, 20, 460);
+  noLoop();
+}
+```
+
 <script src="./scripts/p5.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/rita"></script>
 
 <canvas id="p5_example"></canvas>
 
 <script>
-const cnv = document.getElementById ("p5_example")
+    const cnv = document.getElementById ("p5_example")
 
-let grammar, poem;
+const StringTest = 'The quick red fox jumped over the brown dog.'
 
 function setup() {
-   // cnv = createCanvas (400, 400)
-   createCanvas (500, 500, P2D, cnv)
-   // cnv.parent("p5_example");
+   createCanvas (400, 400, P2D, cnv)
+  rectMode(CENTER);
 
-   const rules = {
-      "start": [
-         "I listen to the created shell, and wonder if the sound housed within, is a meer fake or not? I feel the imperfections of the seashells, and wonder if these imperfections are convincing enough to those who have come before."
-      ],
-      "created": ["manufactured","constructed","artificial", "assembled", "contrived", "spurious", "counterfeit", "factitious", "simulated" ],
-      "sound": ["Ocean", "filtered static", "life", "existence", "entity", "individual", "soul", "creature", "history", "story", "the experiences"],
-      "fake": ["Simularcrum", "effigy", "representation", "account", "declaration", "rendering", "mimicry", "imitation", "impersonation", "impression", "mockery", "parody"],
-      "imperfections": ["imperfections", "blemishes", "marks", "spots", "scratches", "indentations", "notches", "flaws", "errors"],
-      "convincing": ["convincing", "persuasive", "plausible", "believable", "feasible", "reasonable", "acceptable", "credible", "suasive"]
-   };
+  window.addEventListener("keydown", function(event) {
+   if (event.key === "Enter") {
+      console.log("The Enter key was pressed!")
+   }
+  });
+}
 
-   grammar = RiTa.grammar(rules);
-   poem = grammar.expand();
-
-   textAlign(CENTER);
-   textSize(16);
+function Emily() {
+   let rs = new RiString(StringTest);
+   let words = rs.words();
+   console.log(words);
 }
 
 function draw() {
   background(220);
-  text(poem, width/2, height/2);
-  noLoop();
-  
 }
 </script>
