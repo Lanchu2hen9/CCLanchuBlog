@@ -59,19 +59,18 @@ let grammar, poem;
 
 function setup() {
    // cnv = createCanvas (400, 400)
-   cnv = createCanvas (400, 400, P2D, cnv)
-   cnv.parent("p5_example");
+   createCanvas (500, 500, P2D, cnv)
+   // cnv.parent("p5_example");
 
    const rules = {
-      "<start>": [
-         "I listen to the <created> shell, and wonder if the <sound> housed within, is a meer <fake> or not? I feel the <imperfections> of the seashells, and wonder if these <imperfections> are <convincing> enough to those who have come before."
+      "start": [
+         "I listen to the created shell, and wonder if the sound housed within, is a meer fake or not? I feel the imperfections of the seashells, and wonder if these imperfections are convincing enough to those who have come before."
       ],
-      "<created>": ["manufactured","constructed","artificial", "assembled", "contrived", "spurious", "counterfeit", "
-factitious", "simulated" ],
-"<sound>": ["Ocean", "filtered static", "life", "existence", "entity", "individual", "soul", "creature", "history", "story", "the experiences"],
-"<fake>": ["Simularcrum", "effigy", "representation", "account", "declaration", "rendering", "mimicry", "imitation", "impersonation", "impression", "mockery", "parody"],
-"<imperfections>": ["imperfections", "blemishes", "marks", "spots", "scratches", "indentations", "notches", "flaws", "errors"],
-"<convincing>": ["convincing", "persuasive", "plausible", "believable", "feasible", "reasonable", "acceptable", "credible", "suasive"]
+      "created": ["manufactured","constructed","artificial", "assembled", "contrived", "spurious", "counterfeit", "factitious", "simulated" ],
+      "sound": ["Ocean", "filtered static", "life", "existence", "entity", "individual", "soul", "creature", "history", "story", "the experiences"],
+      "fake": ["Simularcrum", "effigy", "representation", "account", "declaration", "rendering", "mimicry", "imitation", "impersonation", "impression", "mockery", "parody"],
+      "imperfections": ["imperfections", "blemishes", "marks", "spots", "scratches", "indentations", "notches", "flaws", "errors"],
+      "convincing": ["convincing", "persuasive", "plausible", "believable", "feasible", "reasonable", "acceptable", "credible", "suasive"]
    };
 
    grammar = RiTa.grammar(rules);
