@@ -157,6 +157,7 @@ function setup() {
   window.addEventListener("keydown", function(event) {
    if (event.key === "Enter") {
       console.log("The Enter key was pressed!")
+      Emily();
    }
   });
 }
