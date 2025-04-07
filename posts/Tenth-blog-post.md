@@ -140,6 +140,9 @@ function draw() {
 }
 ```
 
+Exploring the tokenize method in RiTa.js, below code should split and then join the sentence with spaces.
+
+```js
 <script src="./scripts/p5.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/rita"></script>
 
@@ -147,8 +150,6 @@ function draw() {
 
 <script>
     const cnv = document.getElementById ("p5_example")
-
-const StringTest = 'The quick red fox jumped over the brown dog.'
 
 function setup() {
    createCanvas (400, 400, P2D, cnv)
@@ -163,10 +164,83 @@ function setup() {
 }
 
 function Emily() {
-   let rs = new RiString(StringTest);
-   let words = rs.words();
-   console.log(words);
+  let sentence = "I listen to the created shell, and wonder if the sound housed within, is a meer fake or not? I feel the imperfections of the seashells, and wonder if these imperfections are convincing enough to those who have come before.";
+  words = RiTa.tokenize(sentence, { regex: "\\s"});
+  // Splits sentence in bits that have whitespace/spaces.
+
+  // console.log(words);
+
+  // let output = '';
+  // for (let i = 0; i < words.length; i++) {
+  //   output += words[i];
+  // }
+  // console.log(output);
+
+  // Does the same things as the for loop above,
+  // and joins the tokens in the string back together
+  let output = words.join('');
+  console.log(output);
 }
+
+function draw() {
+  background(220);
+}
+</script>
+```
+
+<script src="https://cdn.jsdelivr.net/npm/rita"></script>
+<script src="./scripts/p5.js"></script>
+
+<canvas id="p5_example"></canvas>
+
+<script>
+    const cnv = document.getElementById ("p5_example")
+
+let lexie;
+
+function setup() {
+   createCanvas (400, 400, P2D, cnv)
+  rectMode(CENTER);
+
+  lexie = new RiLexicon();
+
+  window.addEventListener("keydown", function(event) {
+   if (event.key === "Enter") {
+      console.log("The Enter key was pressed!")
+      Emily();
+   }
+  });
+}
+
+function Emily() {
+
+    let sentence = "I listen to the manufactured shell, And wonder if the ocean within will tell, Is it a mere mimicry or not, A reflection, a story, or a thought? I feel the blemishes on the shore, And wonder if they’re convincing, more, Are these flaws of the sea so true, Or are they just impressions, too? Each mark, each spot, each little flaw, A tale of time, a history raw, The imperfections, so profound, Do they hold the truth we’ve found?";
+  words = RiTa.tokenize(sentence, { regex: "\\s"});
+  // Splits sentence in bits that have whitespace/spaces.
+
+  // console.log(words);
+  let pos = RiTa.pos(sentence);
+  console.log(pos);
+
+  let output = '';
+  for (let i = 0; i < words.length; i++) {
+    if (pos[i] === 'prp' || pos[i] === 'jj' || pos[i] === 'rb'){
+      output += lexie.randomWord('prp');
+      output += lexie.randomWord('jj');
+      output += lexie.randomWord('rb');
+    } else {
+      output += words[i];
+    }
+  }
+  console.log(output);
+
+  // Does the same things as the for loop above,
+  // and joins the tokens in the string back together
+  // let output = words.join('');
+  // console.log(output);
+}
+
+//I listen to the created shell, and wonder if the sound housed within, is a meer fake or not? I feel the imperfections of the seashells, and wonder if these imperfections are convincing enough to those who have come before.
 
 function draw() {
   background(220);
