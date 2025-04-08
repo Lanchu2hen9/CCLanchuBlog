@@ -196,13 +196,13 @@ function draw() {
 <script>
     const cnv = document.getElementById ("p5_example")
 
-let lexie;
+// let lexie;
 
 function setup() {
    createCanvas (400, 400, P2D, cnv)
   rectMode(CENTER);
 
-  lexie = new RiLexicon();
+  // lexie = new RiLexicon();
 
   window.addEventListener("keydown", function(event) {
    if (event.key === "Enter") {
@@ -218,16 +218,18 @@ function Emily() {
   words = RiTa.tokenize(sentence, { regex: "\\s"});
   // Splits sentence in bits that have whitespace/spaces.
 
-  // console.log(words);
+  console.log(words);
   let pos = RiTa.pos(sentence);
   console.log(pos);
 
-  let output = '';
+  // let output = '';
+
+   let output = words.join('');
   for (let i = 0; i < words.length; i++) {
     if (pos[i] === 'prp' || pos[i] === 'jj' || pos[i] === 'rb'){
-      output += lexie.randomWord('prp');
-      output += lexie.randomWord('jj');
-      output += lexie.randomWord('rb');
+      output += RiTa.randomWord({pos: 'prp'});
+      output += RiTa.randomWord({pos: 'jj'});     
+      output += RiTa.randomWord({pos: 'rb'});     
     } else {
       output += words[i];
     }
