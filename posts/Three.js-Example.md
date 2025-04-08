@@ -56,14 +56,13 @@ allow_math: true
 
     function init() {
 
-      const container = document.createElement( 'div' );
-      document.body.appendChild( container );
 
-      const canvasWidth = window.innerWidth;
-      const canvasHeight = window.innerHeight;
+
+      const canvasWidth = width;
+      const canvasHeight = height;
 
       // CAMERA
-      camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 80000 );
+      camera = new THREE.PerspectiveCamera( 45, width / height, 1, 80000 );
       camera.position.set( - 600, 550, 1300 );
 
       // LIGHTS
@@ -86,13 +85,13 @@ allow_math: true
       cameraControls.addEventListener( 'change', render );
 
       // TEXTURE MAP
-      const textureMap = new THREE.TextureLoader().load( 'textures/uv_grid_opengl.jpg' );
+      const textureMap = new THREE.TextureLoader().load( '/scripts/three.js/examples/textures/uv_grid_opengl.jpg' );
       textureMap.wrapS = textureMap.wrapT = THREE.RepeatWrapping;
       textureMap.anisotropy = 16;
       textureMap.colorSpace = THREE.SRGBColorSpace;
 
       // REFLECTION MAP
-      const path = 'textures/cube/pisa/';
+      const path = '/scripts/three.js/examples/textures/cube/pisa/';
       const urls = [ 'px.png', 'nx.png', 'py.png', 'ny.png', 'pz.png', 'nz.png' ];
 
       textureCube = new THREE.CubeTextureLoader().setPath( path ).load( urls );
