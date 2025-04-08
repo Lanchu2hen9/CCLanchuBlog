@@ -37,7 +37,7 @@ allow_math: true
     let camera, scene, renderer;
     let cameraControls;
     let effectController;
-    const teapotSize = 300;
+    const teapotSize = 400;
     let ambientLight, light;
 
     let tess = - 1;	// force initialization
