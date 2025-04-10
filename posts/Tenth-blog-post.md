@@ -15,7 +15,7 @@ allow_math: true
    - [3D model Generation](https://cclanchublo6.deno.dev/Tenth-blog-post#3d-model-generation)
    - [Interaction](https://cclanchublo6.deno.dev/Tenth-blog-post#interaction)
    - [Audio](https://cclanchublo6.deno.dev/Tenth-blog-post#audio)
-3. [Task 3](#)
+3. [Task 3](https://cclanchublo6.deno.dev/Tenth-blog-post#task-3)
 
 # Task 1:
 
