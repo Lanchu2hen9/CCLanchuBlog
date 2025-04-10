@@ -145,11 +145,21 @@ The web editor/code version is [here](https://editor.p5js.org/Lanchu2hen9/sketch
 
 # Signals & Envelopes:
 
+For the below example refer to the equation $y = sin(x)$
+
+_Signals;_ A signal in the context of maths/the equation $y = sin(x)$, is the whole graph itself.
+_Evelopes;_ An envelope in the context of the maths and "$y = sin(x)$", is the rate of change/derivative of a point on the graph.
+
+So if we're using a non-maths analogy[^3];
+
+> The signal is the rapid vibration — the actual **sound** that makes the tone.
+> The envelope is the shape of how that sound starts, sustains, and fades away.
+
 ## Ramps:
 
 ### Triangle Wave:
 
-`const sig = 1 - Math.abs (p * 2 - 1)` Is essentially related to: y = |(x _ 2) - 1| where, the equation of |(x _ 2) - 1| is absolute so you have the "negative" version of it. See below the blue line is just the equation: y = (x _ 2) - 1, where the green line is the equation y = -(x _ 2) - 1
+`const sig = 1 - Math.abs (p * 2 - 1)` Is essentially related to: $y = |(x - 2) - 1|$ where, the equation of $|(x - 2) - 1|$ is absolute so you have the "negative" version of it. See below the blue line is just the equation: $y = (x - 2) - 1$, where the green line is the equation $y = -((x - 2) - 1)$
 
 ![Triangle Graph](Meth.png)
 
@@ -357,3 +367,4 @@ The web editor/code version is [here](https://editor.p5js.org/Lanchu2hen9/sketch
 
 [^1]: Take everything ChatGPT says with a grain of salt. Sometimes chatGPT bullshits. ChatGPT is the definition of: "Fake it til you make it." Like me, 🥲 but I haven't made it yet.
 [^2]: This is both the room and the instructions at the same time.
+[^3]: Coughs, this is not my analogy. Cough ChatGPT, cough.
