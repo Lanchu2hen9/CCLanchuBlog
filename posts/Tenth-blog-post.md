@@ -1,5 +1,5 @@
 ---
-title: Week 5 (Thurs) Homework
+title: Week 5 (Tues) Homework
 published_at: 2025-04-04
 snippet: This is homework 5a.
 disable_html_sanitization: true
