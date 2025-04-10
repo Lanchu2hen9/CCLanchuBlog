@@ -21,7 +21,7 @@ allow_math: true
 
 Tom if you're reading, I'd like to say; "As much as I love WebGL and Javascript, I'm not wrangling/correcting the path issues for another 3D example from [three.js examples](https://threejs.org/examples/)." If I'm going to be doing 3D for my AT2 or AT3, I'll be wrangling the paths, I'm not going to because 3D is quite literally a whole another dimesion that I don't want to worry about.
 
-The embed is at the bottom of the blog [here](#)
+The embed is at the bottom of the blog [here](https://cclanchublo6-9gykw95043qv.deno.dev/Eleveth-Blog-post#embed)
 
 <div id = "three.js_container"><div>
 
@@ -230,6 +230,12 @@ _Name:_ GIF Sticker Pack One
 _Aesthetic register:_ The interesting.
 I think that the aesthetic register of the above artwork is of The Interesting, because this artwork contains high information content and structure. Yes there is a hint of "disruption" and "randomness" within the artwork, but I feel like that the way that artwork is delibrately glitched is done on purpose by the artist. And also the thing with the asethetic register of "The interesting" is that the more you learn about it, the less "random" it seems.
 
-![a drippy lemon](logo.svg)
+![A diagram of the effective complexity graph in galanter's paper](Effective-Complexity.png)  
+Above where I think the artwork lies on the spectrum.
+
+**how do you think it works, under the hood?**
+I have no clue, if I'm taking a stab in the dark. I think the artist is making it so that the WebGL renderer, renders less of the polygons in the 3D model of the rose. I say this because the textures of the 3D models aren't being discoloured, its shininess is still staying the same.
+
+It honestly could also be a 3D animation if the artist is not corrupting the data/mesh of the 3D model. That or the animation of the rotation of the rose is probably done by transforming the rose.
 
 ## Embed:
