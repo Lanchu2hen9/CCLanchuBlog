@@ -188,7 +188,13 @@ function draw() {
 </script>
 ```
 
-Hit enter.
+Hit enter. I've used `RiTa.randomWord();` to replace each Pronoun `prp`, Adjective `jj` and Adverb `rb`. Within this original poem:
+
+> I listen to the manufactured shell, And wonder if the ocean within will tell, Is this conch a mere mimicry or not, A reflection, a story, or a thought? I feel the blemishes on the shell, Are these signs of the sea so true, Or just impressions passing through? Each mark, each spot, each little flaw, A tale of time, a history raw. These imperfections, deep and round—Do they hold the truth we’ve found?
+
+I've also specified with `const Pronouns = ['I', 'You', 'He', 'She', 'They', 'We']`, what specific possessive subject pronouns that I want the `prp` replacement to be, so the poem makes sense.
+
+So if the generated poem doesn't really make sense when reading it, blame RiTa.js.
 
 <script src="https://cdn.jsdelivr.net/npm/rita"></script>
 <script src="./scripts/p5.js"></script>
@@ -214,7 +220,7 @@ function setup() {
 }
 
 function Emily() {
-  let sentence = "I listen to the manufactured shell, And wonder if the ocean within will tell, Is this conch a mere mimicry or not, A reflection, a story, or a thought? I feel the blemishes on the shell, Are these signs of the sea so true, Or just impressions passing through? Each mark, each spot, each little flaw, A tale of time, a history raw. These imperfections, deep and round—Do they hold the truth we’ve found? ";
+  let sentence = "I listen to the manufactured shell, And wonder if the ocean within will tell, Is this conch a mere mimicry or not, A reflection, a story, or a thought? I feel the blemishes on the shell, Are these signs of the sea so true, Or just impressions passing through? Each mark, each spot, each little flaw, A tale of time, a history raw. These imperfections, deep and round—Do they hold the truth we’ve found?";
 
     let words = RiTa.tokenize(sentence);
     let pos = RiTa.pos(sentence);
