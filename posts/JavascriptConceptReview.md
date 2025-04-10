@@ -145,6 +145,8 @@ The web editor/code version is [here](https://editor.p5js.org/Lanchu2hen9/sketch
 
 # Signals & Envelopes:
 
+See Tom's blog on [Signals & Envelopes](https://blog.science.family/250406_signals_&_envelopes)
+
 For the below example refer to the equation $y = sin(x)$
 
 _Signals;_ A signal in the context of maths/the equation $y = sin(x)$, is the whole graph itself.
