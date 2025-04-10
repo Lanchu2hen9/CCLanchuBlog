@@ -152,7 +152,7 @@ Exploring the tokenize method in RiTa.js, below code should split and then join 
     const cnv = document.getElementById ("p5_example")
 
 function setup() {
-   createCanvas (400, 400, P2D, cnv)
+  createCanvas (400, 400, P2D, cnv)
   rectMode(CENTER);
 
   window.addEventListener("keydown", function(event) {
@@ -188,6 +188,8 @@ function draw() {
 </script>
 ```
 
+Hit enter.
+
 <script src="https://cdn.jsdelivr.net/npm/rita"></script>
 <script src="./scripts/p5.js"></script>
 
@@ -196,13 +198,12 @@ function draw() {
 <script>
     const cnv = document.getElementById ("p5_example")
 
-// let lexie;
+let output = '';
 
 function setup() {
-   createCanvas (400, 400, P2D, cnv)
+  createCanvas (500, 500, P2D, cnv)
   rectMode(CENTER);
 
-  // lexie = new RiLexicon();
 
   window.addEventListener("keydown", function(event) {
    if (event.key === "Enter") {
@@ -213,38 +214,44 @@ function setup() {
 }
 
 function Emily() {
+  let sentence = "I listen to the manufactured shell, And wonder if the ocean within will tell, Is this conch a mere mimicry or not, A reflection, a story, or a thought? I feel the blemishes on the shell, Are these signs of the sea so true, Or just impressions passing through? Each mark, each spot, each little flaw, A tale of time, a history raw. These imperfections, deep and round—Do they hold the truth we’ve found? ";
 
-    let sentence = "I listen to the manufactured shell, And wonder if the ocean within will tell, Is it a mere mimicry or not, A reflection, a story, or a thought? I feel the blemishes on the shore, And wonder if they’re convincing, more, Are these flaws of the sea so true, Or are they just impressions, too? Each mark, each spot, each little flaw, A tale of time, a history raw, The imperfections, so profound, Do they hold the truth we’ve found?";
-  words = RiTa.tokenize(sentence, { regex: "\\s"});
-  // Splits sentence in bits that have whitespace/spaces.
+    let words = RiTa.tokenize(sentence);
+    let pos = RiTa.pos(sentence);
 
-  console.log(words);
-  let pos = RiTa.pos(sentence);
-  console.log(pos);
+    output = '';
 
-  // let output = '';
+    const Pronouns = ['I', 'You', 'He', 'She', 'They', 'We']
 
-   let output = words.join('');
-  for (let i = 0; i < words.length; i++) {
-    if (pos[i] === 'prp' || pos[i] === 'jj' || pos[i] === 'rb'){
-      output += RiTa.randomWord({pos: 'prp'});
-      output += RiTa.randomWord({pos: 'jj'});     
-      output += RiTa.randomWord({pos: 'rb'});     
-    } else {
-      output += words[i];
+    for (let i = 0; i < words.length; i++) {
+      if (pos[i] === 'prp') {
+        output += Pronouns[Math.floor(Math.random() * Pronouns.length)] + ' ';
+      } else if (pos[i] === 'jj') {
+        output += RiTa.randomWord({pos: 'jj'})  + ' ';
+      } else if (pos[i] === 'rb') {
+        output += RiTa.randomWord({pos: 'rb'}) + ' ';
+      } else {
+        output += words[i] + ' ';
+      }
     }
-  }
-  console.log(output);
+    console.log(output.trim());
+    loop();
 
-  // Does the same things as the for loop above,
-  // and joins the tokens in the string back together
-  // let output = words.join('');
   // console.log(output);
+  // Console.logs the outputted sentence of the for and if loop.
 }
 
-//I listen to the created shell, and wonder if the sound housed within, is a meer fake or not? I feel the imperfections of the seashells, and wonder if these imperfections are convincing enough to those who have come before.
-
 function draw() {
-  background(220);
+  background('#f2e2d2');
+  textAlign(CENTER, CENTER);
+  textWrap(WORD);
+  textSize(16);
+
+  let x = width / 2;
+  let y = height / 2;
+
+  fill('#75958E');
+  text(output, x, y, width - 40, height - 40);
+  noLoop();
 }
 </script>
