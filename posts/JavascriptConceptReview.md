@@ -165,7 +165,50 @@ So if we're using a non-maths analogy[^3];
 
 ![Triangle Graph](Meth.png)
 
-# NPMs/Modules:
+# Modules:
+
+_tl;dr: Modules are a way of slicing your code up and importing it and exporting from different libraries and people._
+
+Think of modules as individual books within a library. Each time you import/export a book from a library you "borrowing" a book from the library. Think of the library, like a library like p5.js, or q5.js or RiTa.js. But instead of p5.js you have like libraries like: "Lodash, Axios"[^4].
+
+ChatGPT states:
+
+> Imagine you’re in a library, and the library has many different books. Each book contains information about different topics (e.g., one book on history, one on coding, one on cooking). The books are kept in separate sections of the library (just like files in your project).
+
+> **The Books (Modules):** Each book is like a module. You don’t need to read all the books at once, but you can check out specific ones when you need the information.
+
+> **The Library (Project):** The library is your project, and inside the library, there are many books (modules) to help you with different tasks.
+
+> **Checking Out a Book (Importing a Module):** When you need information from a specific book, you check it out (import it) into your study room (your code). You only borrow the chapters (pieces of functionality) you need.
+
+> **Sharing Books (Exporting):** If you write your own book (create a module), you can make it available to other people (export it), so they can use it in their study rooms (other parts of the code).
+
+## Example:
+
+Honestly there's like different older versions of modular coding, and this is a whole ass rabbit hole[^5] you can dive down into. If you see some modular coding with `const greet = require('./book.js');` syntax, that's probably the older version of modular coding. I think the "ES Modules" syntax is the standardised way of modular way of coding. The below example is from ChatGPT:
+
+### Export statement:
+
+```js
+// book.mjs
+export const greet = () => {
+  return "Hello from ES Modules!";
+};
+```
+
+### Import Statement:
+
+```js
+// main.mjs
+import { greet } from "./book.mjs";
+console.log(greet()); // Outputs: Hello from ES Modules!
+```
+
+## Front-end & Back-end coding:
+
+From my understanding of modular coding it is mostly used for back-end coding. When I mean modular coding, I mean like import/export statements and like Javascript coding. For front-end coding its like your HTML, CSS. Like making stuff look pretty. Its still good to have some back-end coding knowledge[^6] in your back-pocked.
+
+## NPMs vs Modules:
 
 - A NPM is like a library, for example `<script src="https://cdn.jsdelivr.net/npm/rita"></script>`
 - Whereas a module is like a chunk of code, for example:
@@ -370,3 +413,6 @@ So if we're using a non-maths analogy[^3];
 [^1]: Take everything ChatGPT says with a grain of salt. Sometimes chatGPT bullshits. ChatGPT is the definition of: "Fake it til you make it." Like me, 🥲 but I haven't made it yet.
 [^2]: This is both the room and the instructions at the same time.
 [^3]: Coughs, this is not my analogy. Cough ChatGPT, cough.
+[^4]: On a side note, I have no idea what I am yapping about, this might be complete bullshit. Consult a professional, I am not a professional.
+[^5]: Would not reccommend going down this rabbit hole unless you're really passionate about coding, and or have a good grasp of what the coding technical terms mean.
+[^6]: Big Knowledge, increase brain. Brain big, brain stronk.
