@@ -21,6 +21,15 @@ allow_math: true
    - [Constructor(){}](https://cclanchublo6.deno.dev/JavascriptConceptReview#constructor)
 6. [Coding Practise Emeb](https://cclanchublo6.deno.dev/JavascriptConceptReview#coding-practise-emeb)
 7. [Experiments](https://cclanchublo6.deno.dev/JavascriptConceptReview#experiments)
+8. [Signals & Envelopes](https://cclanchublo6.deno.dev/JavascriptConceptReview#signals--envelopes)
+   - [Ramps](https://cclanchublo6.deno.dev/JavascriptConceptReview#ramps)
+     - [Triangle Wave](https://cclanchublo6.deno.dev/JavascriptConceptReview#triangle-wave)
+9. [Modules](https://cclanchublo6.deno.dev/JavascriptConceptReview#modules)
+   - [Example](https://cclanchublo6.deno.dev/JavascriptConceptReview#example)
+     - [Export statement](https://cclanchublo6.deno.dev/JavascriptConceptReview#export-statement)
+     - [Import Statement](https://cclanchublo6.deno.dev/JavascriptConceptReview#import-statement)
+     - [Front-end & Back-end coding](https://cclanchublo6.deno.dev/JavascriptConceptReview#front-end--back-end-coding)
+   - [API Libraries & ES Module-compatibility](https://cclanchublo6.deno.dev/JavascriptConceptReview#api-libraries--es-module-compatibility)
 
 # General Math/Maths scripting Language:
 
