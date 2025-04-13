@@ -185,7 +185,7 @@ ChatGPT states:
 
 ## Example:
 
-Honestly there's like different older versions of modular coding, and this is a whole ass rabbit hole[^5] you can dive down into. If you see some modular coding with `const greet = require('./book.js');` syntax, that's probably the older version of modular coding. I think the "ES Modules" syntax is the standardised way of modular way of coding. The below example is from ChatGPT:
+Honestly there's like different older versions of modular coding, and this is a whole ass rabbit hole[^5] you can dive down into. If you see some modular coding with `const greet = require('./book.js');` syntax, that's probably the older version of modular coding. The below examples are called ES modules. (Short for ECMAScript Modules.)
 
 ### Export statement:
 
@@ -207,6 +207,85 @@ console.log(greet()); // Outputs: Hello from ES Modules!
 ## Front-end & Back-end coding:
 
 From my understanding of modular coding it is mostly used for back-end coding. When I mean modular coding, I mean like import/export statements and like Javascript coding. For front-end coding its like your HTML, CSS. Like making stuff look pretty. Its still good to have some back-end coding knowledge[^6] in your back-pocked.
+
+## API Libraries & ES Module-compatibility:
+
+In order to use an API library like p5.js or c6.js or RiTa.js it has to be ES Module-compatibile. Which is a fancy term that says if a library is importable via the "modern" way of modular coding into your script.
+
+Importing the API library without the import statement is like slapping a random ass script tag into the HTML File.
+
+### Example 1:
+
+```js
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <main>
+    </main>
+    <script src="sketch.js"></script>
+  </body>
+</html>
+```
+
+This bit is the sketch.js file in the p5.js web editor.
+
+```js
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+}
+```
+
+### Example 2:
+
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <main>
+    </main>
+
+    <script type="module" src="sketch.js"></script>
+    <!-- Your chunk of code here in the module, see NPMs vs Modules. -->
+  </body>
+</html>
+```
+
+This is the "sketch.js file
+
+```js
+// Import p5.js library and p5.sound.js as ES Modules
+import p5 from "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js";
+import "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js";
+
+function setup() {
+  createCanvas(400, 400, P2D, cnv);
+}
+
+function draw() {
+  background(220);
+}
+```
+
+Example 1 & 2 are functionally the same thing. But by technicality they use different methods.
+
+## Declaring API Libraries Globally:
+
+In example 1 you have declared `<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>` `<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>` libraries globally. And then used it in the p5 sketch.js scripting. This makes your scripting/coding glitchy, and is generally not the best way of coding.
 
 ## NPMs vs Modules:
 

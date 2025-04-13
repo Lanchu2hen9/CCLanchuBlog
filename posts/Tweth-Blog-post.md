@@ -35,3 +35,6 @@ I mean the differences are kind of obviously stated above. API libraries listed 
 4. p5.js
 
 # Task 2:
+
+**Can we use these libraries from within a javascript module? Explain why / why not?**
+Yes if the API library is ES Module-compatible.
