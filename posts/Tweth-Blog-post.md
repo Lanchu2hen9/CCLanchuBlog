@@ -10,12 +10,13 @@ allow_math: true
 
 # Table Of Contents:
 
-1. [Task 1](https://cclanchublo6.deno.dev/Tenth-blog-post#task-1)
-2. [Task 2](https://cclanchublo6.deno.dev/Tenth-blog-post#task-2)
+1. [Task 1](https://cclanchublo6.deno.dev/Tweth-Blog-post#task-1)
+2. [Task 2](https://cclanchublo6.deno.dev/Tweth-Blog-post#task-2)
    - [3D model Generation](https://cclanchublo6.deno.dev/Tenth-blog-post#3d-model-generation)
    - [Interaction](https://cclanchublo6.deno.dev/Tenth-blog-post#interaction)
    - [Audio](https://cclanchublo6.deno.dev/Tenth-blog-post#audio)
 3. [Task 3](#)
+4. [Task 4](#)
 
 # Task 1:
 

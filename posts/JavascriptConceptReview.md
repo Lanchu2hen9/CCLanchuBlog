@@ -30,6 +30,10 @@ allow_math: true
      - [Import Statement](https://cclanchublo6.deno.dev/JavascriptConceptReview#import-statement)
      - [Front-end & Back-end coding](https://cclanchublo6.deno.dev/JavascriptConceptReview#front-end--back-end-coding)
    - [API Libraries & ES Module-compatibility](https://cclanchublo6.deno.dev/JavascriptConceptReview#api-libraries--es-module-compatibility)
+     - [Example 1](https://cclanchublo6.deno.dev/JavascriptConceptReview#example-1)
+     - [Example 2](https://cclanchublo6.deno.dev/JavascriptConceptReview#example-2)
+   - [Declaring API Libraries Globally](https://cclanchublo6.deno.dev/JavascriptConceptReview#declaring-api-libraries-globally)
+   - [NPMs vs Modules](https://cclanchublo6.deno.dev/JavascriptConceptReview#npms-vs-modules)
 
 # General Math/Maths scripting Language:
 
