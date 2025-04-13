@@ -37,4 +37,7 @@ I mean the differences are kind of obviously stated above. API libraries listed 
 # Task 2:
 
 **Can we use these libraries from within a javascript module? Explain why / why not?**
-Yes if the API library is ES Module-compatible.
+Yes if the API library is ES Module-compatible. Explain why/why not? Tom I have a whole ass explaination on API script tags and contaminating the global scale. See [this](https://cclanchublo6.deno.dev/JavascriptConceptReview#api-libraries--es-module-compatibility).
+
+**In what situations might a tool like [esm.sh](https://esm.sh/#tsx) be useful?**
+Converts traditional NPM packages and urls/those script tags into importable modules. So I don't have to pray to the Repo Maintainer and hope that the API library is ES module-compatiable.
