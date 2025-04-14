@@ -134,6 +134,14 @@ setup();
 </script>
 ```
 
+So it turns out the path for `import Q5 from ''` in the previous code block was wrong and was connecting to this file:
+![The import statement connecting to the q5.js in the static > scripts > q5 > q5.js-main > q5.js file.](Wrong.png)
+
+When it really should be connecting to this file:
+![The import statement connecting to the q5.js file this time in my my-q5-project > q5 > q5.js](Right.png)
+
+For the sake of not breaking my code, I am not going to mess with the entirety of my q5.js repo folder uploaded to VSCode.
+
 <canvas id="q5_test"></canvas>
 
 <script type="module">
