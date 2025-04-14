@@ -102,7 +102,11 @@ The errors I get from the below code are:
 </script>
 ```
 
-Okay we're getting somewhere.
+Okay now I'm getting somewhere. I have the console error of:
+
+> GET http://localhost:8000/static/my-q5-project/q5/q5.mjs net::ERR_ABORTED 404 (Not Found)
+
+Referenced this page; [q5js_to_esm.mjs](https://gist.github.com/GoToLoop/f3787d5ceab12ad5e1d26cca083f40df). Not sure if its correct tho. Things are for the most part aren't red, so I'm assuming I'm doing _something_ correct.
 
 <canvas id="q5_example"></canvas>
 
