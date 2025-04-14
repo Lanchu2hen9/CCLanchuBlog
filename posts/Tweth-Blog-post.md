@@ -12,9 +12,6 @@ allow_math: true
 
 1. [Task 1](https://cclanchublo6.deno.dev/Tweth-Blog-post#task-1)
 2. [Task 2](https://cclanchublo6.deno.dev/Tweth-Blog-post#task-2)
-   - [3D model Generation](https://cclanchublo6.deno.dev/Tenth-blog-post#3d-model-generation)
-   - [Interaction](https://cclanchublo6.deno.dev/Tenth-blog-post#interaction)
-   - [Audio](https://cclanchublo6.deno.dev/Tenth-blog-post#audio)
 3. [Task 3](#)
 4. [Task 4](#)
 
@@ -42,3 +39,28 @@ Yes if the API library is ES Module-compatible. Explain why/why not? Tom I have 
 
 **In what situations might a tool like [esm.sh](https://esm.sh/#tsx) be useful?**
 Converts traditional NPM packages and urls/those script tags into importable modules. So I don't have to pray to the Repo Maintainer and hope that the API library is ES module-compatiable.
+
+# Task 3:
+
+<canvas id="q5_example"></canvas>
+
+<script type="module">
+   // import q5 from './scripts/q5/q5.js-main/q5.js';
+   import { Q5 } from 'https://q5js.org/q5.js';
+   
+   const sketch = (q) => {
+    q.setup = () => {
+      q.createCanvas(400, 400, q.P2D);
+      q.noLoop(); // Optional: remove if you want continuous drawing
+    };
+
+    q.draw = () => {
+      q.background('silver');
+      q.circle(100, 50, 80);
+    };
+  };
+
+  // Mount the sketch to your canvas element
+  new q5(sketch, document.getElementById('q5_example'));
+
+</script>
