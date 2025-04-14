@@ -108,6 +108,8 @@ Okay now I'm getting somewhere. I have the console error of:
 
 Referenced this page; [q5js_to_esm.mjs](https://gist.github.com/GoToLoop/f3787d5ceab12ad5e1d26cca083f40df). Not sure if its correct tho. Things are for the most part aren't red, so I'm assuming I'm doing _something_ correct.
 
+```js
+
 <canvas id="q5_example"></canvas>
 
 <script type="module">
@@ -129,4 +131,45 @@ function draw() {
 
 // Call setup once and draw continuously
 setup();
+</script>
+```
+
+<canvas id="q5_test"></canvas>
+
+<script type="module">
+  import Q5 from './my-q5-project/q5/q5.js'
+  const div = document.getElementById (`q5_test`)
+  const width = div.parentNode.scrollWidth
+  const height = width * 9 / 16
+
+  const q = new Q5 ("instance")
+  console.log (q)
+
+  const pos = { 
+    x: 0, 
+    y: height / 2 - 50,
+    v: 12,
+  }
+
+  q.setup = () => {
+    q.createCanvas (width, height)
+    q.noStroke ()
+    q.fill (`deeppink`)
+  }
+
+  q.draw = () => {
+    q.background (`turquoise`)
+    q.square (pos.x, pos.y, 100)
+
+    pos.x += pos.v
+
+    if (pos.x > width - 100) {
+        pos.x = width - 100
+        pos.v *= -1
+    } else if (pos.x < 0) {
+        pos.x = 0
+        pos.v *= -1
+    }
+  }
+
 </script>
