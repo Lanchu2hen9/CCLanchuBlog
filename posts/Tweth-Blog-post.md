@@ -42,16 +42,23 @@ Converts traditional NPM packages and urls/those script tags into importable mod
 
 # Task 3:
 
+Tried using import statements it did not work. I don't think q5.js is ES module-compatiable. Going with the old traditional way of script tags. Below is me being lazy and using ChatGPT, its not working cus ChatGPT is ass when it comes to code. ITS GOOGLE TIME! 👆🏻🤓. If all things fail, I'm just straight up using the HTML code, and linking it in my blog.
+
+## ChatGPT's code:
+
+The errors I get from the below code are:
+
+> "Tweth-Blog-post:108 Uncaught ReferenceError: q5 is not defined at Tweth-Blog-post:108:3"
+
+```js
 <canvas id="q5_example"></canvas>
 
 <script type="module">
-   // import q5 from './scripts/q5/q5.js-main/q5.js';
-   import { Q5 } from 'https://q5js.org/q5.js';
-   
+
    const sketch = (q) => {
     q.setup = () => {
       q.createCanvas(400, 400, q.P2D);
-      q.noLoop(); // Optional: remove if you want continuous drawing
+      q.noLoop();
     };
 
     q.draw = () => {
@@ -60,7 +67,62 @@ Converts traditional NPM packages and urls/those script tags into importable mod
     };
   };
 
-  // Mount the sketch to your canvas element
   new q5(sketch, document.getElementById('q5_example'));
 
+</script>
+```
+
+```js
+<!-- Try p5 compatibility mode (this might help too) -->
+<script src="https://cdn.jsdelivr.net/gh/q5js/q5.js@main/q5.min.js"></script>
+
+<canvas id="q5_example"></canvas>
+
+<script>
+  const sketch = (q) => {
+    q.setup = () => {
+      q.createCanvas(400, 400, q.P2D, document.getElementById("q5_example"));
+    };
+
+    q.draw = () => {
+      q.background('lavender');
+      q.fill('blue');
+      q.ellipse(q.frameCount % 400, 200, 50, 50); // animation!
+    };
+  };
+
+  // Wait for q5 to load before using it
+  window.addEventListener('load', () => {
+    if (window.q5) {
+      new window.q5(sketch, document.getElementById("q5_example"));
+    } else {
+      console.error('🥲 q5 not defined. 🥲');
+    }
+  });
+</script>
+```
+
+Okay we're getting somewhere.
+
+<canvas id="q5_example"></canvas>
+
+<script type="module">
+
+import { Q5 } from './static/my-q5-project/q5/q5.mjs';
+const cnv = document.getElementById("q5_example");
+
+// Setup function for your canvas
+function setup() {
+   createCanvas(400, 400, P2D, cnv);  // Set the canvas size and type
+   noLoop();  // Disable continuous drawing (you can remove if needed)
+}
+
+// Draw function for your canvas
+function draw() {
+   background('silver');  // Set the background color
+   circle(100, 50, 80);  // Draw a circle at position (100, 50) with radius 80
+}
+
+// Call setup once and draw continuously
+setup();
 </script>
