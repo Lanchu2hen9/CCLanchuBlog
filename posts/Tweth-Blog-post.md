@@ -166,7 +166,7 @@ For the sake of not breaking my code, I am not going to mess with the entirety o
     img = q.loadImage(BounceCar);
   }
 
-  const post = {
+  const pos = {
     x: Math.random() * width,
     y: Math.random() * height,
     // Places the Car.png on a random position on the canvas.
@@ -179,12 +179,39 @@ For the sake of not breaking my code, I am not going to mess with the entirety o
     // The "*2" is there to give the car a speed of "2 pixels per frame"
   }
 
+  let phase = 0;
+  const baseSpeed = 2;
+  const exponent = 1.25;
+
   q.setup = () => {
     q.createCanvas (width, height)
+    q.noStroke()
+    q.imageMode(q.CENTER)
   }
 
   q.draw = () => {
-    q.background (`turquoise`)
-  }
+    q.background (`black`)
 
+    const speedFactor = baseSpeed * Math.pow(phase, exponent)
+    // Controls how fast the catus is yeetus. 
+    // (In more technical terms the steepness of the exponential curve.)
+    phase += 0.01
+    // increments the phase over time.
+
+    // Updates & re-assigns the car.png on the canvas.
+    pos.x += pos.vx * speedFactor
+    pos.y += pos.vy * speedFactor
+
+    // Variables used to contain the width and height of the cat images.
+    const imgW = img?.width ?? 100
+    const imgH = img?.height ?? 100
+
+    if (pos.x < imgW / 2 || pos.x > width - imgW / 2) pos.vx *= -1
+    if (pos.y < imgH / 2 || pos.y > height - imgH / 2) pos.vy *= -1
+    // Creates a border around the edges of the canvas, so 
+    // that the png doesn't fly off into the distance.
+    
+    if (img) q.image(img, pos.x, pos.y)
+    // if the image exists, then draw it on the canvas at the current (x,y) position.
+  }
 </script>

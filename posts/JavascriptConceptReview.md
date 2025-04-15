@@ -55,6 +55,38 @@ allow_math: true
 - "FrameCount();" Pretty self-explaintory, it counts deez framez.
 - `return`, returns value, stops executing code after the `return`.
 
+**Nullish coalescing operator** or `??` means if the thing on the left if null or undefined use the thing on the right instead.
+So:
+
+```js
+let username = userInput ?? "Guest";
+console.log(username);
+```
+
+If the user doesn't input anything on the left, then print the string `"Guest"` on the right. **Note do not mistake `??` for `||`.**
+
+**`||` (Or)**, functionally means if the thing on the left is falsy then use the thing on the right. What is defined as _"falsy"_, falsy is as defined by ChatGPT as anything that is:
+
+- false
+- 0
+- ""
+- null
+- undefined
+- NaN (Not a number)
+  - When the maths isn't mathing. Examples include:
+    - `0 / 0` (Dividing zero by zero = undefined.)
+    - `Math.sqrt(-1)` (Square root of negative = imaginary number.)
+    - `Infinity - Infinity` (∞ minus ∞ is undefined.)
+    - `"cat" * 3` (Can’t multiply a string.)
+    - `"5" - "dog"` ( "5" is fine, but "dog" breaks the math.)
+    - `true * undefined` (Booleans can be numbers, but undefined is not.)
+    - `parseInt("hello")` (Can’t turn "hello" into a number.)
+    - `parseFloat("abc123")` (Can’t turn "abc123" into a number.)
+    - `Number("notANumber")`
+    - `undefined + 1` (undefined is not a number.)
+    - `let x; x + 5` (x is undefined, so math breaks.)
+    - `NaN + 1` (Still NaN, once it’s NaN, it spreads.)
+
 # General Notes:
 
 - Don't use print ();, use console.log(``);
