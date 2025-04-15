@@ -19,6 +19,8 @@ allow_math: true
 
 # Task 1:
 
+`q.createCanvas(width, height, q.WEBGL).parent(cnv);` trying to parent the created canvas to the cnv element, so that the embbed doesn't end up at the bottom of the blog. Still need to work on this. It works perflectly fine with `q.createCanvas(width, height, q.WEBGL);` tho, it turns q5.js can actually support WebGL.
+
 <canvas id="q5_test"></canvas>
 
 <script type="module">
@@ -35,6 +37,8 @@ allow_math: true
   q.setup = () => {
    q.createCanvas(width, height, q.WEBGL);
    // q.createCanvas(width, height, q.WEBGL).parent(cnv);
+
+
    // console.log(q.WEBGL);
    // q.createCanvas (width, height, cnv)
    q.noStroke ()
