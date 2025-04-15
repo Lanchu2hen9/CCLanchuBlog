@@ -142,33 +142,126 @@ When it really should be connecting to this file:
 
 For the sake of not breaking my code, I am not going to mess with the entirety of my q5.js repo folder uploaded to VSCode.
 
+The embed below is a cat screensaver. For reference this is the code:
+
+```js
 <canvas id="q5_test"></canvas>
 
 <script type="module">
   import Q5 from './my-q5-project/q5/q5.js'
   const div = document.getElementById (`q5_test`)
-  const width = div.parentNode.scrollWidth
-  const height = width * 9 / 16
+  const width = 700
+  const height = 700
 
   const q = new Q5 ("instance")
   console.log (q)
 
   const logos = [
-    'static/assets/Car1.png',
-    'static/assets/MaxwellCar.png',
-    'static/assets/smudgecar.png',
+    './assets/Car1.png',
+    './assets/MaxwellCar.png',
+    './assets/smudgecar.png',
   ]
 
-  const BounceCar = logos[Math.floor(Maths.random() * logo.length)]
+  const BounceCar = logos[Math.floor(Math.random() * logos.length)]
   let img;
+
+  const displayW = 105;
+  const displayH = 85;
 
   q.preload = () => {
     img = q.loadImage(BounceCar);
   }
 
   const pos = {
-    x: Math.random() * width,
-    y: Math.random() * height,
+    x: Math.random() * (width - displayW * 2) + displayW,
+    y: Math.random() * (height - displayH * 2) + displayH,
+
+    // x: 0,
+    // y: 0,
+    // Places the Car.png on a random position on the canvas.
+
+    vx: (Math.random() < 0.5 ? -1 : 1) * 2,
+    vy: (Math.random() < 0.5 ? -1 : 1) * 2,
+    // Choose a random number [0,1), if the no. is less than 0.5 then
+    // yeetus the catus in a negative "-1" direction, if not then yeetus
+    // the catus in a positive direction "+1".
+    // The "*2" is there to give the car a speed of "2 pixels per frame"
+  }
+
+  let phase = 0;
+  const baseSpeed = 6;
+  const exponent = 0.5;
+
+  q.setup = () => {
+    q.createCanvas (width, height)
+    q.noStroke()
+    q.imageMode(q.CENTER)
+
+    // pos.x = Math.random() * (width - displayW) + displayW / 2
+    // pos.y = Math.random() * (height - displayH) + displayH / 2
+  }
+
+  q.draw = () => {
+    q.background (`lightblue`)
+
+    const speedFactor = baseSpeed * Math.pow(phase, exponent)
+    // Controls how fast the catus is yeetus.
+    // (In more technical terms the steepness of the exponential curve.)
+    phase += 0.01
+    // increments the phase over time.
+
+    // Updates & re-assigns the car.png on the canvas.
+    pos.x += pos.vx * speedFactor
+    pos.y += pos.vy * speedFactor
+
+    // Variables used to contain the width and height of the cat images.
+    const imgW = img?.width ?? 10
+    const imgH = img?.height ?? 10
+
+    if (pos.x < imgW / 10 || pos.x > width - imgW / 10) pos.vx *= -1
+    if (pos.y < imgH / 10 || pos.y > height - imgH / 10) pos.vy *= -1
+    // Creates a border around the edges of the canvas, so
+    // that the png doesn't fly off into the distance.
+
+    if (img) q.image(img, pos.x, pos.y, displayW, displayH)
+    // if the image exists, then draw it on the canvas at the current (x,y) position.
+  }
+</script>
+```
+
+<canvas id="q5_test"></canvas>
+
+<script type="module">
+  import Q5 from './my-q5-project/q5/q5.js'
+  const div = document.getElementById (`q5_test`)
+  const width = 700
+  const height = 700
+
+  const q = new Q5 ("instance")
+  console.log (q)
+
+  const logos = [
+    './assets/Car1.png',
+    './assets/MaxwellCar.png',
+    './assets/smudgecar.png',
+  ]
+
+  const BounceCar = logos[Math.floor(Math.random() * logos.length)]
+  let img;
+
+  const displayW = 105;
+  const displayH = 85;
+
+  q.preload = () => {
+    img = q.loadImage(BounceCar);
+  }
+
+  const pos = {
+    x: Math.random() * (width - displayW * 2) + displayW,
+    y: Math.random() * (height - displayH * 2) + displayH,
+
+    // x: 0,
+    // y: 0,
     // Places the Car.png on a random position on the canvas.
 
     vx: (Math.random() < 0.5 ? -1 : 1) * 2,
@@ -180,17 +273,20 @@ For the sake of not breaking my code, I am not going to mess with the entirety o
   }
 
   let phase = 0;
-  const baseSpeed = 2;
-  const exponent = 1.25;
+  const baseSpeed = 6;
+  const exponent = 0.5;
 
   q.setup = () => {
     q.createCanvas (width, height)
     q.noStroke()
     q.imageMode(q.CENTER)
+
+    // pos.x = Math.random() * (width - displayW) + displayW / 2
+    // pos.y = Math.random() * (height - displayH) + displayH / 2
   }
 
   q.draw = () => {
-    q.background (`black`)
+    q.background (`lightblue`)
 
     const speedFactor = baseSpeed * Math.pow(phase, exponent)
     // Controls how fast the catus is yeetus. 
@@ -203,15 +299,17 @@ For the sake of not breaking my code, I am not going to mess with the entirety o
     pos.y += pos.vy * speedFactor
 
     // Variables used to contain the width and height of the cat images.
-    const imgW = img?.width ?? 100
-    const imgH = img?.height ?? 100
+    const imgW = img?.width ?? 10
+    const imgH = img?.height ?? 10
 
-    if (pos.x < imgW / 2 || pos.x > width - imgW / 2) pos.vx *= -1
-    if (pos.y < imgH / 2 || pos.y > height - imgH / 2) pos.vy *= -1
+    if (pos.x < imgW / 10 || pos.x > width - imgW / 10) pos.vx *= -1
+    if (pos.y < imgH / 10 || pos.y > height - imgH / 10) pos.vy *= -1
     // Creates a border around the edges of the canvas, so 
     // that the png doesn't fly off into the distance.
     
-    if (img) q.image(img, pos.x, pos.y)
+    if (img) q.image(img, pos.x, pos.y, displayW, displayH)
     // if the image exists, then draw it on the canvas at the current (x,y) position.
   }
 </script>
+
+# Task 4:
