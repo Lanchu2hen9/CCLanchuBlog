@@ -233,7 +233,7 @@ The embed below is a cat screensaver. For reference this is the code:
 
 <script type="module">
   import Q5 from './my-q5-project/q5/q5.js'
-  const div = document.getElementById (`q5_test`)
+  const cnv = document.getElementById (`q5_test`)
   const width = 700
   const height = 700
 
@@ -277,7 +277,7 @@ The embed below is a cat screensaver. For reference this is the code:
   const exponent = 0.5;
 
   q.setup = () => {
-    q.createCanvas (width, height)
+    q.createCanvas (width, height, cnv)
     q.noStroke()
     q.imageMode(q.CENTER)
 
