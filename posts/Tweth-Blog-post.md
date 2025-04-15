@@ -314,4 +314,20 @@ The embed below is a cat screensaver. For reference this is the code:
 
 # Task 4:
 
+**In your own words, please give a brief summary of the following texts:**
+
+## Information & Thinking by Michel Serres:
+
+_Information & Thinking by Michel Serres_ states all things, however small or large emits, recieves, proccesses and stores the information. Serres also states that humans have a tendency to believe that we are at the centre of the universe, that we are the **_only_** things with the "the capability to see, read or write" the world around us. An interesting quote:
+
+> "We are not the only ones endowed with the capability to count or remember; the trees calculate their years, crowned in their wood. Nor are we the only ones endowed with the capability to code; everything ultimately gets spelled out in the language of mathematics."
+
+Serres also states that information is formed by the exchange/interactions of the participants within a network. Serres states that:
+
+> "Where does this information circulate? Basically, in networks...[moreso] information network[s]...We still decorate the planet with a web of hertz an electronic web with a thousand and one names, repeating..."
+
+Serres also explains that information or aptly put it knowledge, is formed around "multiple reference points" as precieved by the person and or thing, and this knowledge is often separate from the "scholarly disciplines"/academia as I understand.
+
+Honestly speaking I love thinking of things in a grand scale, personally speak the vastness of the universe is what makes our existence so special, we are the universe's way of appriecating itself and loving itself. Also on a tangent, would totally reccomend watching this video [The Egg - A Short Story, by Kurzgesagt](https://youtu.be/h6fcK_fRYaI?si=jnYFCILFJWCsdAiK), gave me an epiphany of my place in the universe a couple of years back.
+
 ## Embed:
