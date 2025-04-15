@@ -153,31 +153,38 @@ For the sake of not breaking my code, I am not going to mess with the entirety o
   const q = new Q5 ("instance")
   console.log (q)
 
-  const pos = { 
-    x: 0, 
-    y: height / 2 - 50,
-    v: 12,
+  const logos = [
+    'static/assets/Car1.png',
+    'static/assets/MaxwellCar.png',
+    'static/assets/smudgecar.png',
+  ]
+
+  const BounceCar = logos[Math.floor(Maths.random() * logo.length)]
+  let img;
+
+  q.preload = () => {
+    img = q.loadImage(BounceCar);
+  }
+
+  const post = {
+    x: Math.random() * width,
+    y: Math.random() * height,
+    // Places the Car.png on a random position on the canvas.
+
+    vx: (Math.random() < 0.5 ? -1 : 1) * 2,
+    vy: (Math.random() < 0.5 ? -1 : 1) * 2,
+    // Choose a random number [0,1), if the no. is less than 0.5 then
+    // yeetus the catus in a negative "-1" direction, if not then yeetus
+    // the catus in a positive direction "+1". 
+    // The "*2" is there to give the car a speed of "2 pixels per frame"
   }
 
   q.setup = () => {
     q.createCanvas (width, height)
-    q.noStroke ()
-    q.fill (`deeppink`)
   }
 
   q.draw = () => {
     q.background (`turquoise`)
-    q.square (pos.x, pos.y, 100)
-
-    pos.x += pos.v
-
-    if (pos.x > width - 100) {
-        pos.x = width - 100
-        pos.v *= -1
-    } else if (pos.x < 0) {
-        pos.x = 0
-        pos.v *= -1
-    }
   }
 
 </script>
