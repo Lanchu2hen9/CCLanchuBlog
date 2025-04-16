@@ -330,4 +330,28 @@ Serres also explains that information or aptly put it knowledge, is formed aroun
 
 Honestly speaking I love thinking of things in a grand scale, personally speak the vastness of the universe is what makes our existence so special, we are the universe's way of appriecating itself and loving itself. Also on a tangent, would totally reccomend watching this video [The Egg - A Short Story, by Kurzgesagt](https://youtu.be/h6fcK_fRYaI?si=jnYFCILFJWCsdAiK), gave me an epiphany of my place in the universe a couple of years back.
 
+## Xenofeminism: A Politics for Alienation:
+
+_Xenofeminism: A Politics for Alienation by Laboria Cuboniks_ is a feminist manifesto that rejects the idea of gender-roles (particularly feminine) present in society.
+
+This manifesto calls for the collective to push for radical change in removing power imbalances in both capitalism and racism.
+
+This manifesto is also champions people to build the infrastructure in which people can use HRT and other similar medical procedures to reclaim their own bodily autonomy.
+
+Very chaotic article, I admire its energy of "Fuck around & find out."
+
+## What Is It Like to Be a Fungus?:
+
+_What Is It Like to Be a Fungus? By Merlin Sheldrake_ challenges the "singular"-ness idea that humans are isolated, self-contained individuals.
+
+Sheldrake states that fungus are everywhere in the world, and have contributed a lot to humanity and nature as a whole.
+
+- Penicillin => Gives health to humans.
+- Mycoremediation => Cleans up environmental pollutants/oil spills.
+- Mycofiltration => "A water treatment process that uses fungal mycelium, the...fungi...filter and remove contaminants from water."
+
+It also blurs the identity of where the individual's identity ends and the human microbiome starts. For example, Candida albicans exist in our mircohiomes, they truly are fun-guys.[1^]
+
+[1^]: Sorry not sorry for this pun.
+
 ## Embed:
