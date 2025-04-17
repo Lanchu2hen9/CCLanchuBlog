@@ -64,5 +64,88 @@ The concept that I want to tackle is "Processing ≠ Thinking", just because you
 
 Smth like this: [P5.js - Creating a 2D starfield using P5.js | Starry Night Background](https://youtu.be/xbmwfg5U9-s?si=zOxnLPkHqoLTwaEx) But the stars "zoom in" on the user mouse click.
 
+I want somethings like a star/night sky background attached to a perlin noise field smth like this:
+
+<iframe id="Noisey-Disco" src="https://editor.p5js.org/Lanchu2hen9/full/KVWP32eXI"></iframe>
+
+<script type="module">
+
+    const iframe  = document.getElementById (`Noisey-Disco`)
+    iframe.width  = 400
+    iframe.height = 400
+
+</script>
+
+But instead of the squares grids I want it to be like stars. I also like the fact that the squares change size over time. So I want the background to be this but stars.
+
+I want it so that `zoff += 0.001;` (The changing of the pattern through time.) Speeds up to smth like "`zoff += 0.01;`, on user input. I want everything to be calm at first, and then bam it hits you with the chaos. I want it to start off as a low energy system and then it hits you with high energy.
+
+Here's the embedded code btw:
+
+```js
+// Video Tutorial from: https://youtu.be/sN7JotC3vdM?si=KcZAmjH5M8YtabG3
+// Might fuck with these values at the later date. 30 March Lanchu.
+
+let sizes = [];
+let cols;
+let rows;
+let size = 15; //Determines no. of rows and columns.
+let xoff;
+let yoff;
+let zoff = 0;
+let inc = 10;
+
+let BackgroundMusic;
+
+function preload() {}
+
+function setup() {
+  createCanvas(innerWidth, innerHeight);
+  rectMode(CENTER);
+  cols = width / size;
+  rows = height / size;
+}
+
+function draw() {
+  background(220);
+
+  xoff = 0;
+  for (let i = 0; i < cols; i++) {
+    sizes[i] = [];
+    yoff = 0;
+    for (let j = 0; j < rows; j++) {
+      sizes[i][j] = map(noise(xoff, yoff, zoff), 0, 1, 0, size * 1.7);
+      yoff += inc;
+
+      let r = noise(zoff) * 255;
+      let g = noise(zoff + 10) * 255;
+      let b = noise(zoff + 20) * 255;
+
+      fill(r, g, b);
+      noStroke();
+    }
+    xoff += inc;
+    zoff += 0.001;
+    //The changing of the pattern through time.
+  }
+
+  for (let i = 0; i < cols; i++) {
+    for (let j = 0; j < rows; j++) {
+      rect(size / 2 + i * size, size / 2 + j * size, sizes[i][j], sizes[i][j]);
+    }
+  }
+}
+```
+
+I also want this high energy to be localised to the mouse's position.
+
+Also when I mean star I mean smth like this shape => ✨. Might need to use WEBGL For this.
+
+I want on the user's click the stars burst/go "supernova" and send out an array of sciencey words related to astronomy. - The word part of AT2 is supposed to represent's humanity's ability to reason and make a judgement about the universe around us.
+
+I also want these text to hit the edge of the screen and then bounce off the edges of the screen like a screensaver. And it will be interesting to use recursion within the "textbounce" to make it split off and duplicate smaller versions of itself. Might have to limit the smaller versions of this text to a certain amount so that the browser doesn't lag.
+
+Sound smth inspired by this [NASA | Sun Sonification (raw audio)](https://youtu.be/-I-zdmg_Dno?si=_mvisp07Ys-S7q4Z), but I want spikes of corruption and or glitch where spikes of either silence or smth interupting a soundtrack.
+
 [^1]: Update its the 17th April 2025 Lanchu here, I am very tired. The sem broke me, before I broke it.
 [^2]: A pig would eat a human if given the chance. And dolphins have pretty privilege.
