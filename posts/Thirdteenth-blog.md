@@ -19,8 +19,17 @@ allow_math: true
 
 # Task 1:
 
-I'm not going to be use q5.js for the first task. Think of this task more as a warm-up.
-https://editor.p5js.org/Lanchu2hen9/sketches/_q0Bg5fmG
+I'm not going to be use q5.js for the first task. Think of this task more as a warm-up. [p5 web editor code](https://editor.p5js.org/Lanchu2hen9/sketches/_q0Bg5fmG) Draw smth in the below canvas.
+
+<iframe id="TheTism" src="https://editor.p5js.org/Lanchu2hen9/full/_q0Bg5fmG"></iframe>
+
+<script type="module">
+
+    const iframe  = document.getElementById (`TheTism`)
+    iframe.width  = 400
+    iframe.height = 400
+
+</script>
 
 `q.createCanvas(width, height, q.WEBGL).parent(cnv);` trying to parent the created canvas to the cnv element, so that the embbed doesn't end up at the bottom of the blog. Still need to work on this. It works perflectly fine with `q.createCanvas(width, height, q.WEBGL);` tho, it turns q5.js can actually support WebGL.
 
