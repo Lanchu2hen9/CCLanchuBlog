@@ -62,5 +62,7 @@ The concept that I want to tackle is "Processing ≠ Thinking", just because you
 - I still want to use recursion, so maybe on user input recursion happens.
 - This [turquiose & hot pink water droplet.](https://blog.science.family/250413_shaders#adding-interactions) but I want the water droplet to distort some kind of noise/perlin noise background. And on user click it creates either fractual trees, and or more distortions.
 
+Smth like this: [P5.js - Creating a 2D starfield using P5.js | Starry Night Background](https://youtu.be/xbmwfg5U9-s?si=zOxnLPkHqoLTwaEx) But the stars "zoom in" on the user mouse click.
+
 [^1]: Update its the 17th April 2025 Lanchu here, I am very tired. The sem broke me, before I broke it.
 [^2]: A pig would eat a human if given the chance. And dolphins have pretty privilege.
