@@ -137,6 +137,97 @@ function draw() {
 }
 ```
 
+# Code Block Drafts:
+
+## Draft 1:
+
+```Js
+document.body.style.margin = "0";
+document.body.style.overflow = "hidden";
+
+const cnv = document.getElementById("cnv_element");
+cnv.width = innerWidth;
+cnv.height = innerHeight;
+
+//cnv.width = 600;
+// cnv.height = 400;
+
+const ctx = cnv.getContext("2d");
+
+let stars = [];
+
+function setup() {
+  for (let i = 0; i < 100; i++) {
+    stars.push(new Star());
+  }
+  requestAnimationFrame(draw_frame);
+}
+
+const draw_frame = (ms) => {
+  ctx.fillStyle = "black";
+  //   ctx.fillStyle = "grey";
+  ctx.fillRect(0, 0, innerWidth, innerHeight);
+
+  const seconds = ms / 1000;
+  //   console.log(seconds.toFixed(2));
+
+  for (let i = 0; i < stars.length; i++) {
+    stars[i].show();
+    stars[i].update();
+  }
+
+  requestAnimationFrame(draw_frame);
+};
+
+requestAnimationFrame(draw_frame);
+
+class Star {
+  constructor(x, y, size, speed) {
+    this.x = random(innerWidth);
+    this.y = random(innerHeight);
+    this.size = random(1, 5);
+    this.speed = random(1, 3);
+  }
+  show() {
+    noStroke();
+    fill(255);
+    ellipse(this.x, this.y, this.size);
+  }
+
+  update() {
+    // Should technically move the stars.
+    this.x += this.speed;
+
+    // Should reset the stars positions when they go off screen.
+    if (this.x < -this.size) {
+      this.x = innerWidth + this.size;
+      this.y = random(innerHeight);
+    }
+  }
+}
+
+// draw_frame();
+
+onresize = () => {
+  cnv.width = innerWidth;
+  cnv.height = innerHeight;
+};
+```
+
+Although the above code works in p5.js, I would need to plain-vanilla Javascriptify the p5.js code. What I need to do:
+
+- I need to vanillise the p5.js `random();`, as in define as actually focking define `function random() {...}`.
+- Actually draw the circles/"ellipses" with the following:
+
+```Js
+ctx.beginPath();
+  ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+  ctx.fillStyle = "white";
+  ctx.fill();
+```
+
+- I actually asked ChatGPT about this and there's a bunch of stuff I need fiddle with including the setup function.
+
 I also want this high energy to be localised to the mouse's position.
 
 Also when I mean star I mean smth like this shape => ✨. Might need to use WEBGL For this.
