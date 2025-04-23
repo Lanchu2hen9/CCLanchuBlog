@@ -214,6 +214,10 @@ onresize = () => {
 };
 ```
 
+## Draft 2:
+
+Vanilla Javascripted it.
+
 Although the above code works in p5.js, I would need to plain-vanilla Javascriptify the p5.js code. What I need to do:
 
 - I need to vanillise the p5.js `random();`, as in define as actually focking define `function random() {...}`.
