@@ -54,6 +54,11 @@ allow_math: true
   - ~Manspreads~ Splays content over multiple lines of code.
 - "FrameCount();" Pretty self-explaintory, it counts deez framez.
 - `return`, returns value, stops executing code after the `return`.
+- Integers:
+  - Whole numbers. -1, 0, 1, 2, 3
+- Floats:
+  - **ANY NUMBER** with a decimal point attached to it.
+  - Even -0.0
 
 **Nullish coalescing operator** or `??` means if the thing on the left if null or undefined use the thing on the right instead.
 So:
