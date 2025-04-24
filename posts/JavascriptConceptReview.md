@@ -59,6 +59,9 @@ allow_math: true
 - Floats:
   - **ANY NUMBER** with a decimal point attached to it.
   - Even -0.0
+- `==` loose equality, as long as the values/variables on either side of the `==` are the same, the code executes.
+- `===` Strict Equality, the variables has to be the same kind of variables on either side.
+  - `5 ==="5"` commits suicide cus number does not equals a string.
 
 **Nullish coalescing operator** or `??` means if the thing on the left if null or undefined use the thing on the right instead.
 So:
