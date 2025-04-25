@@ -966,5 +966,7 @@ The following is an instance method within the Star object, that explains what I
     }
 ```
 
+Putting it in the Star Object is bad idea, since I'm creating an eventlistener each for each **focking** Star Object in stars array.
+
 [^1]: Update its the 17th April 2025 Lanchu here, I am very tired. The sem broke me, before I broke it.
 [^2]: A pig would eat a human if given the chance. And dolphins have pretty privilege.
