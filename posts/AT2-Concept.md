@@ -952,5 +952,19 @@ We don't talk about the blogging aspect. I want it so that when the user clicks 
 
 And as for the sound, I want it based on the x,y coordinates of the mouse to change. Space sounds?
 
+The following is an instance method within the Star object, that explains what I want to do.
+
+```Js
+    OnUserClick() {
+      // Within this instance method, we want to have it
+      // so that when the user clicks the this.r, this.g, this.b
+      // changes/brightens. Specifically, the "170" value.\
+
+      // We also want either fractual trees or "lightning" to shoot
+      // of the point in which the user clicks, so we might need to use
+      //mouseX and mouseY to get the coordinates of the mouse click.
+    }
+```
+
 [^1]: Update its the 17th April 2025 Lanchu here, I am very tired. The sem broke me, before I broke it.
 [^2]: A pig would eat a human if given the chance. And dolphins have pretty privilege.
