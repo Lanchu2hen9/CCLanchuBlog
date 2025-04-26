@@ -31,6 +31,24 @@ Music is when order is injected into chaos. The line between chaos music is thos
 **3. Voice - what makes voice a separate category of sound?**
 Voice is when information, and structure is injected into noise/a sound. When mixed with the other two categories, Voice brings an inherent randomness to sound.
 
-In yapping about Sound and every, I would like to say I am not a sound person in general, I dislike loud sounds, and anything that's not either white noise or black noise distracts me. But for AT2, I am legally obligated to use sound, so I will use sound. I'll probably do something simple, get two arrays, one for the x-axis and the other for the y-axis. Plot it so that when the random two audio from space is played based on the user's x and y axis positions. Randomness cus chaos.
+In yapping about Sound and every, I would like to say I am not a sound person in general, I dislike loud sounds, and anything that's not either white noise or black noise distracts me. But for AT2, I am legally obligated to use sound, so I will use sound. I'll probably do something simple, get two arrays, one for the x-axis and the other for the y-axis. Have it so that whenever the browser is opened 2 random audio clips from the arrays are chosen. And have it according to where you position your mouse on the canvas something the two is mixed differently. Actually I want one audio to shift from one audio to another on the y-axis.
+
+So probably smth like 3 arrays:
+
+```js
+let YSounds1 = [];
+let YSounds2 = [];
+let XSounds = [];
+
+preload() {
+   // Push said audio clips into the array.
+}
+```
+
+ChatGPT says this about the role of de-familiarisation in Natalie Loveless' talk:
+
+> "De-familiarisation means making everyday things feel strange so we notice and care about them again. Loveless says artists can use this to help people see their deep connections with nature."
+
+I guess with De-familiarisation, and this [example](https://mynoise.net/NoiseMachines/thunderNoiseGenerator.php), you're taking the natural almost everyday occurance of "stormy/rain/thunder" and divorcing it from its original context, and increasing people's everyday connection to nature. Because unironically at lot of ppl use this in their everyday life like for their "high-quality work" and study.
 
 [^1]: ChatGPT suggested this to me, I'm not a musical and or sound person.
