@@ -18,3 +18,12 @@ allow_math: true
 3. [Task 4](https://cclanchublo6.deno.dev/Thirdteenth-blog#task-4)
 
 # Task 1:
+
+**How will you make the sound design for your AT2 function in a chaotic aesthetic register?**
+
+**What does it mean to be chaotic in the sonic domain? In your discussion, please make reference effective complexity, paying particular attention to the following:**
+**1. Structure - what structures our perception of sound?**
+
+**2. Noise - what differentiates noise from sound, or music?**
+
+**3. Voice - what makes voice a separate category of sound?**
