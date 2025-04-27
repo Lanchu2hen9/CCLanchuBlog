@@ -54,7 +54,7 @@ I guess with De-familiarisation, and this [example](https://mynoise.net/NoiseMac
 
 ## Task 2:
 
-Both for efficiency and AT2 I am going to be creating what I imagine the sound for AT2 to be. I'm going to be referring/studying this [Samples](https://blog.science.family/250409_web_audio_api_samples). The interactive sound design experiment is [here.](#)
+Both for efficiency and AT2 I am going to be creating what I imagine the sound for AT2 to be. I'm going to be referring/studying this [Samples](https://blog.science.family/250409_web_audio_api_samples).
 
 This is the idea if I explained it very poorly earlier in this post.
 ![AT2, Sound design idea](AT2-Sound-Idea.jpg)
@@ -139,7 +139,7 @@ Not sure if its cheating if I copy the maths part from ChatGPT. Some things that
 
 ### Interactive Sound Piece Draft 1:
 
-If this blasts your ears out its not my problem since its a **Draft 1** and its supposed to be not good.
+If this blasts your ears out its not my problem since its a **Draft 1** and its supposed to be not good. The interactive sound design experiment is [here.](https://lanchu-thespiral-a-50-es441hettssd.deno.dev/ExperiementFiles/Week7a.html)
 
 ```js
 document.body.style.margin = 0;
