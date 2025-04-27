@@ -61,4 +61,80 @@ This is the idea if I explained it very poorly earlier in this post.
 
 So I yapped to Chatgpt about my sound design idea, ChatGPT said these are the areas that I have to investigate into order to create said idea.
 
+- AudioBufferSourceNode
+- GainNode
+- PannerNode (optional) for spatial sound movement.
+- start() and stop() method handling (especially when blending and switching random sounds) How to smoothly adjust gain.value for blending without pops/clicks
+- Maybe linearRampToValueAtTime for smoother gain transitions.
+
+### Broad Steps for Your System:
+
+1. Load all sounds into AudioBuffer objects.
+2. Create an AudioBufferSourceNode for each sound.
+3. Create a GainNode for each source, and connect it to the audio context’s destination.
+4. On mouse move, calculate relative position.
+5. Based on position, choose random samples from the correct arrays (YSoundStart, YSoundEnd, etc).
+6. Lerp the gain values between selected sounds based on proximity to center or edges.
+7. Update the gainNode.gain.value properties in real-time.
+
+### ChatGPT's skeleton code:
+
+```js
+// Set up
+let YSoundsStart = [...]; // +Y sounds
+let YSoundsEnd = [...];   // -Y sounds
+let XSoundsStart = [...]; // +X sounds
+let XSoundsEnd = [...];   // -X sounds
+
+let canvas = document.querySelector('canvas');
+let ctx = canvas.getContext('2d');
+
+// Find center
+let centerX = canvas.width / 2;
+let centerY = canvas.height / 2;
+
+// Handle mouse move
+canvas.addEventListener('mousemove', (e) => {
+    let mouseX = e.clientX;
+    let mouseY = e.clientY;
+
+    // Find relative position from center
+    let relativeX = mouseX - centerX;
+    let relativeY = centerY - mouseY; // Flip Y so UP = positive
+
+    // Normalize distances
+    let maxDistance = Math.sqrt(centerX ** 2 + centerY ** 2);
+    let distanceX = relativeX / centerX; // Between -1 and 1
+    let distanceY = relativeY / centerY; // Between -1 and 1
+
+    // Pick random sounds
+    let soundX = distanceX >= 0
+        ? pickRandom(XSoundsStart)
+        : pickRandom(XSoundsEnd);
+
+    let soundY = distanceY >= 0
+        ? pickRandom(YSoundsStart)
+        : pickRandom(YSoundsEnd);
+
+    // Calculate blending
+    let blendX = Math.abs(distanceX); // 0 to 1
+    let blendY = Math.abs(distanceY); // 0 to 1
+
+    // Apply volumes
+    soundX.volume = blendX;
+    soundY.volume = blendY;
+
+    // Play or adjust sounds
+    soundX.play();
+    soundY.play();
+});
+
+// Utility
+function pickRandom(array) {
+    return array[Math.floor(Math.random() * array.length)];
+}
+```
+
+Not sure if its cheating if I copy the maths part from ChatGPT. Some things that it wrote are not the best way of writing code. But what can I say? I've already shook the devil's hand in terms of coding with AI before.
+
 [^1]: ChatGPT suggested this to me, I'm not a musical and or sound person.
