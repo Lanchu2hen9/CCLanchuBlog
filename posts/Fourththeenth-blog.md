@@ -36,9 +36,10 @@ In yapping about Sound and every, I would like to say I am not a sound person in
 So probably smth like 3 arrays:
 
 ```js
-let YSounds1 = [];
-let YSounds2 = [];
-let XSounds = [];
+let YSoundsStart = [];
+let YSoundsEnd = [];
+let XSoundsStart = [];
+let XSoundsEnd = [];
 
 preload() {
    // Push said audio clips into the array.
@@ -54,5 +55,9 @@ I guess with De-familiarisation, and this [example](https://mynoise.net/NoiseMac
 ## Task 2:
 
 Both for efficiency and AT2 I am going to be creating what I imagine the sound for AT2 to be. I'm going to be referring/studying this [Samples](https://blog.science.family/250409_web_audio_api_samples). The interactive sound design experiment is [here.](#)
+
+This is the idea if I explained it very poorly earlier in this post.
+
+So I yapped to Chatgpt about my sound design idea, ChatGPT said these are the areas that I have to investigate into order to create said idea.
 
 [^1]: ChatGPT suggested this to me, I'm not a musical and or sound person.
