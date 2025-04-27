@@ -354,4 +354,6 @@ onresize = () => {
 };
 ```
 
+Yep I did forget to preload the audio clips.
+
 [^1]: ChatGPT suggested this to me, I'm not a musical and or sound person.
