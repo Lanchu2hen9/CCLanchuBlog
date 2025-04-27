@@ -51,4 +51,8 @@ ChatGPT says this about the role of de-familiarisation in Natalie Loveless' talk
 
 I guess with De-familiarisation, and this [example](https://mynoise.net/NoiseMachines/thunderNoiseGenerator.php), you're taking the natural almost everyday occurance of "stormy/rain/thunder" and divorcing it from its original context, and increasing people's everyday connection to nature. Because unironically at lot of ppl use this in their everyday life like for their "high-quality work" and study.
 
+## Task 2:
+
+Both for efficiency and AT2 I am going to be creating what I imagine the sound for AT2 to be. I'm going to be referring/studying this [Samples](https://blog.science.family/250409_web_audio_api_samples). The interactive sound design experiment is [here.](#)
+
 [^1]: ChatGPT suggested this to me, I'm not a musical and or sound person.
