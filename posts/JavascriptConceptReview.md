@@ -34,6 +34,7 @@ allow_math: true
      - [Example 2](https://cclanchublo6.deno.dev/JavascriptConceptReview#example-2)
    - [Declaring API Libraries Globally](https://cclanchublo6.deno.dev/JavascriptConceptReview#declaring-api-libraries-globally)
    - [NPMs vs Modules](https://cclanchublo6.deno.dev/JavascriptConceptReview#npms-vs-modules)
+10. [Sound & Web Audio](#)
 
 # General Math/Maths scripting Language:
 
@@ -542,9 +543,91 @@ In example 1 you have declared `<script src="https://cdnjs.cloudflare.com/ajax/l
 </script>
 ```
 
+# Sound & Web Audio:
+
+I'll be referring to [Samples](https://blog.science.family/250409_web_audio_api_samples), and any video tutorials I follow will be listed below.
+
+## Core Concepts:
+
+### AudioContext:
+
+The default "locked" state of the audio that requires user input in order to active the "sound" [^7]. Probably a good idea to create an AudioContext first, before messing around with the code. Below is the Object AudioContext but in an encapsulated form please refer to [Object Orientated Coding](https://cclanchublo6.deno.dev/JavascriptConceptReview#object-orientated-coding), more specifically Encapsulation [^8].
+
+```js
+class AudioContext {
+  constructor(options = {}) {
+    // Define instance variables
+    this.context = new window.AudioContext(options);
+    // The bit of Web Audio API that does the computer processing bits of audio.
+
+    this.state = this.context.state;
+    // Current state of the AudioContext, is it paused,
+    // is it playing, or not doing anything.
+
+    this.currentTime = this.context.currentTime;
+    // Current playback time
+
+    this.sampleRate = this.context.sampleRate;
+    // Sample rate of the AudioContext
+
+    this.listener = this.context.listener;
+    // AudioListener is where you want the "ears" of the reader to be in 3D space.
+  }
+
+  // Instance Methods
+
+  createGain() {
+    // Creates a GainNode for controlling volume
+    return this.context.createGain();
+  }
+
+  createOscillator() {
+    // Creates an OscillatorNode for generating periodic waveforms
+    return this.context.createOscillator();
+    // I'm not a sound designer, all I know that Oscillators are the things,
+    // is an instrument that produces sound waves that goes wiggle wiggle.
+  }
+
+  createAnalyser() {
+    return this.context.createAnalyser();
+    // Gets the specific data of the any audio and analyse the bass,
+    // treble time and stuff.
+    // getByteFrequencyData() → For frequency data (bass, treble, etc.).
+    // getByteTimeDomainData() → For waveform data (time-based changes).
+  }
+
+  resume() {
+    //Play button, plays the audio clip if its in the "supsended" state.
+    return this.context.resume();
+  }
+
+  suspend() {
+    // Pause button, pauses the audio clip if its suspended.
+    return this.context.suspend();
+  }
+
+  close() {
+    // Stops the media player/"code" and shuts down the audio engine.
+    return this.context.close();
+  }
+}
+```
+
+### Mediastream:
+
+Like every audio editting software every, where you have multiple tracks, in which you can add different "streams"/"paths" of audio. Suprisedly similar considering how much maths is in the creation/generation of sound and sound design. See [Mediastream](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream)
+
+#### Instance methods:
+
+- I'm assuming `AudioContext.createMediaElementSource();` grabs the audio source readies it to be played.
+- `AudioContext.createMediaStreamSource();` Mircophone input of WebAudio. [^9]
+
 [^1]: Take everything ChatGPT says with a grain of salt. Sometimes chatGPT bullshits. ChatGPT is the definition of: "Fake it til you make it." Like me, 🥲 but I haven't made it yet.
 [^2]: This is both the room and the instructions at the same time.
 [^3]: Coughs, this is not my analogy. Cough ChatGPT, cough.
 [^4]: On a side note, I have no idea what I am yapping about, this might be complete bullshit. Consult a professional, I am not a professional.
 [^5]: Would not reccommend going down this rabbit hole unless you're really passionate about coding, and or have a good grasp of what the coding technical terms mean.
 [^6]: Big Knowledge, increase brain. Brain big, brain stronk.
+[^7]: Smth probably happened in the AudioContext bit, for me to get the console error: "Week7a.js:212 Uncaught (in promise) NotAllowedError: play() failed because the user didn't interact with the document first."
+[^8]: Lanchu & co. are not legally obligated or responsible for the failing of your own inability to code, please consult a professional, fact-check and or lock the fuck in and hyperfixate on code in your own time.
+[^9]: I'm going to be real with you for a moment I think Web Audio API is just one of those things, where you fuck around and find out.
