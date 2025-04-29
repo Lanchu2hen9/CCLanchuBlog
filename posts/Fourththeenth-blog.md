@@ -1,7 +1,7 @@
 ---
 title: Week 7 (Tues) Homework
 published_at: 2025-04-15
-snippet: This is homework 7a. Apparently homework 7a doesn't exist for some reason.
+snippet: This is homework 7a.
 disable_html_sanitization: true
 allow_math: true
 ---
