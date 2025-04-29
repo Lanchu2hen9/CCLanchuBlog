@@ -11,11 +11,12 @@ allow_math: true
 # Table Of Contents:
 
 1. [Task 1](https://cclanchublo6.deno.dev/Thirdteenth-blog#task-1)
-2. [Task 2 & 3](https://cclanchublo6.deno.dev/Thirdteenth-blog#task-2)
+2. [Task 2](https://cclanchublo6.deno.dev/Thirdteenth-blog#task-2)
    - [Passage 1](https://cclanchublo6.deno.dev/Thirdteenth-blog#passage-1)
    - [Passage 2](https://cclanchublo6.deno.dev/Thirdteenth-blog#passage-2)
    - [Passage 3](https://cclanchublo6.deno.dev/Thirdteenth-blog#passage-3)
-3. [Task 4](https://cclanchublo6.deno.dev/Thirdteenth-blog#task-4)
+3. [Task 3](https://cclanchublo6.deno.dev/Thirdteenth-blog#task-4)
+4. [Task 4](https://cclanchublo6.deno.dev/Thirdteenth-blog#task-4)
 
 # Task 1:
 
@@ -83,6 +84,27 @@ Seeing that task 2 & 3 is literally just creating a rough draft of AT2, I'll cre
    q.background (`lightblue`)
   }
 </script>
+
+# Task 3:
+
+The following is feedback from Rania:
+
+## Homework 6b Feedback:
+
+> I liked how you’re challenging the "everything thinks" idea by introducing a helpful distinction between processing and true sapience. The way you break down "human-like sapience" and "animal-like proto-sapience" adds a nice layer of depth.
+
+> For AT2, I love how you’re using recursion and simple if-statements to create something that feels reactive and somewhat unpredictable. You’ve done a fantastic job of keeping the complexity effective without overwhelming it. However, I’m not quite feeling the chaos; it seems more beautiful and peaceful to me. Maybe instead of a smoothly flowing starry night, you could have the stars move in random positions? Embracing a bit of unpredictability with semi-randomised responses or visual changes might really enhance your argument that processing doesn’t equal true thinking, and it would tie in beautifully with the philosophical ideas you’re exploring!
+
+> "Maybe instead of a smoothly flowing starry night, you could have the stars move in random positions"
+> Not the biggest priority as of 29th of April 2025, I'm going to try and figure out how to get the sound work first, and then fiddle with the random positions of the stars.
+
+## For Week 7:
+
+> I am also not much of a sound person myself, however, I think your explanation of chaos in sound is clear. I like the idea that pure chaos has no recognisable structure, and how you tie voice into it as structure inside noise. You described experimental sound examples well, like free jazz and Merzbow. One thing I will suggest is to add a twinkle sound for the stars as well to give them a sound effect.
+
+> I like that you’re honest about not being a sound person, and your plan for AT2 makes sense. Using random sound selection and mouse-position-based mixing is a smart way to make it chaotic but still interactive. It definitely fits post-digital ideas because it embraces randomness, glitchiness, and user-driven change instead of being perfectly controlled. Overall, I think you’re on the right track.
+
+Refer to this [post](https://cclanchublo6.deno.dev/Fourththeenth-blog).
 
 # Task 4:
 
