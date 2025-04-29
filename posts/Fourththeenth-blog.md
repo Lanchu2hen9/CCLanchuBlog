@@ -758,7 +758,6 @@ I also get this error:
 > Uncaught (in promise) NotAllowedError: play() failed because the user didn't interact with the document first
 
 The volume for playing the audio is also a bit iffy, and loud so that's a problem.
-hi
 
 [^1]: ChatGPT suggested this to me, I'm not a musical and or sound person.
 [^2]: If I had a penny for every time I had a path issue, I would be a very rich woman indeed.
