@@ -743,5 +743,23 @@ Also these, which mean path issue[^2]:
 
 > GET http://127.0.0.1:3000/ExperiementFiles/audio/ExpAudio 450634**kyles**waves-ocean-crash-on-beach-nearby-wide-big-metallic-sound.flac 404 (Not Found)
 
+So it turns out its not a path issue, because the above errors only occur for some reason when I use the live preview addon in VSCode, to test and deploy it locally. So currently, when I use the terminal to deploy the Interactive Sound Piece, there's no path issues and all the audio clips from the array play when the user clicks on the canvas to "initialise/unlock" the audio files.
+
+There are these errors though:
+
+> Uncaught (in promise) AbortError: The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22"
+
+So the understand the error A.I. in the console says that, this error occurs because:
+
+> "The audio.play is being interrupted by the audio.pause, which immediately executes after audio.play is ran."
+
+I also get this error:
+
+> Uncaught (in promise) NotAllowedError: play() failed because the user didn't interact with the document first
+
+The volume for playing the audio is also a bit iffy, and loud so that's a problem.
+
 [^1]: ChatGPT suggested this to me, I'm not a musical and or sound person.
 [^2]: If I had a penny for every time I had a path issue, I would be a very rich woman indeed.
+
+Week7a.html:1 Uncaught (in promise) AbortError: The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22
