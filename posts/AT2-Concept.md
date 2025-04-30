@@ -10,12 +10,20 @@ allow_math: true
 
 # Table Of Contents:
 
-1. [Task 1](#)
-2. [Task 2](#)
-   - [3D model Generation](#)
-   - [Interaction](#)
-   - [Audio](#)
-3. [Task 3](#)
+1. [General Notes](#general-notes)
+   - [Ideas](#ideas)
+2. [Requirements](#requirements)
+3. [A Response to Information & Thinking by Michel Serres:](#a-response-to-information--thinking-by-michel-serres)
+4. [How does this relate to AT2?](#how-does-this-relate-to-at2)
+5. [Code Block Drafts](#code-block-drafts)
+
+- [Draft 1](#draft-1)
+- [Draft 2](#draft-2)
+- [Draft 3](#draft-3)
+  - [Maths](#maths)
+- [Draft 4](#draft-4)
+- [Draft 5](#draft-5)
+- [Draft 6](#draft-6)
 
 # General Notes:
 
@@ -1347,6 +1355,8 @@ onresize = () => {
 
 run(simplex);
 ```
+
+[Top ⬆︎](#)
 
 [^1]: Update its the 17th April 2025 Lanchu here, I am very tired. The sem broke me, before I broke it.
 [^2]: A pig would eat a human if given the chance. And dolphins have pretty privilege.
