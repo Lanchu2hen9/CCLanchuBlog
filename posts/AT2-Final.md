@@ -15,6 +15,8 @@ allow_math: true
 
 # Final Assignment Task 2:
 
+To read more about the process and development behind this go [this](https://cclanchublo6-bbkd5ncbjcth.deno.dev/AT2-Concept)
+
 # Week 7, Homework 7b Task 2 questions:
 
 **Write an accompaniment to your AT2, using examples of how you used; variables, iteration, functions, boolean logic, arrays, classes and recursion.**
