@@ -15,4 +15,6 @@ allow_math: true
 
 # Task 1:
 
-# Task 2
+# Task 2:
+
+[Top ⬆︎](#)
