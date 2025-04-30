@@ -10,31 +10,31 @@ allow_math: true
 
 # Table Of Contents:
 
-1. [General Math/Maths scripting Language](https://cclanchublo6.deno.dev/JavascriptConceptReview#general-mathmaths-scripting-language)
-2. [General Notes](https://cclanchublo6.deno.dev/JavascriptConceptReview#general-notes)
-3. [Colours](https://cclanchublo6.deno.dev/JavascriptConceptReview#colours)
-4. [Iteration](https://cclanchublo6.deno.dev/JavascriptConceptReview#iteration)
-5. [Object Orientated Coding](https://cclanchublo6.deno.dev/JavascriptConceptReview#object-orientated-coding)
-   - [Encapsulation](https://cclanchublo6.deno.dev/JavascriptConceptReview#encapsulation)
-   - [Classes](https://cclanchublo6.deno.dev/JavascriptConceptReview#classes)
-   - [Syntax](https://cclanchublo6.deno.dev/JavascriptConceptReview#syntax)
-   - [Constructor(){}](https://cclanchublo6.deno.dev/JavascriptConceptReview#constructor)
-6. [Coding Practise Emeb](https://cclanchublo6.deno.dev/JavascriptConceptReview#coding-practise-emeb)
-7. [Experiments](https://cclanchublo6.deno.dev/JavascriptConceptReview#experiments)
-8. [Signals & Envelopes](https://cclanchublo6.deno.dev/JavascriptConceptReview#signals--envelopes)
-   - [Ramps](https://cclanchublo6.deno.dev/JavascriptConceptReview#ramps)
-     - [Triangle Wave](https://cclanchublo6.deno.dev/JavascriptConceptReview#triangle-wave)
-9. [Modules](https://cclanchublo6.deno.dev/JavascriptConceptReview#modules)
-   - [Example](https://cclanchublo6.deno.dev/JavascriptConceptReview#example)
-     - [Export statement](https://cclanchublo6.deno.dev/JavascriptConceptReview#export-statement)
-     - [Import Statement](https://cclanchublo6.deno.dev/JavascriptConceptReview#import-statement)
-     - [Front-end & Back-end coding](https://cclanchublo6.deno.dev/JavascriptConceptReview#front-end--back-end-coding)
-   - [API Libraries & ES Module-compatibility](https://cclanchublo6.deno.dev/JavascriptConceptReview#api-libraries--es-module-compatibility)
-     - [Example 1](https://cclanchublo6.deno.dev/JavascriptConceptReview#example-1)
-     - [Example 2](https://cclanchublo6.deno.dev/JavascriptConceptReview#example-2)
-   - [Declaring API Libraries Globally](https://cclanchublo6.deno.dev/JavascriptConceptReview#declaring-api-libraries-globally)
-   - [NPMs vs Modules](https://cclanchublo6.deno.dev/JavascriptConceptReview#npms-vs-modules)
-10. [Sound & Web Audio](#)
+1. [General Math/Maths scripting Language](#general-mathmaths-scripting-language)
+2. [General Notes](#general-notes)
+3. [Colours](#colours)
+4. [Iteration](#iteration)
+5. [Object Orientated Coding](#object-orientated-coding)
+   - [Encapsulation](#encapsulation)
+   - [Classes](#classes)
+   - [Syntax](#syntax)
+   - [Constructor(){}](#constructor)
+6. [Coding Practise Emeb](#coding-practise-emeb)
+7. [Experiments](#experiments)
+8. [Signals & Envelopes](#signals--envelopes)
+   - [Ramps](#recursion)
+     - [Triangle Wave](#triangle-wave)
+9. [Modules](#modules)
+   - [Example](#example)
+     - [Export statement](#export-statement)
+     - [Import Statement](#import-statement)
+     - [Front-end & Back-end coding](#front-end--back-end-coding)
+   - [API Libraries & ES Module-compatibility](#api-libraries--es-module-compatibility)
+     - [Example 1](#example-1)
+     - [Example 2](#example-2)
+   - [Declaring API Libraries Globally](#declaring-api-libraries-globally)
+   - [NPMs vs Modules](#npms-vs-moduless)
+10. [Sound & Web Audio](#sound--web-audio)
 
 # General Math/Maths scripting Language:
 
@@ -621,6 +621,8 @@ Like every audio editting software every, where you have multiple tracks, in whi
 
 - I'm assuming `AudioContext.createMediaElementSource();` grabs the audio source readies it to be played.
 - `AudioContext.createMediaStreamSource();` Mircophone input of WebAudio. [^9]
+
+[Top ⬆︎](#)
 
 [^1]: Take everything ChatGPT says with a grain of salt. Sometimes chatGPT bullshits. ChatGPT is the definition of: "Fake it til you make it." Like me, 🥲 but I haven't made it yet.
 [^2]: This is both the room and the instructions at the same time.
