@@ -1,7 +1,7 @@
 ---
 title: Assignment Task 2, Final.
 published_at: 2025-05-05
-snippet: I am very excited. :D
+snippet: This is the final version of AT2.
 disable_html_sanitization: true
 allow_math: true
 ---
