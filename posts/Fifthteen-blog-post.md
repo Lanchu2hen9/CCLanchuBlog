@@ -38,7 +38,7 @@ I have no clue, here have a meme Tom.
 
 # Task 2:
 
-I'll probably be writing the response to task to Task 2 [here]()
+I'll probably be writing the response to task to Task 2 [here](https://cclanchublo6-bbkd5ncbjcth.deno.dev/AT2-Final#week-7-homework-7b-task-2-questions), specifically, or if you want to snoop around my blog more you can go to
 [Top ⬆︎](#)
 
 [^1]: "Fuck it we ball" is a phrase that means "to go headfirst into something with full commitment regardless of possible consequences."
