@@ -2521,6 +2521,8 @@ let SoundY =
 
 I think within my code, it is detecting where the mouse is within the respective axes. But I am not assigning the soundclips to the respective axes, that I think I am.
 
+For one of the elements, map the volume from 0 to 1.
+
 [Top ⬆︎](#)
 
 [^1]: Update its the 17th April 2025 Lanchu here, I am very tired. The sem broke me, before I broke it.
