@@ -2498,6 +2498,29 @@ document.onpointerdown = () => {
 };
 ```
 
+I think the reason my code is not doing the sound blending for the 4 soundclips assigned to each of the respective axis is because of these lines of code:
+
+```js
+let SoundX =
+  XDistance >= 0
+    ? XSoundsStart[Math.floor(Random(0, XSoundsStart.length))]
+    : XSoundsEnd[Math.floor(Random(0, XSoundsEnd.length))];
+// 1. Create a variable called SoundX.
+// 2. if the mouse is larger than or equal to 0, then choose a random sound from the XSoundsStart array.
+// 3. If not, then choose a random sound from the XSoundsEnd array.
+
+let SoundY =
+  YDistance >= 0
+    ? YSoundsStart[Math.floor(Random(0, YSoundsStart.length))]
+    : YSoundsEnd[Math.floor(Random(0, YSoundsEnd.length))];
+// 1. Create a variable called SoundX.
+// 2. if the mouse is larger than or equal to 0, then choose a random sound
+// from the XSoundsStart array.
+// 3. If not, then choose a random sound from the XSoundsEnd array.
+```
+
+I think within my code, it is detecting where the mouse is within the respective axes. But I am not assigning the soundclips to the respective axes, that I think I am.
+
 [Top ⬆︎](#)
 
 [^1]: Update its the 17th April 2025 Lanchu here, I am very tired. The sem broke me, before I broke it.

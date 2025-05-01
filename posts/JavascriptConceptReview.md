@@ -622,6 +622,14 @@ Like every audio editting software every, where you have multiple tracks, in whi
 - I'm assuming `AudioContext.createMediaElementSource();` grabs the audio source readies it to be played.
 - `AudioContext.createMediaStreamSource();` Mircophone input of WebAudio. [^9]
 
+# Things to Explore in the future:
+
+For reference, I will not be delving the deepest into the below topics within the scope of this subject. I would personally love to fall down the rabbit holes for the below ideas.
+
+- React.js
+- Vue.js
+- HTMLX
+
 [Top ⬆︎](#)
 
 [^1]: Take everything ChatGPT says with a grain of salt. Sometimes chatGPT bullshits. ChatGPT is the definition of: "Fake it til you make it." Like me, 🥲 but I haven't made it yet.
