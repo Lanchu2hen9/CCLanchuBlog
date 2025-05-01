@@ -1886,7 +1886,7 @@ document.onpointerdown = () => {
 
 ## Draft 8:
 
-All the sounds should technically work now, its just fiddling with the audio volume, and other visual randomness to make them more "Zany".
+All the sounds should technically work now, its just fiddling with the audio volume, audio clips, and other visual randomness to make them more "Zany".
 
 ```js
 import SimplexNoise from "https://cdn.jsdelivr.net/npm/simplex-noise@3.0.0/dist/esm/simplex-noise.js";
