@@ -32,9 +32,7 @@ The Zany ~ it is all about the **_intentional_** crazed playfulness of an artwor
 If we're going off my previous definition of the "Zany", I didn't read the Florian Cramer article on the Post-digital, I have free will and I chose not to read that specific article. And made something random and chaotic.
 
 **What might be some ways to make your AT2 more zany?**  
-I have no clue, here have a meme Tom.
-
-![This is a meme of the character Moonknight from Marvel, throwing projectile weapons towards the screen and shouting "Random Bullshit GO!"](RandomBullshitGo!.jpeg)
+I have no clue.
 
 # Task 2:
 

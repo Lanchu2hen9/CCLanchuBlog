@@ -3154,6 +3154,12 @@ document.onpointerdown = () => {
 };
 ```
 
+Update for this error:
+
+> Uncaught TypeError: StartAudio.stop is not a function at AudioHandler (AT2-V1.0.js:574:14) at HTMLCanvasElement.<anonymous> (AT2-V1.0.js:567:5)
+
+To **_this_** `StartAudio.stop();` specific line of code, cus `.stop();` is apparently apart of Web Audio API, why can't Vanilla Javascript just have Web Audio API embedded into it? That would make my life **_alot_** easier. 😖
+
 [Top ⬆︎](#)
 
 [^1]: Update its the 17th April 2025 Lanchu here, I am very tired. The sem broke me, before I broke it.
