@@ -640,4 +640,4 @@ For reference, I will not be delving the deepest into the below topics within th
 [^6]: Big Knowledge, increase brain. Brain big, brain stronk.
 [^7]: Smth probably happened in the AudioContext bit, for me to get the console error: "Week7a.js:212 Uncaught (in promise) NotAllowedError: play() failed because the user didn't interact with the document first."
 [^8]: Lanchu & co. are not legally obligated or responsible for the failing of your own inability to code, please consult a professional, fact-check and or lock the fuck in and hyperfixate on code in your own time.
-[^9]: I'm going to be real with you for a moment I think Web Audio API is just one of those things, where you fuck around and find out.
+[^9]: I'm going to be real with you for a moment I think Web Audio API is just one of those things, where learn more about it as you code..

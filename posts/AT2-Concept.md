@@ -3860,6 +3860,642 @@ document.onpointerdown = () => {
 };
 ```
 
+## Draft 11:
+
+I think Draft 11 is currently going to be the final version of the sonic aspect of my code. Got a little bit too into the weeds. The code blocks is mostly for myself. As I have not figured out how to fork branches in Github yet. Not going to touch the user interaction part of the below code, might fiddle with the volume bit, and original audio clips now. Also might play with the length and colours of the lightning.
+
+Thanks again to Tom for reminding me that:
+
+> "you are not allowed to play audio until you have a user gesture."
+
+```js
+import SimplexNoise from "https://cdn.jsdelivr.net/npm/simplex-noise@3.0.0/dist/esm/simplex-noise.js";
+
+const simplex = new SimplexNoise();
+
+const noise = new SimplexNoise();
+
+//#region Global Variables
+let stars = [];
+// Creates an array to store the Star objects.
+
+let Zeus = [];
+// Creates an array to store the ThunderStrikes objects.
+
+let StarBrightness = 170;
+// Variable that defines the default brightness
+// of the stars.
+
+let FlickerSize = 2;
+// Variable that defines the default flicker size.
+
+let IsClicked = false;
+let soundIsEnabled = false;
+
+let YSoundsStart = [];
+let YSoundsEnd = [];
+let XSoundsStart = [];
+let XSoundsEnd = [];
+
+let StartAudio = new Audio(
+  "/ExperiementFiles/audio/ExpAudio/59899__robinhood76__00309-crowd-2.wav"
+);
+
+let RelMouseX = 0;
+let RelMouseY = 0;
+
+let XDistance = 0;
+let YDistance = 0;
+
+let blendX = 0;
+let blendY = 0;
+
+//#region Canvas Centre:
+let CanvasCentreX = innerWidth / 2;
+// Calculates the "x-coordinate" centre
+// of the canvas.
+
+let CanvasCentreY = innerHeight / 2;
+// Calculates the "y-coordinate" centre
+// of the canvas.
+// #endregion
+
+//#endRegion
+
+const cnv = document.getElementById("cnv_element");
+cnv.width = innerWidth;
+cnv.height = innerHeight;
+
+const ctx = cnv.getContext("2d");
+
+// AT2-V1.0.js
+function run(simplex) {
+  document.body.style.margin = "0";
+  document.body.style.overflow = "hidden";
+  setup();
+}
+
+// Bro you need to slap the preload, and other stuff from Week7a.js for the sound here.
+
+//#region Preload Audio
+function preload() {
+  YSoundsStart = [
+    new Audio("/ExperiementFiles/SoundA.wav"),
+    // new Audio(
+    //   "/ExperiementFiles/audio/ExpAudio/386068__dudeawesome__missions-sounds-sound-bites-launch-morse-code-passing-comet.flac"
+    // ),
+  ];
+  // YSoundsStart is an array that will hold the sound objects
+  // attached to the +y-axis of the canvas.
+
+  YSoundsEnd = [
+    // new Audio(
+    //   "/ExperiementFiles/audio/ExpAudio/95822__pixelmasseuse__atlas3q-1fm-16bit.wav"
+    // ),
+    new Audio("/ExperiementFiles/SoundB.wav"),
+  ];
+  // YSoundsEnd is an array that will hold the sound objects
+  // attached to the -y-axis of the canvas.
+  XSoundsStart = [
+    new Audio("/ExperiementFiles/SoundC.wav"),
+    // new Audio(
+    //   "/ExperiementFiles/audio/ExpAudio/456123__burghrecords__birds-in-the-forest.wav"
+    // ),
+  ];
+
+  // XSoundsStart is an array that will hold the sound objects
+  // attached to the +x-axis of the canvas.
+
+  XSoundsEnd = [
+    // new Audio(
+    //   "/ExperiementFiles/audio/ExpAudio/756754__newlocknew__ambforst_autumna-quiet-forestwind-in-the-pines-and-birches.wav"
+    // ),
+    new Audio("/ExperiementFiles/SoundD.wav"),
+  ];
+  // XSoundsStart is an array that will hold the sound objects
+  // attached to the -x-axis of the canvas.
+}
+// You're using an audio element here, to play around so technically speaking you should be able to find the
+// volume attribute connected to the audio element to nudge the volume up and down.
+// See https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/volume (AI recommendated this)
+// Or see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/audio, to investigate the
+// audio element further.
+//#endregion
+
+//#region Objects:
+
+//#region Star Object
+class Star {
+  constructor(x, y, BaseSize, speed, zoff, r, g, b) {
+    this.x = Random(innerWidth);
+    this.y = Random(innerHeight);
+    // (this.x, this.y) are the "centre point",
+    // of the star.
+
+    this.BaseSize = Random(1.5, 9);
+    // Determines the size of the star, from
+    // size 1 start to size 8 star.
+
+    this.speed = Random(1, 2.5);
+    // Determines the speed of the star moving left
+    // across the screen.
+
+    this.zoff = Random(1000);
+    // Determines how fast the noise field animates across the
+    // screen.
+
+    // Higher values, the slower the flickering of the stars is
+    // slower.
+
+    // Lower values, the faster the flickering of the stars is.
+  }
+  // Constructor function, that defines
+  // the instance variables of the Star object.
+
+  show() {
+    ctx.save();
+    // Save the current state of the shape.
+
+    ctx.translate(this.x, this.y);
+    // translate the shape, by this.x
+    // and this.y as defined in the constructor.
+
+    this.zoff += 0.01;
+    // Animates how fast the stars flicker.
+
+    const NoiseEffect = noise.noise2D(this.x * 0.01, this.zoff);
+    // Generates a noise value outputted by the .noise2D();
+    //  NoiseEffect is a noise field that outputs [-1, 1].
+
+    const TransformedSize = this.BaseSize + NoiseEffect * FlickerSize;
+    // Transformed the BaseSize of the star, based on the NoiseEffect
+    // generated by the Simplex Noise field.
+
+    this.r = Math.floor(noise.noise2D(this.zoff, 0) * StarBrightness + 250);
+    // Generates a random red value, based on the noise field.
+
+    // For the red channel value
+    // Round down the generated noise value to the nearest integer.
+    // Step 1. Input zoff value in .nosee2D() function, this is how
+    // the star flickers animates over time.
+    // Step 2. Multiply the generated noise value by 127, this
+    // converts the noise value to a range of [-127, 127].
+    // Step 3. [-127 + 128, 127 + 128], which gives [1, 255]
+
+    this.g = Math.floor(
+      noise.noise2D(this.zoff + 100, 0) * StarBrightness + 250
+    );
+    // Generates a random green value, based on the noise field.
+
+    this.b = Math.floor(
+      noise.noise2D(this.zoff + 200, 0) * StarBrightness + 250
+    );
+    // Generates a random blue value, based on the noise field.
+
+    ctx.beginPath();
+    // Start drawing the shape.
+
+    const arms = 8;
+    // The star shape has 8 arms.
+
+    for (let i = 0; i < arms; i++) {
+      // Count from 0 to arms, where
+      // arms the max number of arms
+      // the star can have.
+
+      const angle = ((Math.PI * 2) / arms) * i;
+      // The angle between each of the arms,
+      // is 2π ÷ no. of arms.
+
+      const x = Math.cos(angle) * TransformedSize;
+      // Start drawing the star at x-coordinate,
+      // which is cos(angle) * size of the Star.
+
+      const y = Math.sin(angle) * TransformedSize;
+      // Start drawing the star at x-coordinate,
+      // which is cos(angle) * size of the Star.
+
+      ctx.moveTo(0, 0);
+      // Move the drawing cursor to the "centre" of the star.
+
+      ctx.lineTo(x, y);
+      // Draws each arm of the Star.
+    }
+
+    ctx.strokeStyle = `rgb(${this.r}, ${this.g}, ${this.b})`;
+    // Make the lines drawn be white.
+
+    ctx.lineWidth = 2;
+    // The thicccness of the lines drawn is 1.
+    ctx.stroke();
+    // Defines the colour of the lines drawn.
+
+    ctx.restore();
+    // Restores the start state of the shape.
+    // So basically, it spews out another Star,
+    // for the update() function to move.
+  }
+
+  update() {
+    this.x -= this.speed;
+    // Moves the Star.
+
+    // Resets the Star positions when they go off screen.
+    if (this.x < -this.BaseSize) {
+      // If the centre of the star is less than the right-
+      // side of the Star, then the star is off screen.
+
+      this.x = innerWidth + this.BaseSize;
+      // Then yeet it to the right side of the screen.
+
+      this.y = Random(innerHeight);
+      // Places Star on a random position on the y-axis,
+      // of the canvas.
+    }
+  }
+}
+// This is the Star object.
+//#endregion
+
+//#region Lightning Object
+class LigthningStrikes {
+  constructor(x, y, length, generation, alphas) {
+    this.x = x;
+    // The x-coordinate of where the Lightning strike
+    // starts from.
+
+    this.y = y;
+    // The y-coordinate of where the Lightning strike
+    // starts from.
+
+    this.length = length;
+    // How long the Lightning strike is.`
+
+    this.generation = generation;
+    // Contains the generation of the Lightning strike.
+    // And where in the lightning the bolt branches off
+    // from.
+
+    this.angle = Math.random() * Math.PI * 2;
+    // Chooses a random angle for the lightning strike.
+
+    this.alphas = 1;
+    // The transparency of the lightning strike.
+
+    this.child = null;
+    // Placeholder to hold the generate child lightning
+    // strikes
+
+    this.createChild();
+    // Create the a secondary lightning strike, branching
+    // off from the main lightning strike.
+  }
+
+  createChild() {
+    if (this.length > 10 && this.generation < 4) {
+      // Maybe make the lightning longer?
+
+      // If the length of the lightning strike
+      // is more than 10 pixels, then create a child,
+      // stop after the 4th generation is born.
+
+      //Finds the end of each newly created lightning strike,
+      // and prepares the (NewX, New Y) coordinates to create
+      // the next lightning strike.
+      const NewX = this.x + Math.cos(this.angle) * this.length;
+      // The new x-coordinate of the child lightning strike.
+
+      const NewY = this.y + Math.sin(this.angle) * this.length;
+      // The new y-coordinate of the child lightning strike.
+
+      this.child = new LigthningStrikes(
+        NewX,
+        NewY,
+        this.length * 0.6,
+        this.generation + 1
+      );
+      // Recursively creates a child lightning strike.
+    }
+  }
+  update() {
+    this.alphas -= 0.00925;
+    // Makes the lightning more transparent over time.
+
+    if (this.child) this.child.update();
+    // Also fades away the child lightning strike.
+  }
+  draw(ctx) {
+    if (this.alphas < 0) return;
+    // If the lightning strike is transparent,
+    // then don't bother drawing it.
+
+    ctx.save();
+
+    ctx.strokeStyle = `rgba(255, 255, 225, ${this.alphas})`;
+
+    ctx.lineWidth = 3;
+
+    ctx.beginPath();
+    ctx.moveTo(this.x, this.y);
+    // the starting drawing point of the lightning strike.
+    // to the specified coordinates.
+
+    const EndX = this.x + Math.cos(this.angle) * this.length;
+    // Stop drawing the lightning strike at this EndX coordinate.
+
+    const EndY = this.y + Math.sin(this.angle) * this.length;
+    // Stop drawing the lightning strike at this EndY coordinate.
+
+    ctx.lineTo(EndX, EndY);
+    // Draw the line from the starting point to the end point.
+
+    ctx.stroke();
+
+    if (this.child) this.child.draw(ctx);
+    // Draws the child lightning strike rescursively.
+
+    ctx.restore();
+  }
+  isDead() {
+    return this.alphas <= 0;
+  }
+}
+//#endregion
+
+// #endregions
+
+//#region Setup Function
+function setup() {
+  preload();
+  OnUserClick();
+  for (let i = 0; i < 100; i++) {
+    // For one star every time, i interates from
+    // 0 to 100.
+
+    stars.push(new Star());
+    // Push the created Star objects into the stars array.
+  }
+  MouseTracker();
+  requestAnimationFrame(draw_frame);
+  // Calls the draw_frame function.
+}
+
+//#region Random Function
+function Random(arg1, arg2) {
+  // Defines two arguments array parameters
+  //  within the function random.
+
+  if (arguments.length == 1) {
+    // If the the length of the arguments array
+    // is equals roughly to 1.
+
+    const max = arg1;
+    // Then define max as arg1.
+
+    return Math.random() * max;
+    // Stops the function from executing
+    // and gives a random number
+    // between 0 and max.
+  } else if (arguments.length == 2) {
+    // If the length of the arguments arrays
+    // is roughly equal to 2.
+
+    const min = arg1;
+    // Define min as arg1.
+
+    const max = arg2;
+    // Define max as arg2.
+
+    const range = max - min;
+    // Define range as max - min.
+
+    return Math.random() * range + min;
+    // Stops the function from executing,
+    // and outputs a random number.
+  }
+}
+// In general, this is the randomiser function
+// that randomises values inputted into it.
+//#endregion
+//#endregion
+
+//#region Draw Function
+const draw_frame = (ms) => {
+  ctx.fillStyle = "black";
+  // Set the background colour to black.
+
+  ctx.fillRect(0, 0, innerWidth, innerHeight);
+  // Fills the entire canvas with black. And resizes the canvas to be
+  // the same size as the window.
+
+  const seconds = ms / 1000;
+  // Converts the milliseconds to seconds.
+
+  //   console.log(seconds.toFixed(2));
+
+  for (let i = Zeus.length - 1; i >= 0; i--) {
+    Zeus[i].update();
+    // Update the position of the lightning strikes.
+
+    Zeus[i].draw(ctx);
+    // Draw the lightning strikes.
+
+    if (Zeus[i].isDead()) {
+      Zeus.splice(i, 1);
+    }
+    // If the lightning strike is dead, remove it from the array.
+  }
+
+  ctx.globalAlpha = 1;
+
+  for (let i = 0; i < stars.length; i++) {
+    // For every star in the stars array.
+
+    stars[i].show();
+    // Draw the stars.
+
+    stars[i].update();
+    // Move the stars's position.
+  }
+
+  requestAnimationFrame(draw_frame);
+};
+
+//#region LightningYeeter:
+function LightningYeeter() {
+  // requestAnimationFrame(() => LightningYeeter(ctx));
+  ctx.fillStyle = "rgba(0, 0, 0, 0.5)";
+  ctx.fillRect(0, 0, innerWidth, innerHeight);
+
+  for (let i = Zeus.length - 1; i >= 0; i--) {
+    Zeus[i].update();
+    Zeus[i].draw(ctx);
+    if (Zeus[i].isDead()) Zeus.splice(i, 1);
+  }
+}
+//#endregion
+
+//#region OnUserClick Function
+function OnUserClick() {
+  if (!soundIsEnabled) {
+    soundIsEnabled = true;
+  }
+
+  cnv.addEventListener("mousedown", (e) => {
+    const x = e.clientX;
+    const y = e.clientY;
+
+    if (!IsClicked) {
+      IsClicked = true;
+      StarBrightness = 360;
+      FlickerSize = 370;
+      // MouseTracker();
+    }
+    // else {
+    //   IsClicked = false;
+    //   DefaultAudio();
+    // }
+
+    setTimeout(() => {
+      IsClicked = false;
+      StarBrightness = 170;
+      FlickerSize = 2;
+    }, 1000);
+
+    for (let i = 0; i < 15; i++) {
+      Zeus.push(new LigthningStrikes(x, y, 100, 0));
+    }
+
+    LightningYeeter();
+  });
+
+  // Within this instance method, we want to have it
+  // so that when the user clicks the this.r, this.g, this.b
+  // changes/brightens. Specifically, the "170" value.\
+
+  // We also want either fractual trees or "lightning" to shoot
+  // of the point in which the user clicks, so we might need to use
+  //mouseX and mouseY to get the coordinates of the mouse click.
+}
+//#endregion
+
+//#region DefaultAudio
+// function DefaultAudio() {
+//   StartAudio.play();
+//   StartAudio.loop = true;
+//   StartAudio.volume = 0.75;
+// }
+//#endregion
+
+//#region MouseTracker:
+function MouseTracker() {
+  cnv.addEventListener("mousemove", (e) => {
+    const mouseX = e.clientX;
+    // mouseX variable that holds the x-coordinate of the mouse,
+    // relative to the top left corner of the canvas.
+
+    const mouseY = e.clientY;
+    // mouseY variable that holds the y-coordinate of the mouse,
+    // relative to the top left corner of the canvas.
+
+    RelMouseX = mouseX - CanvasCentreX;
+    // The horizontal distance of the mouse from the relative
+    // to the centre of the canvas.
+
+    RelMouseY = mouseY - CanvasCentreY;
+    // The vertical distance of the mouse from the relative
+    // to the centre of the canvas.
+
+    // Flipping the "positive" y-axis of the Canvas API
+    // so that the "positive" y-axis, is UP.
+    // Ditto for the x-axis.
+
+    let MaxDistance = Math.sqrt(CanvasCentreX ** 2 + CanvasCentreY ** 2);
+    // Essentially pythagorean theorem. Where in a^2 + b^2 = c^2, a is the
+    // vertical distance (y-value, CanvasCentreY) and b is the horizontal
+    // distance (x-value, CanvasCentreX).
+
+    XDistance = RelMouseX / CanvasCentreX;
+    // Calculates the "percentage"/"fraction" of the x-distance from the
+    // centre of the canvas. (0,0)
+    YDistance = RelMouseY / CanvasCentreY;
+    // Calculates the "percentage"/"fraction" of the y-distance from the
+    // centre of the canvas. (0,0)
+
+    // This makes it so that the distance from the mouse from the centre
+    // of the canvas is independent of whatever value the width and height
+    // of the canvas is.
+
+    blendX = Math.abs(XDistance);
+    // Creates variable called blendX, and assigning it the absolute value of
+    // of XDistance.
+
+    blendY = Math.abs(YDistance);
+    // Creates variable called blendY, and assigning it the absolute value of
+    // of Distance.
+
+    let TotalBlend = blendX + blendY;
+    let blendXProportion = blendX / TotalBlend;
+    let blendYProportion = blendY / TotalBlend;
+
+    AudioHandler(blendXProportion, blendYProportion);
+  });
+}
+//#endregion
+
+//#startregion AudioBlender
+function AudioHandler(blendXProportion, blendYProportion) {
+  StartAudio.pause();
+  StartAudio.currentTime = 0;
+
+  let SoundX =
+    XDistance >= 0
+      ? XSoundsStart[Math.floor(Random(0, XSoundsStart.length))]
+      : XSoundsEnd[Math.floor(Random(0, XSoundsEnd.length))];
+  // 1. Create a variable called SoundX.
+  // 2. if the mouse is larger than or equal to 0, then choose a random sound from the XSoundsStart array.
+  // 3. If not, then choose a random sound from the XSoundsEnd array.
+
+  let SoundY =
+    YDistance >= 0
+      ? YSoundsStart[Math.floor(Random(0, YSoundsStart.length))]
+      : YSoundsEnd[Math.floor(Random(0, YSoundsEnd.length))];
+  // 1. Create a variable called SoundX.
+  // 2. if the mouse is larger than or equal to 0, then choose a random sound
+  // from the XSoundsStart array.
+  // 3. If not, then choose a random sound from the XSoundsEnd array.
+  // //The following code should play the sound
+
+  if (!soundIsEnabled) return;
+  // This checks if the sound is enabled, if it is it continues the code onto the
+  // next couple of lines. If not the stops the code at line 199.
+  SoundX.play();
+  SoundY.play();
+
+  SoundX.volume = blendXProportion;
+  SoundY.volume = blendYProportion;
+}
+//#endregion
+
+onresize = () => {
+  cnv.width = innerWidth;
+  cnv.height = innerHeight;
+
+  CanvasCentreX = innerWidth / 2;
+  CanvasCentreY = innerHeight / 2;
+};
+
+document.onpointerdown = () => {
+  const div = document.getElementById("start");
+  div.remove();
+  // Sound play logic here.
+  MouseTracker();
+  // AudioHandler();
+  document.onpointerdown = null;
+  run(simplex);
+};
+```
+
 [Top ⬆︎](#)
 
 [^1]: Update its the 17th April 2025 Lanchu here, I am very tired. The sem broke me, before I broke it.
