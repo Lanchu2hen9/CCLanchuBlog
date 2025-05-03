@@ -4496,7 +4496,7 @@ document.onpointerdown = () => {
 };
 ```
 
-# Draft 12:
+## Draft 12:
 
 ````js
 import SimplexNoise from "https://cdn.jsdelivr.net/npm/simplex-noise@3.0.0/dist/esm/simplex-noise.js";
@@ -5141,6 +5141,19 @@ document.onpointerdown = () => {
 // OnUserClick();
 // run(simplex);
 ````
+
+### Checklist:
+
+- ~~Variables~~ ✓
+- ~~Iteration~~ ✓
+- ~~Functions~~ ✓
+- ~~Boolean Logic~~ ✓
+- ~~Arrays~~ ✓
+- ~~Classes~~ ✓
+- ~~Recursion~~ ✓
+- Code Comments
+- ~~Interactivity~~ ✓
+- ~~Sound~~ ✓
 
 [Top ⬆︎](#)
 
