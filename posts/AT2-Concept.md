@@ -26,6 +26,11 @@ allow_math: true
 - [Draft 6](#draft-6)
 - [Draft 7; All Visuals Working](#draft-7-all-visuals-working)
 - [Draft 8](#draft-8)
+- [Draft 9](#draft-9)
+- [Draft 10](#draft-10)
+  - [Draft 10; Example 1](#draft-10-example-1)
+- [Draft 11](#draft-11)
+- [Draft 12](#draft-12)
 
 # General Notes:
 
