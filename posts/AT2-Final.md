@@ -30,6 +30,8 @@ allow_math: true
 
 # Final Assignment Task 2:
 
+The final version of Assignment Task 2 is [here](https://lanchu-thespiral-a-50.deno.dev/ExperiementFiles/AT2-V1.0.html).
+
 To read more about the process and development behind this go [this](https://cclanchublo6-bbkd5ncbjcth.deno.dev/AT2-Concept). I would reccomend it as **light-reading**, its a very long blog.
 
 # Final Code:
