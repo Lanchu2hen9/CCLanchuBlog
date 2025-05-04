@@ -837,8 +837,64 @@ function setup() {
 
 ## Boolean Variables:
 
-```js
+Essientally my boolean variables, `let IsClicked` and `let soundIsEnabled` checks to see if the user has clicked on the canvas, or if the sound has be enabled by some user gesture.
 
+```js
+let IsClicked = false;
+let soundIsEnabled = false;
+
+// Several lines of code later...
+
+function OnUserClick() {
+  if (!soundIsEnabled) {
+    soundIsEnabled = true;
+  }
+  // Check if the sound is not enabled.
+  // If it is  not enable it then enabled.
+
+  // When the user clicks on the canvas, then
+  cnv.addEventListener("mousedown", (e) => {
+    // Blah Blah code here.
+    if (!IsClicked) {
+      // If "IsClicked" is false?
+      // Code A
+    }
+    // Blah Blah more code here.
+  });
+}
+
+function MouseTracker() {
+  cnv.addEventListener("mousemove", (e) => {
+    // Blah blah code logic here, which I'm shortening in
+    // this .md file code block.
+
+    AudioHandler(blendXProportion, blendYProportion);
+    // Calls the function AudioHandler.
+  });
+}
+//#endregion
+
+//#startregion AudioBlender
+function AudioHandler(blendXProportion, blendYProportion) {
+  //Random choose sound logic here.
+
+  if (!soundIsEnabled) return;
+  // This checks if the sound is enabled, if it is it continues the code onto the
+  // next couple of lines. If not the stops the code at this specific line.
+
+  SoundX.play();
+  // Plays the HTML Audio Element that is called SoundX.
+
+  SoundY.play();
+  // Plays the HTML Audio Element that is called SoundY.
+
+  SoundX.volume = blendXProportion;
+  // The volume of SoundX is equals to the blendXProportion.
+
+  SoundY.volume = blendYProportion;
+  // The volume of SoundY is equals to the blendYProportion
+}
+//#endregion
 ```
 
 **How does your net art respond to the chosen text?**
