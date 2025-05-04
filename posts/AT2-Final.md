@@ -69,6 +69,10 @@ Underground seismic sound effects. by rahulsawla*. (2024). Freesound. https://fr
 
 ‌Sun Sonification. (2018). SoundCloud. https://soundcloud.com/nasa/sun-sonification
 
+‌THUN_Whipping Thunder Strikes.Lightning And Flash.LFE Sweetener.Artificial_EM.mp3 by newlocknew. (2023). Freesound. https://freesound.org/people/newlocknew/sounds/696391/
+
+‌Low Rumble.wav by CGEffex. (2025). Freesound. https://freesound.org/people/CGEffex/sounds/127976/
+
 ‌
 
 ‌
