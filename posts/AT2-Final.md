@@ -354,10 +354,6 @@ class LigthningStrikes {
     this.createChild();
     // Create the a secondary lightning strike, branching
     // off from the main lightning strike.
-
-    this.sound = new Audio(
-      "/ExperiementFiles/audio/AT2-AudioFiles/Lightning.wav"
-    );
   }
 
   createChild() {
@@ -835,7 +831,7 @@ function setup() {
 }
 ```
 
-## Boolean Variables:
+## Boolean Logic:
 
 Essientally my boolean variables, `let IsClicked` and `let soundIsEnabled` checks to see if the user has clicked on the canvas, or if the sound has be enabled by some user gesture.
 
@@ -896,6 +892,86 @@ function AudioHandler(blendXProportion, blendYProportion) {
 }
 //#endregion
 ```
+
+## Classes:
+
+Templates used by the code to draw the Stars and LightningStrikes.
+
+```js
+class Star {
+  constructor(x, y, BaseSize, speed, zoff, r, g, b) {
+    this.x = Random(innerWidth);
+    this.y = Random(innerHeight);
+    // (this.x, this.y) are the "centre point",
+    // of the star.
+
+    this.BaseSize = Random(1.5, 9);
+    // Determines the size of the star, from
+    // size 1 start to size 9 star.
+
+    this.speed = Random(1, 2.5);
+    // Determines the speed of the star moving left
+    // across the screen.
+
+    this.zoff = Random(1000);
+    // Determines how fast the noise field animates across the
+    // screen.
+
+    //Is used to create the flickering effect for the stars.
+
+    // The higher the this.zoff value = slower flickering for stars.
+    // Lower this.zoff value the faster the flickering of the stars.
+  }
+  // Constructor function, that defines
+  // the instance variables of the Star object.
+  show() {
+    //Not going to paste the whole function here, because I don't
+    // want the code block to get too large. Please refer to either
+    // my github repo or the Final Code Header.
+  }
+  update() {}
+}
+
+class LigthningStrikes {
+  constructor(x, y, length, generation, alphas, sound) {
+    this.x = x;
+    // The x-coordinate of where the Lightning strike
+    // starts from.
+
+    this.y = y;
+    // The y-coordinate of where the Lightning strike
+    // starts from.
+
+    this.length = length;
+    // How long the Lightning strike is.
+
+    this.generation = generation;
+    // Contains the generation of the Lightning strike.
+    // And where in the lightning the bolt branches off
+    // from.
+
+    this.angle = Math.random() * Math.PI * 2;
+    // Chooses a random angle for the lightning strike.
+
+    this.alphas = 1;
+    // The transparency of the lightning strike.
+
+    this.child = null;
+    // Placeholder to hold the generate child lightning
+    // strikes
+
+    this.createChild();
+    // Create the a secondary lightning strike, branching
+    // off from the main lightning strike.
+  }
+  createChild() {}
+  update() {}
+  draw(ctx) {}
+  isDead() {}
+}
+```
+
+## Recursion:
 
 **How does your net art respond to the chosen text?**
 
