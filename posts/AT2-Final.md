@@ -17,7 +17,7 @@ allow_math: true
 
 # Final Assignment Task 2:
 
-To read more about the process and development behind this go [this](https://cclanchublo6-bbkd5ncbjcth.deno.dev/AT2-Concept)
+To read more about the process and development behind this go [this](https://cclanchublo6-bbkd5ncbjcth.deno.dev/AT2-Concept). I would reccomend it as **light-reading**, its a very long blog.
 
 # Final Code:
 
@@ -106,19 +106,13 @@ function run(simplex) {
 function preload() {
   YSoundsStart = [
     new Audio(
-      "/ExperiementFiles/audio/AT2-AudioFiles/PosYSounds/NASA1-PosY2.wav"
+      "/ExperiementFiles/audio/AT2-AudioFiles/PosYSounds/NASA2-PosY3.mp3"
     ),
     new Audio(
-      "/ExperiementFiles/audio/AT2-AudioFiles/PosYSounds/NASA2-PosY3.wav"
+      "/ExperiementFiles/audio/AT2-AudioFiles/PosYSounds/NasaLiftOff-PosY4.mp3"
     ),
     new Audio(
-      "/ExperiementFiles/audio/AT2-AudioFiles/PosYSounds/NasaLiftOff-PosY4.wav"
-    ),
-    new Audio(
-      "public/ExperiementFiles/audio/AT2-AudioFiles/PosYSounds/NasaRing-PosY5.wav"
-    ),
-    new Audio(
-      "public/ExperiementFiles/audio/AT2-AudioFiles/PosYSounds/Sun-PosY1.wav"
+      "/ExperiementFiles/audio/AT2-AudioFiles/PosYSounds/Sun-PosY1.mp3"
     ),
   ];
   // YSoundsStart is an array that will hold the sound objects
@@ -126,19 +120,13 @@ function preload() {
 
   YSoundsEnd = [
     new Audio(
-      "/ExperiementFiles/audio/AT2-AudioFiles/NegYSounds/Earth-NegY3.wav"
+      "/ExperiementFiles/audio/AT2-AudioFiles/NegYSounds/SeismicEarth-NegY1.mp3"
     ),
     new Audio(
-      "public/ExperiementFiles/audio/AT2-AudioFiles/NegYSounds/EarthTectonic-NegY4.wav"
+      "/ExperiementFiles/audio/AT2-AudioFiles/NegYSounds/TartarusLoop-NegY2.mp3"
     ),
     new Audio(
-      "public/ExperiementFiles/audio/AT2-AudioFiles/NegYSounds/SeismicEarth-NegY1.wav"
-    ),
-    new Audio(
-      "public/ExperiementFiles/audio/AT2-AudioFiles/NegYSounds/TartarusLoop-NegY2.wav"
-    ),
-    new Audio(
-      "public/ExperiementFiles/audio/AT2-AudioFiles/NegYSounds/Volcano-NegY5.wav"
+      "/ExperiementFiles/audio/AT2-AudioFiles/NegYSounds/Volcano-NegY5.mp3"
     ),
   ];
   // YSoundsEnd is an array that will hold the sound objects
@@ -146,19 +134,13 @@ function preload() {
 
   XSoundsStart = [
     new Audio(
-      "/ExperiementFiles/audio/AT2-AudioFiles/PosXSounds/AmazonPosX5.wav"
+      "/ExperiementFiles/audio/AT2-AudioFiles/PosXSounds/BeachPosX1.mp3"
     ),
     new Audio(
-      "/ExperiementFiles/audio/AT2-AudioFiles/PosXSounds/BeachPosX1.wav"
+      "/ExperiementFiles/audio/AT2-AudioFiles/PosXSounds/BirbsPosX3.mp3"
     ),
     new Audio(
-      "/ExperiementFiles/audio/AT2-AudioFiles/PosXSounds/BirbsPosX3.wav"
-    ),
-    new Audio(
-      "/ExperiementFiles/audio/AT2-AudioFiles/PosXSounds/WaterfallPosX4.wav"
-    ),
-    new Audio(
-      "/ExperiementFiles/audio/AT2-AudioFiles/PosXSounds/ForestPosX2.wav"
+      "/ExperiementFiles/audio/AT2-AudioFiles/PosXSounds/WaterfallPosX4.mp3"
     ),
   ];
 
@@ -167,19 +149,13 @@ function preload() {
 
   XSoundsEnd = [
     new Audio(
-      "/ExperiementFiles/audio/AT2-AudioFiles/NegXSounds/BackroomsNegX1.wav"
+      "/ExperiementFiles/audio/AT2-AudioFiles/NegXSounds/CrowdNegX5.mp3"
     ),
     new Audio(
-      "/ExperiementFiles/audio/AT2-AudioFiles/NegXSounds/CityNegX3.wav"
+      "/ExperiementFiles/audio/AT2-AudioFiles/NegXSounds/MexcioCityNegX4.mp3"
     ),
     new Audio(
-      "/ExperiementFiles/audio/AT2-AudioFiles/NegXSounds/CrowdNegX5.wav"
-    ),
-    new Audio(
-      "/ExperiementFiles/audio/AT2-AudioFiles/NegXSounds/MexcioCityNegX4.wav"
-    ),
-    new Audio(
-      "/ExperiementFiles/audio/AT2-AudioFiles/NegXSounds/OfficeNegX2.wav"
+      "/ExperiementFiles/audio/AT2-AudioFiles/NegXSounds/OfficeNegX2.mp3"
     ),
   ];
   // XSoundsStart is an array that will hold the sound objects
@@ -386,7 +362,8 @@ class LigthningStrikes {
         this.generation + 1
         // Adds a new generation.
       );
-      // Recursively creates a child lightning strike.
+      // This instance method creates a new LighningStrike object and assigns it
+      // the this.child instance variable.
     }
   }
   update() {
@@ -431,7 +408,7 @@ class LigthningStrikes {
     //Draws the stroke of the ligthningStrike shape.
 
     if (this.child) this.child.draw(ctx);
-    // Draws the child lightning strike rescursively.
+    // if the current branch as a child, then draw a child.
 
     ctx.restore();
     // Restores the saved Canvas state as indicated previous in
@@ -535,7 +512,6 @@ const draw_frame = (ms) => {
   // Converts the milliseconds to seconds.
 
   //   console.log(seconds.toFixed(2));
-
   for (let i = Zeus.length - 1; i >= 0; i--) {
     // for each of the elements in the Zeus array,
 
@@ -630,7 +606,7 @@ function OnUserClick() {
 
       FlickerSize = 2;
       // Set the FlickerSize of the Star Object to 2.
-    }, 30);
+    }, 4000);
 
     // Creates 15 Ligthningstrikes
     for (let i = 0; i < 15; i++) {
@@ -973,11 +949,103 @@ class LigthningStrikes {
 
 ## Recursion:
 
+Recursion is used within the `createChild();` and `draw(ctx);` instance methods. Within:
+
+```js
+class LigthningStrikes {
+  constructor(x, y, length, generation, alphas, sound) {
+    //Insert other Instance Variable here.
+
+    this.child = null;
+    // Placeholder to hold the generate child lightning
+    // strikes
+
+    this.createChild();
+    // Create the a secondary lightning strike, branching
+    // off from the main lightning strike.
+  }
+  createChild() {
+    if (this.length > 55 && this.generation < 5) {
+      // If the length of the lightning strike
+      // is more than 55 pixels, then create a child,
+      // stop after the 4th generation is born.
+
+      //Finds the end of each newly created lightning strike,
+      // and prepares the (NewX, NewY) coordinates to create
+      // the next lightning bolt.
+      const NewX = this.x + Math.cos(this.angle) * this.length;
+      // The new x-coordinate of the child lightning strike.
+
+      const NewY = this.y + Math.sin(this.angle) * this.length;
+      // The new y-coordinate of the child lightning strike.
+
+      this.child = new LigthningStrikes(
+        NewX,
+        // The new X coordinate of the next bolt, essientally the
+        // starting point.
+        NewY,
+        // The new Y coordinate of the next bolt, essientally the
+        // starting point.
+
+        this.length * 0.6,
+        // Increase the length of each subsequential lightning
+        // bolt by x0.6.
+
+        this.generation + 1
+        // Adds a new generation.
+      );
+    }
+  }
+}
+```
+
+The `this.child = new LigthningStrikes(...);` basically creates a new ligthningStrike Object and assigns it to the placeholder this.child instance variable. And later on in the next instance method:
+
+```js
+  draw(ctx) {
+    if (this.alphas < 0) return;
+    // If the lightning strike is transparent,
+    // then don't bother drawing it.
+
+    ctx.save();
+    //Drawing the main branch of the lightningStrike.
+    ctx.stroke();
+    //Draws the stroke of the ligthningStrike shape.
+
+    if (this.child) this.child.draw(ctx);
+    // The recursive bit. Basically saying:
+    // If this lightning strike has a child, draw the child.
+
+    ctx.restore();
+    // Restores the saved Canvas state as indicated previous in
+    // ctx.save();
+  }
+```
+
 **How does your net art respond to the chosen text?**
+See [A Response to Information & Thinking by Michel Serres](https://cclanchublo6-m9th1g1gm2tc.deno.dev/AT2-Concept#a-response-to-information--thinking-by-michel-serres), and [My Thought process](https://cclanchublo6-m9th1g1gm2tc.deno.dev/AT2-Concept#my-thought-process).
 
-**Why you consider it to be post-digital**
+In a more formal summary, Serres from my understanding states that humans are not important, and we aren't the only things in the universe that can process and record the world around us. And that information forms around points in a web. That so called "web" of knowledge.
 
-# References;
+My counterpoint/response to Serres' text is that despite that humans aren't special, however they are "sapient"-enough to be able to process and understand the world/universe around us. So I basically wanted to simulate the Universe, and through the user's input the chaos is generated.
+
+## My ideas:
+
+- The Universe can be seen as an orderly, peaceful "system" by the actors within in.
+- The actors who are "sapient"-enough seek to understand the "system", and their place in it.
+  - The understanding part in my net art is the user interacting with the net art.
+- Understanding/interaction/observation of the "system" and the fundemental laws it is based on creates chaos.
+
+When I say system I am referring to the universe, when I say fundemental laws, I mean physicals, how stars work and all that maths stuff that comes with astronomy. Through human understanding and curiousity, we organise an inherently chaotic system into neat little categories.
+
+**Why you consider it to be post-digital?**
+I mean I would call my net art inherently post-digital, I mean a piece of art work, either writing or physical art is very subjective. Like one person can take a look at a red painting, and be like: "Very nice painting", and another person can take a look at the same red painting and go like: "Ah yes the red symbolises the artist's pain as they grapple with their gender identity or smth." Sometimes, people create for the joy of creating.
+
+I guess if I **_had_** to place it physically in a post-digital category, I would as it focuses on human experiences, and our places in the universe. And what it means to be a "sapient" processing "unit" of the universe.
+
+# References:
+
+Keep in mind some of these references are a bit outdated so....
 
 waves ocean crash on beach nearby wide big metallic sound.flac by kyles. (2018). Freesound. https://freesound.org/people/kyles/sounds/450634/
 
