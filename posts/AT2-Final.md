@@ -13,7 +13,20 @@ allow_math: true
 1. [Final Assignment Task 2](#final-assignment-task-2)
 2. [Week 7, Homework 7b Task 2 questions](#week-7-homework-7b-task-2-questions)
 3. [Final Code](#final-code)
-4. [References](#references)
+
+   - [Variables/Array Usage](#variablesarray-usage)
+   - [Iteration](#iteration)
+   - [Functions](#functions)
+   - [Boolean Logic](#boolean-logic)
+   - [Classes](#classes)
+   - [Recursion](#recursion)
+
+4. [How does this relate to your chosen text?](#how-does-this-relate-to-your-chosen-text)
+
+   - [My Ideas](#my-ideas)
+
+5. [Do you think its Post-digital?](#do-you-think-its-post-digital)
+6. [References](#references)
 
 # Final Assignment Task 2:
 
@@ -1022,6 +1035,8 @@ The `this.child = new LigthningStrikes(...);` basically creates a new ligthningS
   }
 ```
 
+# How does this relate to your chosen text?
+
 **How does your net art respond to the chosen text?**
 See [A Response to Information & Thinking by Michel Serres](https://cclanchublo6-m9th1g1gm2tc.deno.dev/AT2-Concept#a-response-to-information--thinking-by-michel-serres), and [My Thought process](https://cclanchublo6-m9th1g1gm2tc.deno.dev/AT2-Concept#my-thought-process).
 
@@ -1037,6 +1052,8 @@ My counterpoint/response to Serres' text is that despite that humans aren't spec
 - Understanding/interaction/observation of the "system" and the fundemental laws it is based on creates chaos.
 
 When I say system I am referring to the universe, when I say fundemental laws, I mean physicals, how stars work and all that maths stuff that comes with astronomy. Through human understanding and curiousity, we organise an inherently chaotic system into neat little categories.
+
+# Do you think its Post-digital?
 
 **Why you consider it to be post-digital?**
 I mean I would call my net art inherently post-digital, I mean a piece of art work, either writing or physical art is very subjective. Like one person can take a look at a red painting, and be like: "Very nice painting", and another person can take a look at the same red painting and go like: "Ah yes the red symbolises the artist's pain as they grapple with their gender identity or smth." Sometimes, people create for the joy of creating.
