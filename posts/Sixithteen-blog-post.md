@@ -12,6 +12,18 @@ allow_math: true
 
 1. [Task 1](#task-1)
 2. [Task 2](#task-2)
+   - [UX/UI Community](#uxui-community)
+     - [Domain](#domain)
+     - [Repertoire](#repertoire)
+     - [Values](#values)
+   - [Front-end Community](#front-end-community)
+     - [Domain](#domain-1)
+     - [Repertoire](#repertoire-1)
+     - [Values](#values-1)
+   - [Creative Coding Community](#creative-coding-community)
+     - [Domain](#domain-2)
+     - [Repertoire](#repertoire-2)
+     - [Values](#values-2)
 
 # Task 1:
 
@@ -161,8 +173,6 @@ Pretty much anything with the front-end, like HTML, CSS and Javascript.
 - [www.w3schools.com](https://www.w3schools.com/)
 - [Mdn](https://developer.mozilla.org/en-US/)
 
-**And then list the domain, repertoire, and values of creative coding.**
-
 #### Practices:
 
 - Branching
@@ -176,5 +186,31 @@ Reable, and Accessible code and user interfaces for everyone to read. Open sourc
 And also ChatGPT states about the values:
 
 > "Maintainability: Write code that’s readable, reusable, and scalable."
+
+## Creative Coding Community:
+
+**And then list the domain, repertoire, and values of creative coding.**
+
+### Domain:
+
+The shared area of interest for Creative Coding, would using Javascript (and probably other coding languages), as an artistic often abstract, experimental, or interactive way of expressing your opinions, thoughts and or ideas. Creative coding domains are often in the form of:
+
+- Installations
+- Random generative noise
+- Sound Installations.
+
+### Repertoire:
+
+#### Tools/Resources:
+
+- Three.js
+- RiTa.js
+- Web Audio API
+- p5.js
+- q5.js
+
+### Values:
+
+The creative coding community values playfulness, experiementation, the mixing of media from different disciplines. Open-source resources, spaces online and offline for both those who are just starting out in code, and also those who are masters of code.
 
 [Top ⬆︎](#)
