@@ -24,6 +24,7 @@ allow_math: true
      - [Domain](#domain-2)
      - [Repertoire](#repertoire-2)
      - [Values](#values-2)
+3. [Task 3](#task-3)
 
 # Task 1:
 
@@ -212,5 +213,32 @@ The shared area of interest for Creative Coding, would using Javascript (and pro
 ### Values:
 
 The creative coding community values playfulness, experiementation, the mixing of media from different disciplines. Open-source resources, spaces online and offline for both those who are just starting out in code, and also those who are masters of code.
+
+# Task 3:
+
+**Brainstorm some ideas for your AT3. In your discussion, refer to the communities listed above why these ideas might be interesting, with reference to Ngai's aesthetic registers.**
+
+Well since the brief of AT3 is vague af, I'm going to assume that everything on it is up to interpretation. And I get full creative control. And since I have to physically respond to a "Community" and Lauren Lee McCarthy's work is repsonding to a community and its reactions to a situation (peak-covid) during a time.
+
+I want to do smth like a standard website right, like a basic website. And when you type in a command it does smth. Like you know when you type "do a barrel roll" into google, the whole webpage rotates. Or like those like those Google doodles that change when you interact with them.
+
+I want it too look like a standard website you would find as a mockup in Dribbble or Behance, and then on user interaction it does smth fun. I want this "response" to the UX/UI design community to poke fun at the idea of "the user is an generator of insight/a datapoint that we can use to better our website."
+
+Because as an UX/UI and front-end designer, I don't like called the "users" of a website "user" because it sounds like I'm trying pyschoanalyse them, and "SAS" them to death. I want AT3 to be professional, playful and most importantly **FUN** for the "user" to interact with.
+
+## Requirements:
+
+- Respond to the work of Lauren Lee McCarthy.
+- Engage with a Community of Practice you are a member of.
+- Create a **3-5 minute** video which tells us:
+  - Your plan
+  - What actually happened.
+  - What was interesting about the experience.
+
+## Deliverables:
+
+- URL of your video
+- The URL of your code
+- The URL of your blog
 
 [Top ⬆︎](#)
