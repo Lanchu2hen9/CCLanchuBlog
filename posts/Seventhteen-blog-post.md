@@ -1,7 +1,7 @@
 ---
-title: Week 8 (Tues) Homework
-published_at: 2025-05-06
-snippet: This is homework 8a.
+title: Week 8 (Thurs) Homework
+published_at: 2025-05-10
+snippet: This is homework 8b.
 disable_html_sanitization: true
 allow_math: true
 ---
