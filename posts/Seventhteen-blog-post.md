@@ -12,19 +12,15 @@ allow_math: true
 
 1. [Task 1](#task-1)
 2. [Task 2](#task-2)
-   - [UX/UI Community](#uxui-community)
+   - [Live Coding Community](#live-coding-community)
      - [Domain](#domain)
      - [Repertoire](#repertoire)
      - [Values](#values)
-   - [Front-end Community](#front-end-community)
-     - [Domain](#domain-1)
-     - [Repertoire](#repertoire-1)
-     - [Values](#values-1)
-   - [Creative Coding Community](#creative-coding-community)
-     - [Domain](#domain-2)
-     - [Repertoire](#repertoire-2)
-     - [Values](#values-2)
-3. [Task 3](#task-3)
+   - [Task 2; discussion questions](#task-2-discussion-questions)
+     - [How it may affect young people?](#how-it-may-affect-young-people)
+     - [How coding is taught](#how-coding-is-taught)
+     - [Discourse / Public Debate](#discourse--public-debate)
+     - [Legislation](#legislation)
 
 # Task 1:
 
@@ -86,7 +82,7 @@ Well I guess things are **live** so, the community's shared interest would be an
 
 I guess the community values collaborative coding jam sessions, where errors, flaws are transparent to the audience and listeners. I guess this community is very collabrative with each other.
 
-# Task 2; discussion question:
+# Task 2; discussion questions:
 
 **How does live coding (as a form of music, art, and performance) affect why young people want to learn, how they're taught, what people talk about, and what laws might be relevant?**
 
