@@ -86,16 +86,14 @@ Well I guess things are **live** so, the community's shared interest would be an
 
 I guess the community values collaborative coding jam sessions, where errors, flaws are transparent to the audience and listeners. I guess this community is very collabrative with each other.
 
-**In what ways do cultural performance practices like music, theatre, and art relate to young people's intrinsic motivations for learning, the methods and structures of teaching and learning, discourse/public debate, and legislation?**
+# Task 2; discussion question:
 
-I am sorry a head of time, if my blog is a bit disjointed, I am not very articulate and concise when I am yapping on my blog.
+**How does live coding (as a form of music, art, and performance) affect why young people want to learn, how they're taught, what people talk about, and what laws might be relevant?**
 
-# Motivations:
+## How it may affect young people?
 
-So speaking from a personal prespective and a woman who has come from a private girls school, where grades were very important. I feel like the environment and culture in which the "young person" is brought up in, very much impacts their _"work ethic"_ in professional work.
+I guess completely from an outsider's prespective coding in-general feels like a very inaccessible form of technology. Personally, I feel like most people are very daunted by the fancy technical terms of coding. With the event of live coding, and the Internet/online spaces. I feel like this makes "coding" as a whole more digestible and "market-able" to a certain extent to the general public.
 
-So as both an Chinese Australian and a cis-gendered woman. I've heard that students in education in China are _"forced"_ to be achieve great academic heights. That's why the saying "asian tiger parents" are a thing. But due to this _"asian academic pressure"_, I feel like Chinese young immigrants' "intrinsic motivations for learning" are lowkey based of the expectations or rebelling against the expectation of their parents.
-
-**What are the key connections and implications in each of these areas, and why are they significant?**
+And also due to the transparency of the live coding community, people see "coding" less of an incomprehensible black box and more of something that is achieve-able.
 
 [Top ⬆︎](#)
