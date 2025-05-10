@@ -28,4 +28,34 @@ allow_math: true
 
 # Task 1:
 
+Here's the video for task 1:
+
+<iframe 
+    id="strudel" 
+    src="https://www.youtube.com/embed/fBIFgN9v0LI"
+    title="YouTube video player" 
+    frameborder="0" 
+    width="100%"
+    height="400"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+
+<script type="module">
+    const iframe = document.getElementById('strudel')
+    const updateDimensions = () => {
+        iframe.width = iframe.parentNode.scrollWidth
+        iframe.height = iframe.width * 9 / 16
+    }
+    
+    updateDimensions()
+    window.addEventListener('resize', updateDimensions)
+</script>
+
+# Task 2:
+
+If I am going to be real with you there is no specific thing that I found the most interesting. The most specificially interesting thing/fun thing to do within the above video is experiementing on the fly with different instruments within flok.cc.
+
+I think I've explained the creative community's domain, repertoire, and values pretty well [here](https://cclanchublo6.deno.dev/Sixithteen-blog-post#creative-coding-community).
+
 [Top ⬆︎](#)
