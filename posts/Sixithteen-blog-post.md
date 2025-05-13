@@ -67,8 +67,8 @@ With all due respects, no. Here's a cute ASCII art of a cat for you to look at:
 
 **List 5 communities of practice (CoPs) you are a member of, including the domain, repertoire, and values of said community.**
 
-1. Domain (shared area of interest or focus)
-2. Repertoire (shared tools, language, practices, resources)
+1. Domain (shared area of interest or focus) - Ilicit behaviours.
+2. Repertoire (shared tools, language, practices, resources) - Behaviours
 3. Values (shared beliefs and principles guiding the community)
 
 ## UX/UI Community:
