@@ -756,8 +756,69 @@ This approach means you don't need direct community participation during develop
 
 Good job A.I. I can actually not interact with ppl. This key point => <font color='green'>"friend group's behavior inspires the interactions, the actual triggers come from any user interacting with your reimagined interface"</font>
 
+# Task 2:
+
+Make a gif. Btw I'm asking A.I. to explain stuff to me. I'll list the A.I. explainations in <font color='green'> green.</font>
+
+> "you can use AI to help you with this task"
+
+Already ahead of you buddy, A.I. was helping to code since I was a baby fetus coder.
+
+## Copilot Prompt Setup:
+
+Referring to the concepts in the p5.js library see "https://p5js.org/reference/", and basic Javascript concepts, such as global local, variables and basically any other concept that I have tackled within "#file:JavascriptConceptReview.md ". Be my helpful code tutor/teacher/mentor that is eager to explain coding concepts to me. Use analogies to explain coding concepts to me a bit like how I have explained concepts in the JavascriptConceptReview.md file. Feel free to add personality to your explainations as a tutor/teacher/mentor based of the JavascriptConceptReview.md file. Await for my prompts/questions to generate/answer questions.
+
+## Learning:
+
+```js
+void setup()
+{
+  size(400,400);
+}
+
+int numFrames = 100;
+
+void draw()
+{
+  background(255);
+
+  float t = 1.0*(frameCount-1)/numFrames;
+
+  float r = 100;
+  float x = width/2 + r*cos(TWO_PI*t);
+  float y = height/2 + r*sin(TWO_PI*t);
+
+  stroke(0);
+  strokeWeight(9.0); // size of black dot
+
+  point(x,y);
+
+  if(frameCount<=numFrames)
+  {
+    saveFrame("fr###.gif");
+  }
+  if(frameCount==numFrames)
+  {
+    println("All frames have been saved");
+  }
+}
+```
+
+### Fancy ass new termologies:
+
+**saveFrame("fr###.gif");** Saves each from of the gif/animation. The ### is like a _placeholder_ for each frame.  
+**println("Hello World"); & print("Hellow World");** are basically the same thing as `console.log("Hello World");`
+
+Expect for the fact that `println("Hello World");` does this in the console:
+
+![println(); message in the console](<println();.png>)
+
+And `print("Hello World");` does this:
+
+![print(); message in the console](<print();.png>)
+
+On a side note Java is not very forgiving in terms of syntax, very fun Java. I like your son better.
+
+![Java being a dick.](JavaDaddy.png)
+
 [Top ⬆︎](#)
-
-```
-
-```
