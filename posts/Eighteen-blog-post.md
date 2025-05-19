@@ -608,14 +608,153 @@ Vue.js Templates:
 
 Hopefully, this kitchen analogy helps clarify the purpose and function of each of these front-end tools! Let me know if you have any more questions.</font>
 
+## New Prompt:
+
+Gemini so for this assignment that I am current yapping to you about, we have to have a community of practise, and build/code smth for that community. In the previous prompt the community of practise was the "UX/UI community". Given that we have to have some sort of interaction/reponse from the community. Like create smth for the community to interact with. I like can track down the community platform link for "UX Rescue" and post the website link to that platform, but that community is more of UX research over prototyping/coding. And additionally currently the link that I have is dead, and I am a lurker in the community so... (I've also been told that i don't have to directly interact with the community, it can be indirect.)
+
+Keeping to the same website idea, my second community is my "high school friends". Refer to the Repertoire, here "...", I want to somehow reinvent the instagram website/platform (desktop version.)
+
+### Ideas that I like:
+
+<font color='green'>
+
+#### The "Yearbook" Remix:
+
+**Concept:** A website that mimics the layout of a high school yearbook but with interactive and dynamic elements.
+
+**Profile Pages:** Clicking on a friend's photo could "deconstruct" their yearbook entry into its individual components (photo, name, quote, clubs) and then playfully reassemble them in a different, often humorous, way.
+
+**Signatures Page:** Instead of static signatures, this page could feature dynamically generated "signatures" that appear as if someone is actually scribbling on the screen when you hover over them.
+
+#### The "Group Chat Visualizer":
+
+**Concept:** A website that presents an abstract and visual representation of your group chats over time (if you have access to anonymized data or can manually input key themes/moments).
+
+**Timeline:** A visual timeline of your group chat history. Hovering over different periods could trigger changes in the visual representation (e.g., more chaotic visuals during periods of intense activity).
+
+**Keyword Exploration:** A "search" function for keywords that, instead of showing text results, dynamically alters the visual representation based on the frequency and context of that keyword.
+
+#### Tech Stack and Feasibility:
+
+**Front-end:** HTML, CSS (potentially with Tailwind for rapid styling), and JavaScript (vanilla or with a lightweight animation library like GSAP).
+
+- GSAP (GreenSock Animation Platform)
+- Anime.js
+- Popmotion
+- Rough.js
+- Tailwind CSS
+  </font>
+
 ## Gemini Conclusion:
 
-Gemini probably due to its tokens thrives more in idea generation/context. Ollama feels like a pragmatist when compared to Gemini.
+- I like the idea of _"deconstructing"_ a website into its fundamental elements.
+- I would be interesting to get the data from my group chats and have the visuals change based on the data and or user interaction of the data.
 
-### Tech Stack:
+## Claude 3.5 Sonnet:
 
-- Hugo or Jekyll
--
+### Prompt:
+
+For assignment that I am current yapping to you about, we have to have a community of practise, and build/code smth for that community. In the previous prompt the community of practise was the "UX/UI community". Given that we have to have some sort of interaction/reponse from the community. Like create smth for the community to interact with. I like can track down the community platform link for "UX Rescue" and post the website link to that platform, but that community is more of UX research over prototyping/coding. And additionally currently the link that I have is dead, and I am a lurker in the community so... (I've also been told that i don't have to directly interact with the community, it can be indirect.)
+
+Keeping to the same website idea, my second community is my "high school friends". Refer to the Repertoire examples here in as context. This is just an example, the communities I've talked about aren't related to the following communities in "#file:Sixithteen-blog-post.md and #file:Seventhteen-blog-post.md" I want to somehow reinvent the instagram website/platform (desktop version.). Also see this link for UX Rescue "https://uxrescue.notion.site/Welcome-to-UX-Rescue-4dc591de8ede4d0aa8800af5d88bdaae" Also please refer to '## Prompt 1:' in #file:Eighteen-blog-post.md
+
+<font color='green'>
+
+## Project Concept: Instagram Desktop Reinvention
+
+### Community of Practice:
+
+- Primary: High school friend group
+- Secondary: Users of Instagram's desktop platform
+- Interaction Type: Indirect (through design choices and features that reflect common usage patterns)
+
+### Core Idea:
+
+Create a reimagined Instagram desktop interface that specifically addresses how high school friend groups actually use the platform, with playful interactions that poke fun at typical social media behaviors.
+
+### Features to Consider:
+
+1. **Group Chat Visualization:**
+
+```javascript
+// Example concept for chat visualization
+const chatVisualizer = {
+  messages: [],
+  renderChat: () => {
+    // Transform chat data into interactive visualization
+    // Add playful animations for typical friend group behaviors
+    // (inside jokes, meme sharing, etc.)
+  },
+};
+```
+
+2. **Memory Timeline:**
+
+```javascript
+// Interactive timeline component
+const timelineFeature = {
+  memories: [],
+  displayMemory: (event) => {
+    // Show shared photos/posts in an unexpected way
+    // Add "yearbook-style" interactions
+  },
+};
+```
+
+### Tech Stack Suggestion:
+
+- Frontend: React.js with Framer Motion for animations
+- Styling: TailwindCSS for rapid prototyping
+- Animation: GSAP for complex interactions
+  </font>
+
+What do you mean by "Interaction Type: Indirect (through design choices and features that reflect common usage patterns)"
+
+<font color='green'>
+Let me explain "Indirect Interaction" in the context of your project:
+
+Indirect Interaction Examples
+Design Reflection of Community Behaviors
+
+Designing features based on how your high school friends actually use Instagram
+Example: If your friends often share memes in DMs, create an exaggerated animation when memes are shared
+Usage Pattern Integration
+
+Building features that respond to common behaviors without requiring direct community feedback
+Example: If friends typically react with specific emojis, make those reactions trigger special effects
+Here's a concrete example of how this might look in code:
+
+```js
+// Example of indirect interaction through design
+const communityPatterns = {
+  // Based on observed friend group behavior
+  commonReactions: ["😂", "💀", "🤡"],
+
+  // Special animation triggers for common patterns
+  handleReaction(emoji) {
+    if (this.commonReactions.includes(emoji)) {
+      // Trigger exaggerated animation specific to friend group's favorite reactions
+      playExaggeratedAnimation(emoji);
+    }
+  },
+
+  // Feature reflecting how friends actually use DMs
+  handleMemeShare() {
+    // Add playful "meme overload" effect when friends spam memes
+    if (memesSentInLastMinute > 5) {
+      triggerMemeOverloadAnimation();
+    }
+  },
+};
+```
+
+This approach means you don't need direct community participation during development - instead, you're building features that reflect and respond to their existing behaviors and patterns. It's like creating an "inside joke" in code form, where the interaction comes from how well the design understands and plays with the community's natural behaviors.
+
+</font>
+
+#### Claude 3.5 Sonnet:
+
+Good job A.I. I can actually not interact with ppl. This key point => <font color='green'>"friend group's behavior inspires the interactions, the actual triggers come from any user interacting with your reimagined interface"</font>
 
 [Top ⬆︎](#)
 
