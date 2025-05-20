@@ -1,5 +1,5 @@
 ---
-title: Week 9 (Tues) Homework
+title: Week 9 (Thurs) Homework
 published_at: 2025-05-20
 snippet: This is homework 9b.
 disable_html_sanitization: true
@@ -50,6 +50,11 @@ Because I am an UX/UI, website and front-end designer. And um A.I. is slowly tak
 - Inconsistent organisation of between workflows between collaborators
 - The "net" of strings of the graphic programming interface might get a bit messy after a while.
 - Lag if your computer doesn't meet the requirements of the interface.
+
+## Generated Images:
+
+**First Image:**
+![A beautiful scenary in a bottle](WeekTask9b-Comfy_00001_.png)
 
 **The strengths & weaknesses of this GPL vs other GPLs**
 
