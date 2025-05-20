@@ -54,7 +54,13 @@ Because I am an UX/UI, website and front-end designer. And um A.I. is slowly tak
 ## Generated Images:
 
 **First Image:**
-![A beautiful scenary in a bottle](WeekTask9b-Comfy_00001_.png)
+![A beautiful scenery in a bottle](WeekTask9b-Comfy_00001_.png)
+![Orange cat attached to the side profile of a human](WeekTask9b-Comfy_00002_.png)
+![Cat head on human body avatar profile picture.](WeekTask9b-Comfy_00004_.png)
+![blue cat](WeekTask9b-Comfy_00005_.png)
+![Tired woman collapsed on desk surrounded by energy drinks](WeekTask9b-Comfy_00006_.png)
+![Asian Woman lying in a spa of matcha](WeekTask9b-Comfy_00007_.png)
+![Orange and black stripped cat](WeekTask9b-Comfy_00008_.png)
 
 **The strengths & weaknesses of this GPL vs other GPLs**
 
