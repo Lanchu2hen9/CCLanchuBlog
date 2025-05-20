@@ -834,6 +834,21 @@ On a side note Java is not very forgiving in terms of syntax, very fun Java. I l
   // t is like the standard "x" value on a standard y = a*cos(2π
 ```
 
+## Experiement 1:
+
+<iframe width="560" height="315" id = "SquishyBoi" src="https://www.youtube.com/embed/9iGXUkvRCKw?si=i_R7TyCQXCZI9_AR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<script type="module">
+    const iframe = document.getElementById('SquishyBoi')
+    const updateDimensions = () => {
+        iframe.width = iframe.parentNode.scrollWidth
+        iframe.height = iframe.width * 9 / 16
+    }
+    
+    updateDimensions()
+    window.addEventListener('resize', updateDimensions)
+</script>
+
 ## Final Code:
 
 ```Java
@@ -885,5 +900,20 @@ void draw()
   }
 }
 ```
+
+## Final Gif:
+
+<iframe width="560" height="315" id = "SquishyBoi" src="https://www.youtube.com/embed/9iGXUkvRCKw?si=i_R7TyCQXCZI9_AR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<script type="module">
+    const iframe = document.getElementById('SquishyBoi')
+    const updateDimensions = () => {
+        iframe.width = iframe.parentNode.scrollWidth
+        iframe.height = iframe.width * 9 / 16
+    }
+    
+    updateDimensions()
+    window.addEventListener('resize', updateDimensions)
+</script>
 
 [Top ⬆︎](#)
