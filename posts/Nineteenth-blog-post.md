@@ -39,6 +39,18 @@ Because I am an UX/UI, website and front-end designer. And um A.I. is slowly tak
 **How you might use this GPL in your own creative practice?**  
 ~To cram out work 1 day prior to its deadline. /j~ Mostly for mood-board development, if I want smth hyper specific to be generated. Or human faces to create UX personas.
 
+## Strengths:
+
+- Easy to customise, to share.
+- Clear Visuals
+- No prior experience with coding needed.
+
+## Weaknesses:
+
+- Inconsistent organisation of between workflows between collaborators
+- The "net" of strings of the graphic programming interface might get a bit messy after a while.
+- Lag if your computer doesn't meet the requirements of the interface.
+
 **The strengths & weaknesses of this GPL vs other GPLs**
 
 **The strengths & weaknesses of GPLs in general, vs text based scripting languages.**
