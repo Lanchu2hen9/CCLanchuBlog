@@ -11,16 +11,21 @@ allow_math: true
 # Table Of Contents:
 
 1. [Task 1](#task-1)
+   - [Prompt 1](#prompt-1)
+   - [Ollama](#ollama)
+     - [Ollama Conclusion](#ollama-conclusion)
+   - [Gemini](#gemini)
+     - [Gemini Conclusion](#gemini-conclusion)
+   - [New Prompt](#claude-35-sonnet)
+     - [Ideas that I like](#ideas-that-i-like)
+   - [Claude 3.5 Sonnet](#new-prompt)
+     - [Project Concept: Instagram Desktop Reinvention](#project-concept-instagram-desktop-reinvention)
 2. [Task 2](#task-2)
-   - [Live Coding Community](#live-coding-community)
-     - [Domain](#domain)
-     - [Repertoire](#repertoire)
-     - [Values](#values)
-   - [Task 2; discussion questions](#task-2-discussion-questions)
-     - [How it may affect young people?](#how-it-may-affect-young-people)
-     - [How coding is taught](#how-coding-is-taught)
-     - [Discourse / Public Debate](#discourse--public-debate)
-     - [Legislation](#legislation)
+   - [Copilot Prompt Setup](#copilot-prompt-setup)
+   - [Learning](#learning)
+   - [Experiement 1](#experiement-1)
+   - [Final Code](#final-code)
+   - [Final Gif](#final-gif)
 
 # Task 1:
 
@@ -903,10 +908,10 @@ void draw()
 
 ## Final Gif:
 
-<iframe width="560" height="315" id = "SquishyBoi" src="https://www.youtube.com/embed/9iGXUkvRCKw?si=i_R7TyCQXCZI9_AR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" id="WHYYYYY" src="https://www.youtube.com/embed/uvpAe-_u9sQ?si=f83F3GaKsFxXOIyK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <script type="module">
-    const iframe = document.getElementById('SquishyBoi')
+    const iframe = document.getElementById('WHYYYYY')
     const updateDimensions = () => {
         iframe.width = iframe.parentNode.scrollWidth
         iframe.height = iframe.width * 9 / 16
