@@ -821,4 +821,69 @@ On a side note Java is not very forgiving in terms of syntax, very fun Java. I l
 
 ![Java being a dick.](JavaDaddy.png)
 
+```java
+  float t = 1.0*(frameCount-1)/numFrames;
+  // time relationship, some fancy ass maths that basically
+  // means proportion of the No. of frames display at a time per total
+  // amount of frames.
+
+  float r = 100;
+  // r determines how far the circle is from the centre of the canvas.
+
+  float x = width/2 + r*cos(TWO_PI*t);
+  // t is like the standard "x" value on a standard y = a*cos(2π
+```
+
+## Final Code:
+
+```Java
+ void setup()
+{
+  size(400,400);
+  colorMode(HSB, 360, 100, 100);
+}
+
+int numFrames = 150;
+int NoCircles = 50;
+
+
+void draw()
+{
+  background(139, 25, 100);
+
+   float t = 1.0*(frameCount-1)/numFrames;
+  // time relationship, some fancy ass maths that basically
+  // means proportion of the No. of frames display at a time per total
+  // amount of frames.
+
+  // For each circle that is created do the following:
+  for (int i = 0; i < NoCircles; i++) {
+    float r = 8 + i * 8;
+    // r determines how far the circle is from the centre of the canvas.
+
+    float x = width / 2 + r*cos(TWO_PI*t + i*PI/4);
+    float y = height / 2 + r * sin(TWO_PI * t + i * PI/4);
+
+    float w = 0.2 * x + 10 * sin(TWO_PI * t * (i + 1));
+    float h = 60 + 10 * cos(TWO_PI * t * (i + 1));
+
+    fill((frameCount * 10000 + i * 250) % 90, 100, 100);
+    noStroke();
+
+    ellipse(x, y, w, h);
+  // Squishy circle that changes colour, duplicate circle.
+
+  }
+
+  if(frameCount<=numFrames)
+  {
+    saveFrame("fr###.gif");
+  }
+  if(frameCount==numFrames)
+  {
+    println("All frames have been saved");
+  }
+}
+```
+
 [Top ⬆︎](#)
