@@ -203,4 +203,6 @@ Run-away Mute Button: Medium achievability (requires solid DOM/JS skills for smo
 **What else would you need to do that would make this feasible?**
 ![A table scoping Idea 2 for AT3](LeTable.png)
 
+For core concepts that I would "need to learn" see [this]().
+
 </font>
