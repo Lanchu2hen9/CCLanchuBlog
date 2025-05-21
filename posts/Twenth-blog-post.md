@@ -31,6 +31,12 @@ allow_math: true
 
 From my understanding [WebRTC (Web Real-Time Communication)](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) API is literally just Zoom but with websites and using servers not connected to the main wifi/firewall & [The WebSocket API (WebSockets)](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API), is the message/"chat-room" equvilent of WebRTC.
 
+There's the ASCII typing board website thing, where one website vistor types something onto the website and what they've typed is like a message that they've left behind. The website is also like a scrollable map thingy like miroboard, where you can click and drag to see other messages on the canvas that other vistors has left behind.
+
+- [Scream Into the void](https://screamintothevoid.com/)
+
+Maybe something like a open book where when some visits the website and types/clicks smth it leaves a trail of effects or messages behind for the next user to see.
+
 ## A.I. Prompt:
 
 I want o
