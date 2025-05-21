@@ -90,4 +90,8 @@ When you're ready to start coding, we can begin with:
 
 Would you like to focus on any particular aspect of this project first? Or would you like me to start generating some code for a specific component?
 
+# Core Concept Frameworks:
+
+For the concepts that I am talking about please refer to the Week10a homework blog. I'll be going with Idea 2.
+
 [Top ⬆︎](#)
