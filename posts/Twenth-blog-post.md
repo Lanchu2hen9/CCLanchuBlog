@@ -97,6 +97,8 @@ Now, for your Assignment 3 ideas:
 Good Portfolio Piece: This would be a unique and impressive piece for your portfolio, showcasing both design and development skills.
 Cons/Challenges (Given your Time & Other Assignments):
 
+### Cons/Challenges:
+
 **Significant Development Scope:**
 User Authentication/Session Management (Implicit): To have User1 log on with User2 and remember their avatars, you'll need some form of user identification, even if it's just session-based for a demo. This adds complexity.
 
