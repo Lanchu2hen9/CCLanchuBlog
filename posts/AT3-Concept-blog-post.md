@@ -1,7 +1,7 @@
 ---
-title: Week 10 (Tues) Homework
+title: AT3 Concept Blog
 published_at: 2025-05-13
-snippet: This is homework 8a.
+snippet: This is the overall concept ideas for AT3.
 disable_html_sanitization: true
 allow_math: true
 ---
