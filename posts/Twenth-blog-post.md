@@ -147,3 +147,59 @@ Real-time Video/Audio Streams: Handling live video and audio streams, even betwe
 
 **Time Commitment:** This idea is monumentally ambitious for ~2.5 weeks. WebRTC is a beast. Attempting this alongside other assignments, especially if you're not already highly proficient in WebRTC, JavaScript, and server-side development, is a recipe for severe stress and potentially incomplete delivery.
 <font color="green">
+
+<font color="black">(I need you to be real with me/realistic with me.) First of all in terms of the "WebRTC Complexity" my teacher said they'll help me to create a template with that.
+
+While that I am aware of the fact that Idea 1 might be a bit more ambitious than idea 2, I can scope it down a bit to fit my timeframe and context? 🤷🏻‍♀️ Ideas on how to scope idea 1 down to make it easier to do within my timeframe and context? And "browser permissions, codecs, and potential network issues" is not a me issue its a technology issue, it's a coding course bruh, not me shaking my fist at technology course.
+
+And as for the "Interactive Button Logic" I am pretty familiar with how buttons work in HTML, CSS and Javascript. I have a good grasp of the basics. And for the "Camera Pixelation/Glitch", wouldn't I just transform the video footage into strings and then use the slice/splice thing in js then like splice chunks together.
+
+And the "Drawing on Screen Share" is just something that's "it will be nice to have, but if I am pressed for time, then fuck it, I'm not including it." like I would like to have it. Any suggestions on how I can include this. Given this further context, which one is more achievable?</font>
+
+<font color = "green">
+
+## Re-evaluation of Idea 2: Video Call Website with Fun Interactions (WebRTC API)
+
+### Your Key Points & My Revised Assessment:
+
+_"My teacher said they'll help me to create a template with that [WebRTC Complexity]."_
+
+This is HUGE. A working WebRTC template (signaling server, basic peer connection setup) is the most difficult and time-consuming part of a WebRTC project. If you're handed that, it cuts out about 80% of the initial WebRTC headache. This moves WebRTC from "monumentally ambitious" to "challenging but potentially achievable."
+
+_"Browser permissions, codecs, and potential network issues is not a me issue its a technology issue, it's a coding course bruh, not me shaking my fist at technology course."_
+
+You're absolutely right. My apologies for framing it as a "you" issue. These are inherent complexities of real-time communication on the web. As a coding course, understanding and acknowledging these "technology issues" (and how robustly your template handles them) is part of the learning. You're not expected to fix browser bugs, but to understand the layers of abstraction.
+
+_"For the 'Interactive Button Logic' I am pretty familiar with how buttons work in HTML, CSS and Javascript."_
+
+Excellent. This means the "run away" button logic is primarily a front-end DOM manipulation and event handling challenge, which sounds well within your grasp given your confidence.
+
+_"For the 'Camera Pixelation/Glitch', wouldn't I just transform the video footage into strings and then use the slice/splice thing in js then like splice chunks together."_
+
+This is where we need to be very realistic. Directly transforming live video frames into strings and then slicing/splicing them in real-time for pixelation is not how video processing on the web typically works.
+Reality: Live video streams (MediaStream objects) are handled as raw pixel data (usually via Canvas or WebGL contexts). To pixelate, you'd typically draw the video frame onto a <canvas> element, apply pixelation (e.g., by drawing scaled-down versions of rectangles representing "pixels" or using canvas filters/shaders), and then output that modified canvas back as a video stream. This is significantly more complex than string manipulation and requires a good understanding of the Canvas API or WebGL shaders. This is a high complexity task.
+
+_"The 'Drawing on Screen Share' is just something that's 'it will be nice to have, but if I am pressed for time, then fuck it, I'm not including it.'"_
+
+This is a good mindset for a "stretch goal." Implementing drawing on a screen share involves:
+
+- Capturing the screen share stream.
+- Drawing it onto a canvas.
+- Layering another transparent canvas on top for drawing input.
+- Synchronizing drawing data (coordinates, colors) across the WebRTC connection for the other user to see in real-time. This is medium-high complexity.
+
+### Revised Achievability for Idea 2:
+
+**Core Video Call (with template):** High achievability.
+Run-away Mute Button: Medium achievability (requires solid DOM/JS skills for smooth UX).
+**Camera Pixelation/Glitch:** High difficulty. This is a significant technical hurdle if you're not already comfortable with real-time canvas/WebGL video manipulation. This could easily sink your time.
+**Drawing on Screen Share:** Medium-High difficulty. Similar to pixelation, involves canvas, but also real-time data sync.
+</font>
+
+<font color="black">
+
+# Scoping:
+
+**What else would you need to do that would make this feasible?**
+
+</font>
