@@ -71,4 +71,44 @@ And the share screen button allows you to draw things on the screen.
 
 ## A.I. Prompt:
 
-I want o
+These are the following ideas that I have for my Assignment 3 task due 8th of June 2025, its currently 21th of May 2025. Keep in might that I have 2 additional assignments to do. Keep in mind I wrote them in an .md file in VScode. So used the context of .md notation.
+
+Read ahead if you want to its all A.I. generated.
+
+<font color="green">
+
+Okay, let's break down your two ideas for Assignment 3, keeping in mind your current workload, the due date of June 8, 2025, and your previous assignments. It's May 21, 2025, so you have about 2.5 weeks.
+
+Now, for your Assignment 3 ideas:
+
+## Analysis of Idea 1: Digital Yearbook (WebSockets API)
+
+**Core Concept:** A digital yearbook website where users choose avatars, and then these avatars appear in a yearbook design. A "quotes page" uses WebSockets for real-time typing/communication, and a "standard yearbook page" depicts avatars. Interaction includes a Google Gravity-like effect for headings.
+
+### Pros:
+
+**Highly Creative & Unique:** This is a very memorable and personal project.
+
+**Strong Technical Learning:** Using WebSockets for real-time typing on the quotes page is a fantastic application of the API and demonstrates advanced technical understanding. You're right, WebSockets are primarily used for real-time communication like text messaging.
+
+**Directly Applicable to Design Skills:** The "yearbook design" aspect (layout, typography, imagery) is core to your Graphic Design course. You can showcase your P2 (Typography) and P3 (Identity) skills directly within the yearbook's design.
+
+**Addresses "Interactive" Aspect:** The Google Gravity effect is a fun, interactive element that goes beyond standard web design.
+Good Portfolio Piece: This would be a unique and impressive piece for your portfolio, showcasing both design and development skills.
+Cons/Challenges (Given your Time & Other Assignments):
+
+**Significant Development Scope:**
+User Authentication/Session Management (Implicit): To have User1 log on with User2 and remember their avatars, you'll need some form of user identification, even if it's just session-based for a demo. This adds complexity.
+
+**Real-time Typing (WebSockets):** While feasible, implementing WebSockets securely and effectively for multiple users and syncing text boxes can be time-consuming. You'll need a backend server (Node.js with ws library, Python with Flask-SocketIO, etc.) to handle these connections.
+
+**Avatar Selection & Storage:** Storing chosen avatars and associating them with users requires a backend and potentially a database.
+
+**Dynamic Yearbook Generation:** Populating the yearbook design dynamically with chosen avatars and messages adds front-end JavaScript complexity.
+
+**Google Gravity Effect:** While cool, implementing this physics-based animation accurately can take a fair bit of JavaScript, potentially leveraging libraries or custom physics.
+
+**Time Commitment:** This idea is very ambitious for ~2.5 weeks, especially with two other assignments looming. The backend development for WebSockets, user handling, and the front-end dynamic rendering could easily consume all your available time and more.
+
+**Potential for Feature Creep:** It's easy to get carried away with making every element "interactable" in a project like this.
+</font>
