@@ -92,6 +92,6 @@ Would you like to focus on any particular aspect of this project first? Or would
 
 # Core Concept Frameworks:
 
-For the concepts that I am talking about please refer to the Week10a homework blog. I'll be going with Idea 2.
+For the concepts that I am talking about please refer to the Week10a homework blog. I'll be going with Idea 2. See [Idea 2, Feedback From Gemini, Part 1](https://cclanchublo6-zrhcf6vk2dcy.deno.dev/Twenth-blog-post#analysis-of-idea-2-video-call-website-with-fun-interactions-webrtc-api) and [Idea 2, Feedback from Gemini, Part 2](https://cclanchublo6-zrhcf6vk2dcy.deno.dev/Twenth-blog-post#re-evaluation-of-idea-2-video-call-website-with-fun-interactions-webrtc-api)
 
 [Top ⬆︎](#)
