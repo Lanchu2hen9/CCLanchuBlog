@@ -53,7 +53,7 @@ Because I am an UX/UI, website and front-end designer. And um A.I. is slowly tak
 
 ## Generated Images:
 
-**First Image:**
+**First Image:**  
 ![A beautiful scenery in a bottle](WeekTask9b-Comfy_00001_.png)
 ![Orange cat attached to the side profile of a human](WeekTask9b-Comfy_00002_.png)
 ![Cat head on human body avatar profile picture.](WeekTask9b-Comfy_00004_.png)
