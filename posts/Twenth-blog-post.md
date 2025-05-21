@@ -207,4 +207,8 @@ Run-away Mute Button: Medium achievability (requires solid DOM/JS skills for smo
 
 For core concepts that I would "need to learn" see [this](https://cclanchublo6-h4jkg85k9nm6.deno.dev/AT3-Concept-blog-post#core-concept-frameworks).
 
+**what would your project gain from such an incorporation?**
+I guess quite a lot, both in terms of creative practise and "mycelial creativity". Because a lot of website use WebSockets API and WebRTC API to "get themselves out there". Copilot says a lot of website help desks Chatbots WebSockets APIs. I guess from both a pratical standpoint, and a mycelial creativity standpoint, it would be good to gain knowledge[^1]/"hyphae" to create a practial "commerical" product/form a "fruit body".
 </font>
+
+[^1]: I'm a jack of all trades, but a master of none, but oftentimes better than a being a master of one.
