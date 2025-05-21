@@ -114,3 +114,36 @@ User Authentication/Session Management (Implicit): To have User1 log on with Use
 
 **Potential for Feature Creep:** It's easy to get carried away with making every element "interactable" in a project like this.
 </font>
+
+<font color="green">
+
+## Analysis of Idea 2: Video Call Website with Fun Interactions (WebRTC API)
+
+**Core Concept:** A standard two-user video call website with playful, interactive buttons (mute button runs away, camera pixelates, share screen allows drawing).
+
+### Pros:
+
+**Cutting-Edge Technology:** WebRTC is very impressive to demonstrate, as it handles real-time audio and video communication directly between browsers. It shows a strong understanding of modern web capabilities.
+
+**Focus on Interactions:** The "fun interactions" are the core of the idea, allowing you to focus on creative JavaScript and potentially CSS animations, which is a good design-tech blend.
+
+**Visual Storytelling:** The pixelation and drawing on screen are visually engaging.
+
+**Good Portfolio Piece:** A custom video call experience with unique interactions is a very strong and memorable portfolio item.
+
+### Cons/Challenges (Given your Time & Other Assignments):
+
+**Extremely High Development Scope (WebRTC):**
+WebRTC Complexity: WebRTC itself is notoriously complex to set up. It requires a "signaling server" (to exchange session information like SDPs and ICE candidates), STUN/TURN servers (to handle NAT traversal for direct peer-to-peer connections), and extensive JavaScript. This is significantly more involved than WebSockets for a basic messaging app.
+Real-time Video/Audio Streams: Handling live video and audio streams, even between just two users, introduces complexities with browser permissions, codecs, and potential network issues.
+
+**Interactive Button Logic:** Making a button "run away" or "escape" requires precise event handling (e.g., mousemove or touchmove), calculation of distance, and dynamic positioning, which can be tricky to make feel fluid across different devices.
+
+**Camera Pixelation/Glitch:** Applying real-time video effects requires manipulating video streams using Canvas API or WebGL, which is an advanced front-end development task.
+
+**Drawing on Screen Share:** Implementing a drawing layer over a shared screen also involves Canvas API manipulation and synchronizing drawings between users.
+
+**Cross-Device Compatibility (Touchscreen):** You noted uncertainty about touchscreen devices for the "run away" button. While possible, ensuring smooth performance on touchscreens adds significant development and testing time.
+
+**Time Commitment:** This idea is monumentally ambitious for ~2.5 weeks. WebRTC is a beast. Attempting this alongside other assignments, especially if you're not already highly proficient in WebRTC, JavaScript, and server-side development, is a recipe for severe stress and potentially incomplete delivery.
+<font color="green">
