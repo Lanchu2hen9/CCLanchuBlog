@@ -203,6 +203,8 @@ Run-away Mute Button: Medium achievability (requires solid DOM/JS skills for smo
 **What else would you need to do that would make this feasible?**
 ![A table scoping Idea 2 for AT3](LeTable.png)
 
+- Forgot to add in the "Sprinkles on top" section, "Pixelated Screen effect only focused on the face."
+
 For core concepts that I would "need to learn" see [this](https://cclanchublo6-h4jkg85k9nm6.deno.dev/AT3-Concept-blog-post#core-concept-frameworks).
 
 </font>

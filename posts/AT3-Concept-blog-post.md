@@ -94,4 +94,145 @@ Would you like to focus on any particular aspect of this project first? Or would
 
 For the concepts that I am talking about please refer to the Week10a homework blog. I'll be going with Idea 2. See [Idea 2, Feedback From Gemini, Part 1](https://cclanchublo6-zrhcf6vk2dcy.deno.dev/Twenth-blog-post#analysis-of-idea-2-video-call-website-with-fun-interactions-webrtc-api) and [Idea 2, Feedback from Gemini, Part 2](https://cclanchublo6-zrhcf6vk2dcy.deno.dev/Twenth-blog-post#re-evaluation-of-idea-2-video-call-website-with-fun-interactions-webrtc-api)
 
+I asked Gemini the following:
+
+> I really want to do Idea 2; for the camera off/on button would it be easier to do the pixelate effect and or glitch effect. Like I want both, but since its due in 2.5 FUCKING weeks and I have other shit to do. Which one is easier? to code give rough code frame and list tutorials in the form of a link from where you got the code frame word from.
+
+<font color="green">
+
+Okay, if you're set on Idea 2 and your teacher is helping with the WebRTC template, let's get real about the "Camera Pixelation/Glitch" effect within your 2.5-week deadline.
+
+Between pixelation and a glitch effect, pixelation is generally easier to implement consistently and reliably in real-time video on the web. A "glitch" can imply a much wider range of effects, some of which are significantly more complex (e.g., simulating corrupted data, specific shader effects).
+
+## Why Pixelation is Easier:
+
+Pixelation is a straightforward transformation: you're essentially reducing the resolution of the image and then scaling it up, or drawing larger "blocks" of color. This is a common and relatively simple operation using the HTML Canvas API.
+
+## Rough Code Frame for Pixelation (Conceptual JavaScript/HTML Canvas):
+
+This is a conceptual outline. You'll integrate this with the video stream you get from your WebRTC setup.
+
+```html
+<video id="localVideo" autoplay muted></video>
+<canvas id="pixelatedCanvas"></canvas>
+<button id="toggleEffect">Toggle Pixelation</button>
+```
+
+```js
+// Get references to your HTML elements
+const localVideo = document.getElementById("localVideo");
+const pixelatedCanvas = document.getElementById("pixelatedCanvas");
+const context = pixelatedCanvas.getContext("2d");
+const toggleButton = document.getElementById("toggleEffect");
+
+let pixelationActive = false;
+let mediaStream = null; // This will hold your WebRTC local video stream
+
+// Function to start the video stream (you'd get this from your WebRTC template)
+async function startLocalVideo() {
+  try {
+    // Assume your teacher's template gives you a mediaStream
+    // For a basic test, you can get it directly from webcam:
+    mediaStream = await navigator.mediaDevices.getUserMedia({
+      video: true,
+      audio: true,
+    });
+    localVideo.srcObject = mediaStream;
+    localVideo.onloadedmetadata = () => {
+      pixelatedCanvas.width = localVideo.videoWidth;
+      pixelatedCanvas.height = localVideo.videoHeight;
+      // Start the pixelation loop once video is loaded
+      requestAnimationFrame(drawPixelatedVideo);
+    };
+  } catch (err) {
+    console.error("Error accessing media devices: ", err);
+  }
+}
+
+// Pixelation parameters
+const PIXEL_SIZE = 16; // Adjust this value for more/less pixelation
+
+function drawPixelatedVideo() {
+  if (localVideo.paused || localVideo.ended) {
+    return; // Stop if video is not playing
+  }
+
+  if (pixelationActive) {
+    // Step 1: Draw the video to a tiny, scaled-down version on the canvas
+    const scaledWidth = pixelatedCanvas.width / PIXEL_SIZE;
+    const scaledHeight = pixelatedCanvas.height / PIXEL_SIZE;
+
+    context.drawImage(localVideo, 0, 0, scaledWidth, scaledHeight);
+
+    // Step 2: Scale up the tiny image back to original size (this creates the pixelation)
+    context.drawImage(
+      pixelatedCanvas,
+      0,
+      0,
+      scaledWidth,
+      scaledHeight,
+      0,
+      0,
+      pixelatedCanvas.width,
+      pixelatedCanvas.height
+    );
+  } else {
+    // If pixelation is not active, draw the video normally
+    context.drawImage(
+      localVideo,
+      0,
+      0,
+      pixelatedCanvas.width,
+      pixelatedCanvas.height
+    );
+  }
+
+  // Loop continuously
+  requestAnimationFrame(drawPixelatedVideo);
+}
+
+toggleButton.addEventListener("click", () => {
+  pixelationActive = !pixelationActive;
+});
+
+// Start everything when the page loads (or after WebRTC connection is established)
+startLocalVideo();
+
+// You'll need to figure out how to feed the pixelatedCanvas stream back into WebRTC
+// This is typically done by creating a new MediaStream from the canvas:
+// const canvasStream = pixelatedCanvas.captureStream(30); // 30fps
+// Then use canvasStream for your peer connection instead of localVideo.srcObject
+```
+
+<font>
+<font color="black">
+### Le Frames from Le video:
+
+[Using frames from a video](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Using_images#using_frames_from_a_video)
+
+- Also can use frames from a basic ass HTML video. See:
+
+```js
+function getMyVideo() {
+  const canvas = document.getElementById("canvas");
+  if (canvas.getContext) {
+    const ctx = canvas.getContext("2d");
+    return document.getElementById("myVideo");
+  }
+}
+```
+
+### CaptureStream();
+
+See [this](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/captureStream).
+From my understanding this concept does this:
+
+> "So it "captureStream()" takes the "frames"/"salami slices" of the MediaStream video and "does shit" with the data, then smooshes the modified "frames"/"salami slices" back into a sausage for other pieces of code to present visually or to do something else with."
+
+### Other Concepts:
+
+[Pixel manipulation with canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Pixel_manipulation_with_canvas)
+[Pixel manipulation with canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Pixel_manipulation_with_canvas)
+</font>
+
 [Top ⬆︎](#)
