@@ -249,5 +249,37 @@ STUN servers or Session Traversal Utilities for NAT _(Network Address Translatio
 A TURN server or Traversal Using Relays around NAT _(Network Address Translation)_. basically relay the incoming website/data that is trying to access your IP address and **relays** the incoming data throughout the gated community.
 
 - Information booth in gated community.
-  [Top ⬆︎](#)
-  </font>
+
+# Code as Suggested by Gemini:
+
+```js
+const configuration = {
+  iceServers: [
+    // This is a common public STUN server (often enough for initial testing)
+    { urls: "stun:stun.l.google.com:19302" },
+
+    // This is where Twilio's STUN/TURN URLs would go!
+    // You'll get these from your Twilio account settings.
+    // It typically includes a TURN server, and might need a username/password
+    // that's tied to your Twilio API key.
+    {
+      urls: "turn:global.turn.twilio.com:3478?transport=udp", // Example URL
+      username: "YOUR_TWILIO_API_KEY_SID", // From your Twilio account
+      credential: "YOUR_TWILIO_API_KEY_SECRET", // From your Twilio account
+    },
+    {
+      urls: "turn:global.turn.twilio.com:3478?transport=tcp", // Example, often includes TCP
+      username: "YOUR_TWILIO_API_KEY_SID",
+      credential: "YOUR_TWILIO_API_KEY_SECRET",
+    },
+  ],
+};
+
+// When your WebRTC peer connection is created, it uses these servers
+const peerConnection = new RTCPeerConnection(configuration);
+```
+
+Apparently the code is the instructions telling the browser **how** to get the URL address of the connectee on the other end of the WebRTC.
+
+[Top ⬆︎](#)
+</font>
