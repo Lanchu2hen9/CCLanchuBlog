@@ -233,7 +233,21 @@ From my understanding this concept does this:
 
 [Pixel manipulation with canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Pixel_manipulation_with_canvas)
 [Pixel manipulation with canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Pixel_manipulation_with_canvas)
-</font>
 
 - Investiage WebCam API
+
+# What are Twilio & Stun/Turn servers?
+
+## STUN servers:
+
+STUN servers or Session Traversal Utilities for NAT _(Network Address Translation)_, is a server that contains the geographical location (IP address of your devices.) From my understanding of STUN servers your device requests a public IP address from STUN, and the STUN **discovers** it and gives it back to the device.
+
+- The information booth outside the gated community _(Your home network)._
+
+## TURN server:
+
+A TURN server or Traversal Using Relays around NAT _(Network Address Translation)_. basically relay the incoming website/data that is trying to access your IP address and **relays** the incoming data throughout the gated community.
+
+- Information booth in gated community.
   [Top ⬆︎](#)
+  </font>
