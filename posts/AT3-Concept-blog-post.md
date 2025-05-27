@@ -281,5 +281,11 @@ const peerConnection = new RTCPeerConnection(configuration);
 
 Apparently the code is the instructions telling the browser **how** to get the URL address of the connectee on the other end of the WebRTC.
 
+## WebCam API:
+
+Saw another classmate in another class playing around with the WebCam, it turns out they were using WebCam API, I was briefly thinking of using this API. But I think its less of "connecting people from across the internet" and moreso of using your WebCam on your camera.
+
+Just consulted the AI, it turns out the WebCam API is apart of WebRTC, and it can be used for "Augmented Reality (AR); filters and stuff, and motion detection or face tracking."
+
 [Top ⬆︎](#)
 </font>
