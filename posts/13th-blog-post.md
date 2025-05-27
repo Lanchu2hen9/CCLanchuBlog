@@ -52,5 +52,3 @@ allow_math: true
 ## My Plan:
 
 1. Get WebRTC set up first. The go from there.
-
-## List
