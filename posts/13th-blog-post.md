@@ -31,3 +31,18 @@ allow_math: true
 
 **Work out how to do screen recording on your computer.**  
 `Shift` + `⌘ Cmd` + `5` my dude, I don't have anything fancy like Obs. Also the default screen recording is probably going to drain my battery a lot during the actual recording recording. 🪫 => My battery during the recording as well as my energy rn.
+
+# Task 2:
+
+<iframe width="560" height="315" id="Week11a" src="https://www.youtube.com/embed/jUh6d4MUvSc?si=AqUYgxR9JWywyJBS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<script type="module">
+    const iframe = document.getElementById('Week11a')
+    const updateDimensions = () => {
+        iframe.width = iframe.parentNode.scrollWidth
+        iframe.height = iframe.width * 9 / 16
+    }
+    
+    updateDimensions()
+    window.addEventListener('resize', updateDimensions)
+</script>
