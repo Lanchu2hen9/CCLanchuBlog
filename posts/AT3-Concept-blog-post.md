@@ -519,5 +519,93 @@ document.addEventListener("mousemove", (e) => {
 });
 ```
 
+# Original button runner code:
+
+```js
+// 3. Make the button run away when the mouse gets close
+document.addEventListener("mousemove", (e) => {
+  const buttonRect = muteButton.getBoundingClientRect();
+
+  const buttonCenterX = buttonRect.left + buttonRect.width / 2;
+
+  const buttonCenterY = buttonRect.top + buttonRect.height / 2;
+
+  const mouseX = e.clientX;
+  const mouseY = e.clientY;
+
+  const MouseSneak = 90; // Pixels
+
+  const distance = Math.sqrt(
+    Math.pow(mouseX - buttonCenterX, 2) + Math.pow(mouseY - buttonCenterY, 2)
+  );
+
+  if (distance < MouseSneak) {
+    let newX, newY;
+
+    let attempts = 0;
+    const maxAttempts = 50;
+
+    do {
+      newX = Math.random() * (innerWidth - buttonRect.width);
+      newY = Math.random() * (innerHeight - buttonRect.height);
+
+      const newDistance = Math.sqrt(
+        Math.pow(mouseX - (newX + buttonRect.width / 2), 2) +
+          Math.pow(mouseY - (newY + buttonRect.height / 2), 2)
+      );
+      attempts++;
+
+      if (newDistance > MouseSneak * 2 || attempts > maxAttempts) {
+        break;
+      }
+    } while (true);
+
+    muteButton.style.left = `${newX}px`;
+    muteButton.style.top = `${newY}px`;
+  }
+});
+```
+
+# For Loop one:
+
+```js
+document.addEventListener("mousemove", (e) => {
+  const buttonRect = muteButton.getBoundingClientRect();
+
+  const buttonCenterX = buttonRect.left + buttonRect.width / 2;
+
+  const buttonCenterY = buttonRect.top + buttonRect.height / 2;
+
+  const mouseX = e.clientX;
+  const mouseY = e.clientY;
+
+  const MouseSneak = 90;
+
+  const distance = Math.sqrt(
+    Math.pow(mouseX - buttonCenterX, 2) + Math.pow(mouseY - buttonCenterY, 2)
+  );
+
+  if (distance < MouseSneak) {
+    let newX;
+    let newY;
+
+    for (let i = 0; i < 50; i++) {
+      newX = Math.random() * (innerWidth - buttonRect.width);
+      newY = Math.random() * (innerHeight - buttonRect.height);
+      const newDistance = Math.sqrt(
+        Math.pow(mouseX - (newX + buttonRect.width / 2), 2) +
+          Math.pow(mouseY - (newY + buttonRect.height / 2), 2)
+      );
+      if (newDistance > MouseSneak * 2) {
+        console.log("The button has found a good position.");
+        break;
+      }
+      muteButton.style.left = `${newX}px`;
+      muteButton.style.top = `${newY}px`;
+    }
+  }
+});
+```
+
 [Top ⬆︎](#)
 </font>
