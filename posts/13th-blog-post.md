@@ -47,6 +47,8 @@ allow_math: true
     window.addEventListener('resize', updateDimensions)
 </script>
 
+**Note to self: Record video of button playground, and embed as iframe into this blog.**
+
 # Task 4:
 
 ## My Plan:
