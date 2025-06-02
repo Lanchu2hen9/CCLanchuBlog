@@ -47,6 +47,19 @@ allow_math: true
     window.addEventListener('resize', updateDimensions)
 </script>
 
+<iframe width="560" height="315" id="Week11a2" src="https://www.youtube.com/embed/lCy9kzTPTZc?si=5x1PNvWOKi0tyE7l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<script type="module">
+    const iframe = document.getElementById('Week11a2')
+    const updateDimensions = () => {
+        iframe.width = iframe.parentNode.scrollWidth
+        iframe.height = iframe.width * 9 / 16
+    }
+    
+    updateDimensions()
+    window.addEventListener('resize', updateDimensions)
+</script>
+
 **Note to self: Record video of button playground, and embed as iframe into this blog.**
 
 # Task 4:
