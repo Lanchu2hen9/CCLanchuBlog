@@ -607,5 +607,11 @@ document.addEventListener("mousemove", (e) => {
 });
 ```
 
+# 3rd of June 2025:
+
+If you're reading this write now Tom in Week 12, I would like to preface, I am very dead. But as for the discussion we had in class today about whether or not having both the local and remote people seeing the "pixelated" screen effect. My heart says no Tom, and no its not because I'm lazy.
+
+Its mainly because its Week 12/end of Semester, and I want both something simple and joyful for both me and my friends to experience. Because my friends are also University students, and I feel like focusing on their end/"creating a joyful local user experience" will be more of like a gift towards them. Because at the end of the day I just want this to be smth fun/delightful for them to enjoy to like relief that end of Sem grind.
+
 [Top ⬆︎](#)
 </font>
