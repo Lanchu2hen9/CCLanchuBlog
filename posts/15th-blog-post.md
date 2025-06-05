@@ -28,6 +28,10 @@ Digital literacy & legislation => more legislation allowing students from dffere
 
 Vectoralist / Techno-Feudalist Forms of Oppression => inherently non-inclusive structure => more inclusion => less power and control of digital infrastructure, and information in the hands of the few.
 
-**Interoperability;** more interoperability allows for the distribution of information through the masses Vectoralist / Techno-Feudalist Forms would be a more authoritarian form/ system and by being more inclusive this gives those who are oppressed more opportunitity to spread information b/w devices. For example, let's say in a dictorship, a person has a radio and they want to plug that radio into a laptop, but they don't have the nesscary dongles or connectors. And they're a creative coder, their coding skills maybe allows them to code smth to connect said radio to their laptop.
+**Interoperability;** more interoperability allows for the distribution of information through the masses. In general, Vectoralist / Techno-Feudalist systems would be a more authoritarian, and creative coding by implementing inclusion as a core, structural pillar would give more information to those who are marginalised. As an example let's say a marginalised person is in a dictorship, and they wanted to connect some piece of technology to another, their technological understanding in creative coding would allow them to bridge some of that technological gap in trying to connect the two pieces of technology together.
+
+**Extra-institutional hubs of knowledge** ~ allows for non-traditional passing of programming knowledge amongst people. By making it open-source you are in a sense going against the more "traditional" gatekeeping in computer science/stem fields.
+
+the critical posthumanities
 
 [Top ⬆︎](#)
