@@ -11,21 +11,15 @@ allow_math: true
 # Table Of Contents:
 
 1. [Task 1](#task-1)
-   - [Prompt 1](#prompt-1)
-   - [Ollama](#ollama)
-     - [Ollama Conclusion](#ollama-conclusion)
-   - [Gemini](#gemini)
-     - [Gemini Conclusion](#gemini-conclusion)
-   - [New Prompt](#claude-35-sonnet)
-     - [Ideas that I like](#ideas-that-i-like)
-   - [Claude 3.5 Sonnet](#new-prompt)
-     - [Project Concept: Instagram Desktop Reinvention](#project-concept-instagram-desktop-reinvention)
-2. [Task 2](#task-2)
-   - [Copilot Prompt Setup](#copilot-prompt-setup)
-   - [Learning](#learning)
-   - [Experiement 1](#experiement-1)
-   - [Final Code](#final-code)
-   - [Final Gif](#final-gif)
+2. [OneComplier/ C#](#onecomplier-c)
+   - [Strengths](#strengths)
+   - [Weaknesses](#weaknesses)
+3. [Javascript](#javascript)
+   - [Strengths](#strengths-1)
+   - [Weakneses](#weaknesses-1)
+4. [Complied Languages VS interpreted language](#complied-languages-vs-interpreted-language)
+   - [Strengths](#complied-strength-vs-interpreted-strengths)
+   - [Weakneses](#complied-weaknesses-vs-interpreted-weaknesses)
 
 # Task 1:
 

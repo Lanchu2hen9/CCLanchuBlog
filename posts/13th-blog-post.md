@@ -11,21 +11,16 @@ allow_math: true
 # Table Of Contents:
 
 1. [Task 1](#task-1)
-   - [Prompt 1](#prompt-1)
-   - [Ollama](#ollama)
-     - [Ollama Conclusion](#ollama-conclusion)
-   - [Gemini](#gemini)
-     - [Gemini Conclusion](#gemini-conclusion)
-   - [New Prompt](#claude-35-sonnet)
-     - [Ideas that I like](#ideas-that-i-like)
-   - [Claude 3.5 Sonnet](#new-prompt)
-     - [Project Concept: Instagram Desktop Reinvention](#project-concept-instagram-desktop-reinvention)
-2. [Task 2](#task-2)
-   - [Copilot Prompt Setup](#copilot-prompt-setup)
-   - [Learning](#learning)
-   - [Experiement 1](#experiement-1)
-   - [Final Code](#final-code)
-   - [Final Gif](#final-gif)
+2. [Task 2 & 3](#task-2)
+3. [Task 4](#task-4)
+   - [My Plan](#my-plan)
+   - [Legally Obligated Community of Practise](#legally-obligated-community-of-practise)
+     - [Domain](#domain)
+       - [What is Body doubling?](#what-is-body-doubling)
+     - [Repertoire](#repertoire)
+     - [Values](#values)
+   - [How are you going to use the code?](#how-are-you-going-to-use-the-code)
+4. [Task 5](#task-5)
 
 # Task 1:
 
@@ -82,7 +77,7 @@ I would love to do more fun with creative coding in AT3, but its week 12, and I'
 
 ## Legally Obligated Community of Practise
 
-### Domain (shared area of interest or focus):
+### Domain:
 
 Studying over call, because we're all university students and either suck at studying on our own. Our studying issues range from poor-impluse control to low-motivation.[^1] So on the rare occasion when everyone is available on instagram to "study & call" we body-double over call and hold each other accountable.
 
@@ -102,7 +97,7 @@ Mute btn - Both personally and physically speaking I can't really "lock-in"[^2] 
 
 Productivity, considering me and my friend group we're not the most neurotypical of friend groups. I also like parallel play with my friends over call. Like they could be doing the most random thing like making dinner or smth, I would just exist next to them.
 
-# How are you going to use the code?
+## How are you going to use the code?
 
 WebRTC to link my friends together, in relation to the body doubling and parallel play thing. Run away button and camera off button because I think its a fun, novelty thing for them to play with in week 12 where everyone is that University grindset mindset. And hopefully if the WebRTC connection works, I should be able to record their reactions on my end.
 

@@ -11,21 +11,23 @@ allow_math: true
 # Table Of Contents:
 
 1. [Task 1](#task-1)
-   - [Prompt 1](#prompt-1)
-   - [Ollama](#ollama)
-     - [Ollama Conclusion](#ollama-conclusion)
-   - [Gemini](#gemini)
-     - [Gemini Conclusion](#gemini-conclusion)
-   - [New Prompt](#claude-35-sonnet)
-     - [Ideas that I like](#ideas-that-i-like)
-   - [Claude 3.5 Sonnet](#new-prompt)
-     - [Project Concept: Instagram Desktop Reinvention](#project-concept-instagram-desktop-reinvention)
-2. [Task 2](#task-2)
-   - [Copilot Prompt Setup](#copilot-prompt-setup)
-   - [Learning](#learning)
-   - [Experiement 1](#experiement-1)
-   - [Final Code](#final-code)
-   - [Final Gif](#final-gif)
+
+   - [Idea 1](#idea-1)
+     - [For the quotes page](#for-the-quotes-page)
+   - [Standard Year book page](#standard-year-book-page)
+   - [Idea 2](#idea-2)
+     - [Fun Interactions](#fun-interactions)
+   - [Standard Year book page](#standard-year-book-page)
+   - [A.I. Prompt](#ai-prompt)
+   - [Analysis of Idea 1: Digital Yearbook (WebSockets API)](#analysis-of-idea-1-digital-yearbook-websockets-api)
+     - [Cons/Challenges](#conschallenges-given-your-time--other-assignments)
+   - [Analysis of Idea 2: Video Call Website with Fun Interactions (WebRTC API)](#analysis-of-idea-2-video-call-website-with-fun-interactions-webrtc-api)
+     - [Cons/Challenges](#conschallenges)
+   - [Re-evaluation of Idea 2: Video Call Website with Fun Interactions (WebRTC API)](#re-evaluation-of-idea-2-video-call-website-with-fun-interactions-webrtc-api)
+     - [Your Key Points & My Revised Assessment](#your-key-points--my-revised-assessment)
+     - [Revised Achievability for Idea 2](#revised-achievability-for-idea-2)
+
+2. [Scoping](#scoping)
 
 # Task 1:
 
