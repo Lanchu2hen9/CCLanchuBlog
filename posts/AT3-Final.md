@@ -10,17 +10,8 @@ allow_math: true
 
 # Table Of Contents:
 
-1. [Task 1](#task-1)
-2. [Task 2 & 3](#task-2)
-3. [Task 4](#task-4)
-   - [My Plan](#my-plan)
-   - [Legally Obligated Community of Practise](#legally-obligated-community-of-practise)
-     - [Domain](#domain)
-       - [What is Body doubling?](#what-is-body-doubling)
-     - [Repertoire](#repertoire)
-     - [Values](#values)
-   - [How are you going to use the code?](#how-are-you-going-to-use-the-code)
-4. [Task 5](#task-5)
+1. [3-5 mins video](#3-5-minute-video)
+2. [Finished Code](#finished-code)
 
 # 3-5 minute video:
 
